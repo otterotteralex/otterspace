@@ -24,7 +24,7 @@
     "age": "8+",
     "playtime": "15 minutes",
     "description": "Take a deep breath, match colorful flowers, and relax. AAAA",
-    "imageUrl": null
+    "imageUrl": "https://drive.google.com/file/d/1yyOrsixtxc2lMcEd5pmgpcwhPRNEEl7t/view?usp=drive_link"
   },
   "Absolute Balderdash": {
     "name": "Absolute Balderdash",
@@ -33,7 +33,7 @@
     "age": "12+",
     "playtime": "60 minutes",
     "description": "A bluffing trivia game where guessing the answer that sounds right probably isn't.",
-    "imageUrl": null
+    "imageUrl": "https://drive.google.com/file/d/13N9kO2D6Bs-8nxKIpx4SssXk8BNtrFWT/view?usp=drive_link"
   },
   "Acht-Minuten Imperium": {
     "name": "Acht-Minuten Imperium",
@@ -42,7 +42,7 @@
     "age": "13+",
     "playtime": "8-20 minutes",
     "description": "(German language with printed English instructions)\nBuild an empire that eclipses your rivals in just 8 minutes!",
-    "imageUrl": null
+    "imageUrl": "https://drive.google.com/file/d/1huiAa3BLn6nkHU2VQ-1oQX5GJeBzQgiI/view?usp=drive_link"
   },
   "Anno 1452": {
     "name": "Anno 1452",
@@ -51,8 +51,17 @@
     "age": "12+",
     "playtime": "90 minutes",
     "description": "(German language with printed English instructions)\nA game about the consolidating of power in the Holy Roman Empire in 1452.",
-    "imageUrl": null
-  },
+    "imageUrl": "https://drive.google.com/file/d/1veI8Dx62n4eNmD9xD3KoX78X6YsGA0Qo/view?usp=drive_link"
+    },
+  "Alpha Zulu": {
+    "name": "Alpha Zulu",
+    "category": "BOARD GAME",
+    "players": "4-8",
+    "age": "6-199",
+    "playtime": "15 minutes",
+    "description": "Players simultaneously yell words where the first letter spells other words to win the game.",
+    "imageUrl": "https://drive.google.com/file/d/1Mqb14XNGuX8GkHtsiKPn7g89oUPMdKev/view?usp=sharing"
+    },
   "Antarctica": {
     "name": "Antarctica",
     "category": "BOARD GAME",
@@ -78,15 +87,6 @@
     "age": "10+",
     "playtime": "45-60 minutes",
     "description": "(German language with printed English instructions)\nThe players, representing merchants, visit the trading posts of the five East India companies all over Asia. Every company's station offers a different good, which will be made available to the merchant who visits the trading post.\n\nThe one who is able to travel to the trading posts with the most lucrative goods will be able to procure the best wares for himself and get the most gold for them at game's end.",
-    "imageUrl": null
-  },
-  "Alpha Zulu": {
-    "name": "Alpha Zulu",
-    "category": "BOARD GAME",
-    "players": "4-8",
-    "age": "6-199",
-    "playtime": "15 minutes",
-    "description": "Players simultaneously yell words where the first letter spells other words to win the game.",
     "imageUrl": null
   },
   "Battle at Kemble's Cascade": {
