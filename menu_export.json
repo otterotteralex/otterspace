@@ -6,7 +6,7 @@
     "age": "12+",
     "playtime": "30 minutes",
     "description": "How easy is it to play? It’s soooo easy! potato\nPick your teams, throw the die, and you’re ready to go.\n\nTurn the timer, then pick a card and describe the names (in any order!) to your team mates as quickly as you can, but without saying the actual words on the card…\n\nThe more names your teammates guess correctly in 30 Seconds, the faster you move along the board!",
-    "imageUrl": "https://drive.google.com/file/d/12l87Fi9oUE1l0u5wSeV5tXmDeoo7yNcu/view?usp=drive_link"
+    "imageUrl": "images/30-seconds.jpg"
   },
   "7 wonders": {
     "name": "7 wonders",
@@ -15,7 +15,7 @@
     "age": "10+",
     "playtime": "30 mins",
     "description": "MYTHICAL GAME: With over a million copies sold, in 7 Wonders you'll take charge of one of the seven great cities of the ancient world and leave your mark on the history of civilisations.",
-    "imageUrl": "https://drive.google.com/file/d/1EycQX7HSnCTrThdPWGNeslWSKzdRIXHn/view?usp=drive_link"
+    "imageUrl": "images/7-wonders.jpg"
   },
   "A Gentle Rain (Bloom Edition)": {
     "name": "A Gentle Rain (Bloom Edition)",
@@ -24,7 +24,7 @@
     "age": "8+",
     "playtime": "15 minutes",
     "description": "Take a deep breath, match colorful flowers, and relax. AAAA",
-    "imageUrl": "https://drive.google.com/file/d/1yyOrsixtxc2lMcEd5pmgpcwhPRNEEl7t/view?usp=drive_link"
+    "imageUrl": "images/a-gentle-rain-bloom-edition.jpg"
   },
   "Absolute Balderdash": {
     "name": "Absolute Balderdash",
@@ -33,7 +33,7 @@
     "age": "12+",
     "playtime": "60 minutes",
     "description": "A bluffing trivia game where guessing the answer that sounds right probably isn't.",
-    "imageUrl": "https://drive.google.com/file/d/13N9kO2D6Bs-8nxKIpx4SssXk8BNtrFWT/view?usp=drive_link"
+    "imageUrl": "images/absolute-balderdash.jpg"
   },
   "Acht-Minuten Imperium": {
     "name": "Acht-Minuten Imperium",
@@ -42,7 +42,7 @@
     "age": "13+",
     "playtime": "8-20 minutes",
     "description": "(German language with printed English instructions)\nBuild an empire that eclipses your rivals in just 8 minutes!",
-    "imageUrl": "https://drive.google.com/file/d/1huiAa3BLn6nkHU2VQ-1oQX5GJeBzQgiI/view?usp=drive_link"
+    "imageUrl": "images/acht-minuten-imperium.jpg"
   },
   "Anno 1452": {
     "name": "Anno 1452",
@@ -51,17 +51,8 @@
     "age": "12+",
     "playtime": "90 minutes",
     "description": "(German language with printed English instructions)\nA game about the consolidating of power in the Holy Roman Empire in 1452.",
-    "imageUrl": "https://drive.google.com/file/d/1veI8Dx62n4eNmD9xD3KoX78X6YsGA0Qo/view?usp=drive_link"
-    },
-  "Alpha Zulu": {
-    "name": "Alpha Zulu",
-    "category": "BOARD GAME",
-    "players": "4-8",
-    "age": "6-199",
-    "playtime": "15 minutes",
-    "description": "Players simultaneously yell words where the first letter spells other words to win the game.",
-    "imageUrl": "https://drive.google.com/file/d/1Mqb14XNGuX8GkHtsiKPn7g89oUPMdKev/view?usp=sharing"
-    },
+    "imageUrl": "images/anno-1452.jpg"
+  },
   "Antarctica": {
     "name": "Antarctica",
     "category": "BOARD GAME",
@@ -69,7 +60,7 @@
     "age": "10+",
     "playtime": "45-90 minutes",
     "description": "(German language with printed English instructions)\nTake turns building structures in future Antarctica.",
-    "imageUrl": null
+    "imageUrl": "images/antarctica.jpg"
   },
   "Azul": {
     "name": "Azul",
@@ -78,7 +69,7 @@
     "age": "8+",
     "playtime": "30-40 minutes",
     "description": "(Italian language with printed English instructions)\nIn the game Azul, players take turns drafting colored tiles from suppliers to their player board. Later in the round, players score points based on how they've placed their tiles to decorate the palace. Extra points are scored for specific patterns and completing sets; wasted supplies harm the player's score. The player with the most points at the end of the game wins.",
-    "imageUrl": null
+    "imageUrl": "images/azul.jpg"
   },
   "Batavia": {
     "name": "Batavia",
@@ -87,7 +78,16 @@
     "age": "10+",
     "playtime": "45-60 minutes",
     "description": "(German language with printed English instructions)\nThe players, representing merchants, visit the trading posts of the five East India companies all over Asia. Every company's station offers a different good, which will be made available to the merchant who visits the trading post.\n\nThe one who is able to travel to the trading posts with the most lucrative goods will be able to procure the best wares for himself and get the most gold for them at game's end.",
-    "imageUrl": null
+    "imageUrl": "images/batavia.jpg"
+  },
+  "Alpha Zulu": {
+    "name": "Alpha Zulu",
+    "category": "BOARD GAME",
+    "players": "4-8",
+    "age": "6-199",
+    "playtime": "15 minutes",
+    "description": "Players simultaneously yell words where the first letter spells other words to win the game.",
+    "imageUrl": "images/alpha-zulu.jpg"
   },
   "Battle at Kemble's Cascade": {
     "name": "Battle at Kemble's Cascade",
@@ -96,7 +96,7 @@
     "age": "13+",
     "playtime": "75 minutes",
     "description": "(French language with printed English instructions)\nIt's your favorite 80s shoot-em-up! Blast aliens, asteroids, and a giant final boss!",
-    "imageUrl": null
+    "imageUrl": "images/battle-at-kembles-cascade.jpg"
   },
   "Block Tower": {
     "name": "Block Tower",
@@ -105,7 +105,7 @@
     "age": "3+",
     "playtime": "20 minutes",
     "description": "Pull out a block, place it on top, but don't let the tower fall! This fun, challenging game is great for families and kids",
-    "imageUrl": null
+    "imageUrl": "images/block-tower.jpg"
   },
   "Bloco Build-A-Friend Puppy": {
     "name": "Bloco Build-A-Friend: Puppy",
@@ -114,7 +114,7 @@
     "age": "5-12 years",
     "playtime": "Varies",
     "description": "62 high-density foam and plastic connectors\nIncludes step-by-step instructions for building a Puppy\nKids can build the illustrated designs or create their own.",
-    "imageUrl": null
+    "imageUrl": "images/bloco-build-a-friend-puppy.jpg"
   },
   "Bloco Dinosaurus Micro Raptors": {
     "name": "Bloco Dinosaurus: Micro Raptors",
@@ -123,7 +123,7 @@
     "age": "5-10 years",
     "playtime": "Varies",
     "description": "Put together a dinosaur friend! The set includes 64 parts: soft elements made of foam and plastic.",
-    "imageUrl": null
+    "imageUrl": "images/bloco-dinosaurus-micro-raptors.jpg"
   },
   "Butterfly Splendour - 1,000 pie": {
     "name": "Butterfly Splendour - 1,000 piece jigsaw puzzle",
@@ -132,7 +132,7 @@
     "age": "12+",
     "playtime": "Varies",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/butterfly-splendour-1000-piece-jigsaw-puzzle.jpg"
   },
   "Calico": {
     "name": "Calico",
@@ -141,7 +141,7 @@
     "age": "10+",
     "playtime": "30-45 minutes",
     "description": "Calico is a puzzly tile-laying game of quilts and cats. In Calico, players compete to sew the coziest quilt as they collect and place patches of different colors and patterns. Each quilt has a special pattern that must be adhered to, and players are also trying to create color and pattern combinations that are not only aesthetically pleasing, but also able to attract the cuddliest cats.",
-    "imageUrl": null
+    "imageUrl": "images/calico.jpg"
   },
   "Cascadia": {
     "name": "Cascadia",
@@ -150,7 +150,7 @@
     "age": "10+",
     "playtime": "30-45 minutes",
     "description": "Cascadia is a puzzly tile-laying game featuring the habitats and wildlife of the Pacific Northwest! In Cascadia, players take turns building their terrain and populating it with wildlife. Players must create a diverse and harmonious ecosystem - each animal species has a different spatial preference and each habitat must be placed to reduce fragmentation and create wildlife corridors.",
-    "imageUrl": null
+    "imageUrl": "images/cascadia.jpg"
   },
   "Cascadia Junior": {
     "name": "Cascadia Junior",
@@ -159,7 +159,7 @@
     "age": "6+",
     "playtime": "15-30 minutes",
     "description": "Cascadia Junior is the newest game in the Cascadia universe!\nOn your turn, build out your map and match animals and habitats to add sightings to your panorama and score points! Cascadia Junior lets younger players experience the spatial puzzle of the award-winning board game Cascadia. This stand-alone game teaches pattern building, set collection, and basic addition.\nLearn about bears, hawks, elk, salmon, and foxes in this diverse land of mountains, wetlands, prairies, rivers, and forests!",
-    "imageUrl": null
+    "imageUrl": "images/cascadia-junior.jpg"
   },
   "Castle panic": {
     "name": "Castle panic",
@@ -168,7 +168,7 @@
     "age": "8+",
     "playtime": "—",
     "description": "The forest is filled with all sorts of monsters. They watched and waited as you built your castle and trained your soldiers, but now they've gathered their army and are marching out of the woods. Can you work with your friends to defend your castle against the horde, or will the monsters tear down your walls and destroy the precious castle towers? You will all win or lose together, but in the end only one player will be declared the Master Slayer!",
-    "imageUrl": null
+    "imageUrl": "images/castle-panic.jpg"
   },
   "Recommended age 8+": {
     "name": "Recommended age: 8+",
@@ -177,7 +177,7 @@
     "age": "7+",
     "playtime": "As long as you'd like :)",
     "description": "Players: 1-6\nPlaytime 30-60 minutes",
-    "imageUrl": null
+    "imageUrl": "images/recommended-age-8.jpg"
   },
   "Cat Between Us": {
     "name": "Cat Between Us",
@@ -186,7 +186,7 @@
     "age": "8+",
     "playtime": "25 minutes",
     "description": "The Purr-fect Challenge Awaits in Cat Between Us as players use an arsenal of irresistible toys to lure a mischievous cat that has vanished in the house.",
-    "imageUrl": null
+    "imageUrl": "images/cat-between-us.jpg"
   },
   "Christmas trivia": {
     "name": "Christmas trivia",
@@ -195,7 +195,7 @@
     "age": "3+",
     "playtime": "Varies",
     "description": "Challenge your holiday knowledge with a variety of Christmas-themed questions, perfect for family fun and friendly competition.",
-    "imageUrl": null
+    "imageUrl": "images/christmas-trivia.jpg"
   },
   "Civilization": {
     "name": "Civilization",
@@ -204,7 +204,7 @@
     "age": "12+",
     "playtime": "360 minutes",
     "description": "(German language with printed English instructions)\nExpand and develop your historical empire while trading with competing civilizations.",
-    "imageUrl": null
+    "imageUrl": "images/civilization.jpg"
   },
   "Cluedo": {
     "name": "Cluedo",
@@ -213,7 +213,7 @@
     "age": "8+",
     "playtime": "40 minutes",
     "description": "Catch the culprit of a crime by identifying who did it, with what, and where.",
-    "imageUrl": null
+    "imageUrl": "images/cluedo.jpg"
   },
   "Coastal Cottage - 1,000 piece j": {
     "name": "Coastal Cottage - 1,000 piece jigsaw puzzle",
@@ -222,7 +222,7 @@
     "age": "12+",
     "playtime": "Varies",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/coastal-cottage-1000-piece-jigsaw-puzzle.jpg"
   },
   "Colonialism": {
     "name": "Colonialism",
@@ -231,7 +231,7 @@
     "age": "12+",
     "playtime": "90 minutes",
     "description": "Plunder foreign lands in this brutal critique of the Colonial Period.",
-    "imageUrl": null
+    "imageUrl": "images/colonialism.jpg"
   },
   "Colour Sudoku": {
     "name": "Colour Sudoku",
@@ -240,7 +240,7 @@
     "age": "8+",
     "playtime": "Varies",
     "description": "Solve 15 different puzzles with 3 degrees of difficulty. Includes 1 playing board, 81 marbles and 3 sudoku cards with solutions on the back.",
-    "imageUrl": null
+    "imageUrl": "images/colour-sudoku.jpg"
   },
   "Combo Color (Danish with printe": {
     "name": "Combo Color (Danish with printed English instructions)",
@@ -249,7 +249,7 @@
     "age": "6+",
     "playtime": "20 minutes",
     "description": "A strategic coloring pictures game! Expand your territory by coloring, each on your turn, a space on the map. These aren’t simple spaces! Don’t let your opponents guess your strategy if you want the best score. Explore Versailles, Tokyo, the jungle, and spectacular sceneries.",
-    "imageUrl": null
+    "imageUrl": "images/combo-color-danish-with-printed-english-instructions.jpg"
   },
   "Confusing Lands": {
     "name": "Confusing Lands",
@@ -258,7 +258,7 @@
     "age": "12+",
     "playtime": "10 minutes",
     "description": "Players compete to make wacky floating landscapes.",
-    "imageUrl": null
+    "imageUrl": "images/confusing-lands.jpg"
   },
   "Coup": {
     "name": "Coup",
@@ -267,7 +267,7 @@
     "age": "13+",
     "playtime": "15 minutes",
     "description": "In Coup, you want to be the last player with influence in the game.\nThe fifteen card deck consists of three copies of five different characters, each with a unique set of powers.\nBluff your way to the top in this fun, competitive card game.",
-    "imageUrl": null
+    "imageUrl": "images/coup.jpg"
   },
   "Consiglio": {
     "name": "Consiglio",
@@ -276,7 +276,7 @@
     "age": "14+",
     "playtime": "30-45 minutes",
     "description": "Consiglio is a fast-paced card game of subtle influence, calculated risks, and shifting loyalties set in a fictional Renaissance city inspired by Venice at its peak. Players assume the roles of ambitious nobles, guildmasters, and social climbers vying for power within the Grand Council — the Consiglio. In this world of masked intentions and whispered deals, only the most cunning can rise to the top.",
-    "imageUrl": null
+    "imageUrl": "images/consiglio.jpg"
   },
   "Cover Your A$$ets": {
     "name": "Cover Your A$$ets",
@@ -285,7 +285,7 @@
     "age": "7-99",
     "playtime": "20-40 minutes",
     "description": "The stakes are high in this high-energy, competitive, and cut-throat, set-collection card game for 2 to 6 players ages 7+ from Grandpa Beck's Games! In Cover Your Assets, players compete to become the first millionaire by building towers of matching sets made from 10 different types of asset cards (things like jewels, piggy banks, classic autos, and more). Each new set that is created is stacked crosswise on top of the previous set, covering, and protecting, all the sets beneath it.",
-    "imageUrl": null
+    "imageUrl": "images/cover-your-aets.jpg"
   },
   "Crooks": {
     "name": "Crooks",
@@ -294,7 +294,7 @@
     "age": "10+",
     "playtime": "10-20 minutes",
     "description": "New York, 1935 – You are a cunning top criminal with a plan that just can't fail. You need only a number of thieves and other scum to put these plans into practice. Fortunately, the city is packed with unemployed rogues who linger in bars, at pool halls and by the race course waiting for a chance to make easy money. Gather the best thieves and rob various locations in the city so as to go home with the most money at the end of the day.",
-    "imageUrl": null
+    "imageUrl": "images/crooks.jpg"
   },
   "Cryo": {
     "name": "Cryo",
@@ -303,7 +303,7 @@
     "age": "13+",
     "playtime": "60-90 minutes",
     "description": "(French Version Only)\nCompeting factions must scavenge the wreckage of their colony ship to survive.",
-    "imageUrl": null
+    "imageUrl": "images/cryo.jpg"
   },
   "Daggerheart": {
     "name": "Daggerheart",
@@ -312,7 +312,7 @@
     "age": "13+",
     "playtime": "As long as you want",
     "description": "Daggerheart is a heroic fantasy tabletop Roleplaying Game designed for narrative-driven play. Punctuated by fast-paced and dynamic combat, the system’s collaborative tools encourage everyone at the table to be a storyteller.\n\nWhen it’s time for the game mechanics to control fate, players roll one Hope die and one Fear die (both 12-sided dice) to determine the outcome. When the Hope die is higher, you also gain Hope to power future abilities and turn the tide in your favor! If the Fear die is higher, the game master gains Fear, which they’ll use to challenge the characters and richly complicate the narrative. Every choice matters as the adventure hangs in the balance between hope and fear!",
-    "imageUrl": null
+    "imageUrl": "images/daggerheart.jpg"
   },
   "Das Magische Labyrinth": {
     "name": "Das Magische Labyrinth",
@@ -321,7 +321,7 @@
     "age": "6+",
     "playtime": "20-30 minutes",
     "description": "(Multilingual edition including English)\nNavigate the unseen labyrinth using only your memory to collect the lost artifacts.",
-    "imageUrl": null
+    "imageUrl": "images/das-magische-labyrinth.jpg"
   },
   "Deep Dark Wood (Gruffalo)": {
     "name": "Deep Dark Wood (Gruffalo)",
@@ -330,7 +330,7 @@
     "age": "3+",
     "playtime": "5-15 minutes",
     "description": "A mouse took a stroll through the deep dark wood. A fox, an owl and a snake saw the mouse and the mouse looked good!\n\nCan you help your Mouse through the deep dark wood, avoiding the hungry Fox, Owl and Snake? If a player lands on one of their spaces, they must turn over a tree in search of the Gruffalo to scare the hungry predator away. So while the game is dice-driven, it rewards memory too.\n\nVery fast playing and with lovely illustrations from the book, it's a good introduction to dice and turn-taking for younger children.",
-    "imageUrl": null
+    "imageUrl": "images/deep-dark-wood-gruffalo.jpg"
   },
   "DGT 2500 Official Fide Digital ": {
     "name": "DGT 2500 Official Fide Digital Chess Clock/Timer",
@@ -339,7 +339,7 @@
     "age": "—",
     "playtime": "—",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/dgt-2500-official-fide-digital-chess-clocktimer.jpg"
   },
   "DGT Chess Pieces in a Bag (10 c": {
     "name": "DGT Chess Pieces in a Bag (10 copies)",
@@ -348,7 +348,7 @@
     "age": "6+",
     "playtime": "Depends on format",
     "description": "Checkmate your opponent in this timeless abstract.",
-    "imageUrl": null
+    "imageUrl": "images/dgt-chess-pieces-in-a-bag-10-copies.jpg"
   },
   "DGT Chess Foldable Board (10 co": {
     "name": "DGT Chess Foldable Board (10 copies)",
@@ -357,7 +357,7 @@
     "age": "6+",
     "playtime": "Depends on format",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/dgt-chess-foldable-board-10-copies.jpg"
   },
   "DGT Plastic Expansion Pack (20 ": {
     "name": "DGT Plastic Expansion Pack (20 Queens)",
@@ -366,7 +366,7 @@
     "age": "—",
     "playtime": "—",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/dgt-plastic-expansion-pack-20-queens.jpg"
   },
   "Diamond Quest (Smart Games)": {
     "name": "Diamond Quest (Smart Games)",
@@ -375,7 +375,7 @@
     "age": "8+",
     "playtime": "Varies",
     "description": "Follow the clues. Find the Diamond!\nEnter the SmartGames diamond mine and dig up all of the jewels and discover the location of the red diamond. Use the ‘mine’ of information offered by the hints and clues in each challenge to help. The deeper you dig, the more your deduction skills will be tested! Diamond Quest is a unique puzzle game featuring 80 challenges, from easy to expert.",
-    "imageUrl": null
+    "imageUrl": "images/diamond-quest-smart-games.jpg"
   },
   "Dinosaurs Mystic Islands (Smart": {
     "name": "Dinosaurs Mystic Islands (Smart Games)",
@@ -384,7 +384,7 @@
     "age": "6+",
     "playtime": "Varies",
     "description": "Use your brain to create a Jurassic habitat!\nDinosaurs: Mystic Islands is an exciting shape-matching game that challenges you to separate the plant-eating dinosaurs from the carnivores.\n\nComplete each of the 80 challenges by placing the islands as shown…but make sure the three friendly dinosaurs are separated from their T-Rex counterparts!",
-    "imageUrl": null
+    "imageUrl": "images/dinosaurs-mystic-islands-smart-games.jpg"
   },
   "Disney Mickey & Friends Food Fi": {
     "name": "Disney Mickey & Friends Food Fight",
@@ -393,7 +393,7 @@
     "age": "6+",
     "playtime": "15+",
     "description": "Simultaneously roll dice and follow what types of food to toss, how many, and in which direction… while avoiding others’ food! Empty your tray and be the first player with three Mickey Medals to win the Mickey and Friends Food Fight!",
-    "imageUrl": null
+    "imageUrl": "images/disney-mickey-friends-food-fight.jpg"
   },
   "Disney Princess Bumper Puzzle P": {
     "name": "Disney Princess Bumper Puzzle Pack",
@@ -402,7 +402,7 @@
     "age": "5+",
     "playtime": "15+ minutes",
     "description": "The Ravensburger Disney Princess 42 Piece Jigsaw 4 Puzzle Bumper Pack includes four bright and colourful Disney Princess jigsaw puzzles in one bumper pack! With gorgeous artwork, each puzzle creates a charming scene thats sure to enchant little Disney fans.",
-    "imageUrl": null
+    "imageUrl": "images/disney-princess-bumper-puzzle-pack.jpg"
   },
   "Dobble Disney Princess": {
     "name": "Dobble: Disney Princess",
@@ -411,7 +411,7 @@
     "age": "4+",
     "playtime": "15+ minutes",
     "description": "Dobble is a game of observation and quick reflexes for all! Featuring some of the most iconic Disney Princesses - Belle, Tiana, Jasmine, and more!",
-    "imageUrl": null
+    "imageUrl": "images/dobble-disney-princess.jpg"
   },
   "Dobble Marvel": {
     "name": "Dobble: Marvel",
@@ -420,7 +420,7 @@
     "age": "6+",
     "playtime": "15+ minutes",
     "description": "Dobble Marvel Emoji blends the thrill of superheroes with classic matching gameplay. Quick to learn and endlessly replayable, it turns every round into an epic test of speed, focus, and heroic reflexes",
-    "imageUrl": null
+    "imageUrl": "images/dobble-marvel.jpg"
   },
   "Draftosaurus": {
     "name": "Draftosaurus",
@@ -429,7 +429,7 @@
     "age": "8+",
     "playtime": "15 minutes",
     "description": "A dinosaur park will always attract tourists – if you can place your species right.",
-    "imageUrl": null
+    "imageUrl": "images/draftosaurus.jpg"
   },
   "Draftosaurus Aerial Show Expans": {
     "name": "Draftosaurus Aerial Show Expansion",
@@ -438,7 +438,7 @@
     "age": "8+",
     "playtime": "15-20 minutes",
     "description": "**required to borrow Draftosaurus with this expansion**\nPterodactyls will nest on top of the mountains that are now part of your park.",
-    "imageUrl": null
+    "imageUrl": "images/draftosaurus-aerial-show-expansion.jpg"
   },
   "Dragon Inferno (Smart Games)": {
     "name": "Dragon Inferno (Smart Games)",
@@ -447,7 +447,7 @@
     "age": "7+",
     "playtime": "10-20 minutes",
     "description": "Rule the kingdom… or go down in flames!\nDragon Inferno challenges players to strategically build the biggest kingdom in the Dragon valley. Watch out! Fire-breathing dragons can turn kingdoms into ashes… but if you’re smart, you can use the dragon’s inferno against your opponent. The player with the biggest kingdom at the end of the game is the winner.",
-    "imageUrl": null
+    "imageUrl": "images/dragon-inferno-smart-games.jpg"
   },
   "Draughts": {
     "name": "Draughts",
@@ -456,7 +456,7 @@
     "age": "6+",
     "playtime": "10+ minutes",
     "description": "Players move pieces diagonally to \"jump\" opponent pieces 'til one side is eliminated.",
-    "imageUrl": null
+    "imageUrl": "images/draughts.jpg"
   },
   "Dungeons And Naggins": {
     "name": "Dungeons And Naggins",
@@ -465,7 +465,7 @@
     "age": "21+",
     "playtime": "30 minutes",
     "description": "Dungeons and Naggins is an Irish comedy co-op board game with optional drinking!\nIt's great craic and it's easy for non-gamers. \nYou flip cards, roll dice, and gather loot, to defeat the boss and win.\nQuick Setup, 2-6 players, 30-minute games.",
-    "imageUrl": null
+    "imageUrl": "images/dungeons-and-naggins.jpg"
   },
   "Educa Neon Flourescent Solar Sy": {
     "name": "Educa Neon Flourescent Solar System Puzzle - 1,000 piece jigsaw puzzle",
@@ -474,7 +474,7 @@
     "age": "12+",
     "playtime": "Varies",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/educa-neon-flourescent-solar-system-puzzle-1000-piece-jigsaw-puzzle.jpg"
   },
   "El Caballero": {
     "name": "El Caballero",
@@ -483,7 +483,7 @@
     "age": "13+",
     "playtime": "90 minutes",
     "description": "(German language with printed English instructions)\nDiscover and control the new world by establishing influence on the edges of islands.",
-    "imageUrl": null
+    "imageUrl": "images/el-caballero.jpg"
   },
   "Elfenland": {
     "name": "Elfenland",
@@ -492,7 +492,7 @@
     "age": "10+",
     "playtime": "60 minutes",
     "description": "(German language with printed English instructions)\nUse elf transportation (dragon, cloud, raft, unicorn...) to visit the most cities.",
-    "imageUrl": null
+    "imageUrl": "images/elfenland.jpg"
   },
   "Enchanted Forest": {
     "name": "Enchanted Forest",
@@ -501,7 +501,7 @@
     "age": "4+",
     "playtime": "30-60 minutes",
     "description": "One treasure is hidden under each tree in the forest. As you move from tree to tree, you get to peek at the treasures you find. Can you remember where each one is hidden? When the king asks where one of the treasures is, players race to reach the castle with the right information.",
-    "imageUrl": null
+    "imageUrl": "images/enchanted-forest.jpg"
   },
   "Era of Tribes": {
     "name": "Era of Tribes",
@@ -510,7 +510,7 @@
     "age": "14+",
     "playtime": "60-180 minutes",
     "description": "Use military might or diplomacy, feed your people and lead your civilization to glory.",
-    "imageUrl": null
+    "imageUrl": "images/era-of-tribes.jpg"
   },
   "Escape from Ghost Castle": {
     "name": "Escape from Ghost Castle",
@@ -519,7 +519,7 @@
     "age": "7+",
     "playtime": "20 minutes",
     "description": "There is a chill in the air! Hide in a mysterious castle and avoid the ghosts that have decided to find you in their house. This ghostly adventure game for the whole family sends one player to hide in the castle, while the others play as the ghosts and try to find his or her hiding place.",
-    "imageUrl": null
+    "imageUrl": "images/escape-from-ghost-castle.jpg"
   },
   "Exploding Kittens (Not Safe For": {
     "name": "Exploding Kittens (Not Safe For Work Edition)",
@@ -528,7 +528,7 @@
     "age": "17+",
     "playtime": "15 minutes",
     "description": "Exploding Kittens: NSFW Edition is a highly-strategic, kitty powered version of Russian Roulette with art much too horrible/incredible to include in a kid-friendly version. Players draw cards until somebody draws an Exploding Kitten, at which point they explode and are out of the game. To avoid exploding, they can defuse the kitten with a crate or via porkback, OR use powerful action cards to move or avoid the Exploding Kitten. Betray your friends. Try not to explode. The last player left alive wins.",
-    "imageUrl": null
+    "imageUrl": "images/exploding-kittens-not-safe-for-work-edition.jpg"
   },
   "Flesh and Blood Smash Palace": {
     "name": "Flesh and Blood Smash Palace",
@@ -537,7 +537,7 @@
     "age": "16+",
     "playtime": "45+ minutes",
     "description": "Smash Palace brings multiplayer melee to Flesh and Blood like never before, and it’s as simple as Crack, Shuffle, Play! Crack 3 packs, remove the last 3 cards from each pack, Shuffle the rest, and Play.\n\nTo keep our Pit-Fighters on their toes, Smash Palace introduces the Event Deck. When the arena can change with the draw of a card, you’d better keep your wits if you want to win.",
-    "imageUrl": null
+    "imageUrl": "images/flesh-and-blood-smash-palace.jpg"
   },
   "Flip 7": {
     "name": "Flip 7",
@@ -546,7 +546,7 @@
     "age": "8+",
     "playtime": "20 minutes",
     "description": "Flip over cards one by one without flipping the same number twice.\n\nSound easy? Think again! This isn't just any deck of cards… In Flip 7 there's only one 1 card, two 2's, three 3’s, etc plus a bunch of special cards that can score you extra points, give you a second chance, or freeze you or your opponents in your tracks.\n\nAre you the type of player to play it safe and bank points before you bust, or are you going to risk it all and go for the bonus points by flipping over seven in a row? Press your luck meets strategy in this addictive card game that's sure to be the greatest card game you’ve ever played!",
-    "imageUrl": null
+    "imageUrl": "images/flip-7.jpg"
   },
   "Fluxx": {
     "name": "Fluxx",
@@ -555,7 +555,7 @@
     "age": "8+",
     "playtime": "10-30 minutes",
     "description": "Fluxx is a card game in which the cards themselves determine the current rules of the game. By playing cards, you change numerous aspects of the game: how to draw cards, how to play cards, and even how to win.\nAt the start of the game, each player holds three cards and on a turn a player draws one card, then plays one card. By playing cards, you can put new rules into play that change numerous aspects of the game: how many cards to draw or play, how many cards you can hold in hand or keep on the table in front of you, and how to win the game.",
-    "imageUrl": null
+    "imageUrl": "images/fluxx.jpg"
   },
   "Froggit (Smart Games)": {
     "name": "Froggit (Smart Games)",
@@ -564,7 +564,7 @@
     "age": "6+",
     "playtime": "Varies",
     "description": "Cross the pond... beware of the fish!\nGuide your frogs across the pond and block other players from doing the same. The first player to get their entire frog family to the other side wins the game. But watch out, the fish can scare your frogs back to the start!",
-    "imageUrl": null
+    "imageUrl": "images/froggit-smart-games.jpg"
   },
   "Garden Guests": {
     "name": "Garden Guests",
@@ -573,7 +573,7 @@
     "age": "8+",
     "playtime": "30 minutes",
     "description": "Race to connect stones and colonies in Garden Guests, but keep quiet to avoid disturbing the beetles. Team up, strategize silently, and build an unbroken path to lead your guests to victory in this whimsical mosaic adventure!",
-    "imageUrl": null
+    "imageUrl": "images/garden-guests.jpg"
   },
   "Gelatinous                     ": {
     "name": "Gelatinous                                                                         Be the biggest ooze . . . or lose!",
@@ -582,7 +582,7 @@
     "age": "10+",
     "playtime": "20 minutes",
     "description": "In Gelatinous, players start out as a wandering slime, using sparkling green dice to grow into a cube. But watch out, the other slimes are growing too! The first to grow into a cube wins – and the rest are lunch.\n\nIncludes 35 glittery green dice and its own dice bag!",
-    "imageUrl": null
+    "imageUrl": "images/gelatinous-be-the-biggest-ooze-or-lose.jpg"
   },
   "Ghosts Of Christmas": {
     "name": "Ghosts Of Christmas",
@@ -591,7 +591,7 @@
     "age": "14+",
     "playtime": "40 minutes",
     "description": "As winter blows in and ghosts start to appear, play \"tricks\" to the past, present, and future. As turns progress, your foes will play - out of order - to any of these time periods, and you will start to figure out who might \"lead\" each trick. Even though you can play to the tricks in any order, the tricks will resolve based on who was leading. Points are awarded to whomever has correctly bid on the number of tricks they thought they'd win. If you’ve played as many hands as there are players, the game is now over, otherwise keep playing! Whoever has the highest score and collected the most wreaths wins the game!",
-    "imageUrl": null
+    "imageUrl": "images/ghosts-of-christmas.jpg"
   },
   "Ghost Hunters (Smart Games)": {
     "name": "Ghost Hunters (Smart Games)",
@@ -600,7 +600,7 @@
     "age": "6+",
     "playtime": "Varies",
     "description": "Catch the ghosts in the light!\nHave you ever wondered what ghosts do in a haunted mansion?\nPlay Ghost Hunters and use your brain to find out!\nLight up all of the ghosts in each challenge by placing all the flashlight puzzle pieces correctly.\nWith 60 challenges it’s a scary good time for players young and old!",
-    "imageUrl": null
+    "imageUrl": "images/ghost-hunters-smart-games.jpg"
   },
   "Ham Helsing": {
     "name": "Ham Helsing",
@@ -609,7 +609,7 @@
     "age": "10+",
     "playtime": "60-90 minutes",
     "description": "Ham Helsing is a cooperative adventure board game based on the graphic novel series about a reluctant monster-hunting pig. Join Ham, Ronin, Malcom, and Lobos as they attempt to save the world! Using a card-crafting system with transparent upgrade cards, protect locations from endless swarms of minions while powering up and improving your skills. Can you power up fast enough to stop the Villain from destroying Mud Canyon and save the day?",
-    "imageUrl": null
+    "imageUrl": "images/ham-helsing.jpg"
   },
   "Harmonies": {
     "name": "Harmonies",
@@ -618,7 +618,7 @@
     "age": "—",
     "playtime": "30-45 minutes",
     "description": "build landscapes by placing colored tokens and create habitats for your animals. To earn the most points and win the game, incorporate the habitats in your landscapes wisely and have as many animals as you can settle there.",
-    "imageUrl": null
+    "imageUrl": "images/harmonies.jpg"
   },
   "Hellas": {
     "name": "Hellas",
@@ -627,7 +627,7 @@
     "age": "12+",
     "playtime": "45-60 minutes",
     "description": "(German language only)\nEnlist the powers of the gods to build an empire in the Greek archipelago.",
-    "imageUrl": null
+    "imageUrl": "images/hellas.jpg"
   },
   "Herd Mentality": {
     "name": "Herd Mentality",
@@ -636,7 +636,7 @@
     "age": "10+",
     "playtime": "20-30 minutes",
     "description": "This is a party game for families, friends and cow rustlers. The aim of the game is simple: think like the herd and write down the same answers as your friends.\n\nIf your answer is part of the majority, you all win cows. Yeehaw! If everyone else writes an answer that is matched by at least one other person, but yours is the odd one out, then you land the angry Pink Cow, and your herd of cows is worthless until you can offload it onto someone else.\n\nThe first player to collect eight cows wins.",
-    "imageUrl": null
+    "imageUrl": "images/herd-mentality.jpg"
   },
   "Hey, That's My Fish!": {
     "name": "Hey, That's My Fish!",
@@ -645,7 +645,7 @@
     "age": "8+",
     "playtime": "20 minutes",
     "description": "Race to catch fish, but don't get stranded as ice disappears beneath your feet.",
-    "imageUrl": null
+    "imageUrl": "images/hey-thats-my-fish.jpg"
   },
   "Hibernia": {
     "name": "Hibernia",
@@ -654,7 +654,7 @@
     "age": "8+",
     "playtime": "40 minutes",
     "description": "Set in Iron Age Ireland, Hibernia is a fast, simple wargame with strong European-style mechanics. It depends on well-balanced and clever play rather than pure aggression. Die rolls restrict when players can attack or reinforce their positions, and a unique scoring mechanism changes the resources which players need to score points each turn, keeping player positions dynamic.",
-    "imageUrl": null
+    "imageUrl": "images/hibernia.jpg"
   },
   "Holi Festival of Colors": {
     "name": "Holi Festival of Colors",
@@ -663,7 +663,7 @@
     "age": "13+",
     "playtime": "20-40 minutes",
     "description": "Celebrate by throwing colored powder at your friends, raining color from above.",
-    "imageUrl": null
+    "imageUrl": "images/holi-festival-of-colors.jpg"
   },
   "Hues and Cues": {
     "name": "Hues and Cues",
@@ -672,7 +672,7 @@
     "age": "8+",
     "playtime": "30 minutes",
     "description": "How well can you describe a color hue without using a primary color's name?!",
-    "imageUrl": null
+    "imageUrl": "images/hues-and-cues.jpg"
   },
   "Il Principe": {
     "name": "Il Principe",
@@ -681,7 +681,7 @@
     "age": "10+",
     "playtime": "60 minutes",
     "description": "Build cities, control territory and claim court roles to gain the most power.",
-    "imageUrl": null
+    "imageUrl": "images/il-principe.jpg"
   },
   "Irish Gauge": {
     "name": "Irish Gauge",
@@ -690,7 +690,7 @@
     "age": "12+",
     "playtime": "60 minutes",
     "description": "It is a beautiful day on the Emerald Isle and over the rolling green hills we spot a puff of dark smoke. Is it a fire? No, we hear the bright peep of a whistle. It is the 3pm train from Dublin, pulling into our station with a clank of drivers and a whoosh of braking steam.\nIrish Gauge is a game about building the railroads across Ireland. Savvy investors leverage their special interests to bring the railroads to their businesses. Irish Gauge is a game of simple rules with varied strategies & tactics for 3-5 players ages 12 and up, playing in about an hour.\nOn your turn, you may either auction a share of any available company, build railway track in one of the companies, upgrade a small town to a city, or request dividends to be paid. Upgrading towns and requesting dividends affect the length of the game as well as the likelihood of companies paying dividends in the future. The game will end when a certain condition is met. The player with the most money plus stock value wins the game! Irish Gauge is the inaugural title in the Iron Rail series.",
-    "imageUrl": null
+    "imageUrl": "images/irish-gauge.jpg"
   },
   "Jask": {
     "name": "Jask",
@@ -699,7 +699,7 @@
     "age": "4-104",
     "playtime": "15-20 minutes",
     "description": "Jask Connect has two brilliant and unique games in one box, both games encompass quick-fire fun, teach the ages 4+ the alphabet, and later in life for the 8+ the art of spelling indeed it is a superb fun medium to entertain and amuse teenagers and adults alike.",
-    "imageUrl": null
+    "imageUrl": "images/jask.jpg"
   },
   "Java": {
     "name": "Java",
@@ -708,7 +708,7 @@
     "age": "12+",
     "playtime": "120 minutes",
     "description": "(German, Italian, and French with printed English instructions)\nAs a Javanese ruler, become the dominant force in this underdeveloped area.",
-    "imageUrl": null
+    "imageUrl": "images/java.jpg"
   },
   "Jumanji": {
     "name": "Jumanji",
@@ -717,7 +717,7 @@
     "age": "8+",
     "playtime": "20-60 minutes",
     "description": "Decode the cards to help your friends, try to avoid all gristly ends.",
-    "imageUrl": null
+    "imageUrl": "images/jumanji.jpg"
   },
   "Jump In (Smart Games)": {
     "name": "Jump In (Smart Games)",
@@ -726,7 +726,7 @@
     "age": "7+",
     "playtime": "Varies",
     "description": "Help the rabbits jump and hide!\nCan you help the rabbits jump to safety?\nUse other rabbits, mushrooms and even the moving foxes to jump around and hide the rabbits in their holes.",
-    "imageUrl": null
+    "imageUrl": "images/jump-in-smart-games.jpg"
   },
   "Kaboom": {
     "name": "Kaboom",
@@ -735,7 +735,7 @@
     "age": "6+",
     "playtime": "30 minutes",
     "description": "Build towers while opponents simultaneously attempt to knock them down.",
-    "imageUrl": null
+    "imageUrl": "images/kaboom.jpg"
   },
   "Karen": {
     "name": "Karen",
@@ -744,7 +744,7 @@
     "age": "14+",
     "playtime": "30-45 minutes",
     "description": "The game of one star reviews! In Karen, each player is going to sneak their own fake complaints in amongst hilarious REAL one star reviews found online, to try and convince their opponents that THEY are the real Karen.\n\nThis hilarious party game isn’t about getting the RIGHT answer- it’s about coming up with your own funny suggestions and tricking the other players into believing your creation is the real complaint!",
-    "imageUrl": null
+    "imageUrl": "images/karen.jpg"
   },
   "Kites": {
     "name": "Kites",
@@ -753,7 +753,7 @@
     "age": "10+",
     "playtime": "10 minutes",
     "description": "The sun is shining, the wind is blowing, and you know just what to do — gather your friends to fly some kites!\n\nIn Kites, everyone works together to keep all their kites — represented by colorful sand timers — in the air. Take turns playing cards, flipping the sand timers, and coordinating with other players to ensure none of the timers run out. If it does, a kite has crashed! Add complication cards for additional challenges.\n\nPlay all of the kite cards in the deck, and everybody wins!",
-    "imageUrl": null
+    "imageUrl": "images/kites.jpg"
   },
   "LEGO  Monkey Palace": {
     "name": "LEGO : Monkey Palace",
@@ -762,7 +762,7 @@
     "age": "10+",
     "playtime": "45 minutes",
     "description": "Build your way to victory brick by brick!\nCompete against each other while you help the monkey rebuild the LEGO® Monkey Palace in this this innovative and strategic building board game.",
-    "imageUrl": null
+    "imageUrl": "images/lego-monkey-palace.jpg"
   },
   "Let's Go! To Japan": {
     "name": "Let's Go! To Japan",
@@ -771,7 +771,7 @@
     "age": "10+",
     "playtime": "45-60 minutes",
     "description": "Create a travel itinerary and go on your dream vacation to Japan.",
-    "imageUrl": null
+    "imageUrl": "images/lets-go-to-japan.jpg"
   },
   "Liguria": {
     "name": "Liguria",
@@ -780,7 +780,7 @@
     "age": "12+",
     "playtime": "60 minutes",
     "description": "(German language with printed English instructions)\nIn Liguria, players take the role of merchants who sail the Ligurian Sea to discover beautiful and exotic colors. By trading, conquering and engaging in diplomatic relationships, they can earn valuable prestige points. Fulfilling contracts with the bishop can prove very lucrative...\n\nMake sure to collect all special colors in the various harbors and bring them back home to make your cathedral stand out the most.",
-    "imageUrl": null
+    "imageUrl": "images/liguria.jpg"
   },
   "Lindisfarne": {
     "name": "Lindisfarne",
@@ -789,7 +789,7 @@
     "age": "10+",
     "playtime": "30-45 minutes",
     "description": "In Lindisfarne, you are the Jarl of your clan, the Viking chief, and you will raid Europe hoping to bring back treasures and prestige. Be aware the sea is unpredictable and, without luck or the gods’ help, you could land after one of your rivals or at the wrong location altogether...",
-    "imageUrl": null
+    "imageUrl": "images/lindisfarne.jpg"
   },
   "Little Red Riding Hood Delux (S": {
     "name": "Little Red Riding Hood Delux (Smart Games)",
@@ -798,7 +798,7 @@
     "age": "4-7 years",
     "playtime": "Varies",
     "description": "Find the path to Grandma’s house!\n\nCan you lay all the pieces on the board so that you build a path for Little Red Riding Hood to reach Grandma’s house? Then you can play the game with the Wolf! But beware, he might get there faster!\n\nTry to solve these challenges by making two paths to Grandma’s House: one for Little Red Riding Hood, and one for the Wolf.\n\nLittle Red Riding Hood includes 48 challenges (24 with the Wolf and 24 without) also features a family-friendly picture book with a modern twist on the original story.",
-    "imageUrl": null
+    "imageUrl": "images/little-red-riding-hood-delux-smart-games.jpg"
   },
   "Logic Links": {
     "name": "Logic Links",
@@ -807,7 +807,7 @@
     "age": "6+",
     "playtime": "Varies",
     "description": "It's time to let your logic loose!\nUse determination, deductive reasoning and super smarts in this game of puzzles.\nEach puzzle has a series of clues, and players must figure out where to place the coloured chips to solve them!\nThe answers are in the instructions but, NO PEEKING!",
-    "imageUrl": null
+    "imageUrl": "images/logic-links.jpg"
   },
   "Loteria Tim Burton The Nightmar": {
     "name": "Loteria Tim Burton The Nightmare Before Christmas",
@@ -816,7 +816,7 @@
     "age": "4+",
     "playtime": "15 minutes",
     "description": "Take part in holiday mischief with the residents of Halloween Town and Christmas Town with Disney Tim Burton’s The Nightmare Before Christmas: A Loteria Game – an English and Spanish version of the popular game of Bingo! Players win by matching images on their tablas. Features beautiful illustrations of iconic characters, items, and places from the classic film, such as Jack Skellington, Vampire Teddy (Peluche Vampiro), and Christmas Tree (Arbol de Navidad). Share the gifts of luck and learning with this unpredictable and bilingual game for The Nightmare Before Christmas fans of every generation!",
-    "imageUrl": null
+    "imageUrl": "images/loteria-tim-burton-the-nightmare-before-christmas.jpg"
   },
   "Lucky Numbers": {
     "name": "Lucky Numbers",
@@ -825,7 +825,7 @@
     "age": "8+",
     "playtime": "20 minutes",
     "description": "(Italian - can play without knowing language)\nFill your grid with numbers first, and be careful to avoid giving up crucial tiles.",
-    "imageUrl": null
+    "imageUrl": "images/lucky-numbers.jpg"
   },
   "Lustigt Jigsaw Puzzle - 211 pie": {
     "name": "Lustigt Jigsaw Puzzle - 211 pieces",
@@ -834,7 +834,7 @@
     "age": "6+",
     "playtime": "Varies",
     "description": "A unique jigsaw suitable for ages 6+.",
-    "imageUrl": null
+    "imageUrl": "images/lustigt-jigsaw-puzzle-211-pieces.jpg"
   },
   "Magical Encounters": {
     "name": "Magical Encounters",
@@ -843,7 +843,7 @@
     "age": "7+",
     "playtime": "45 minutes",
     "description": "Embark on adventure with the Magic 8-Ball as your guide.",
-    "imageUrl": null
+    "imageUrl": "images/magical-encounters.jpg"
   },
   "Maltese Gear": {
     "name": "Maltese Gear",
@@ -852,7 +852,7 @@
     "age": "7+",
     "playtime": "Varies",
     "description": "Of all the gear puzzles, Maltese Gear might be the most inspiring – and the most challenging. It’s so hypnotically magical to spin and twist the gears around a hollow interior, you may not care if you solve it or not!\nTwist & Solve, get one solid color per side!",
-    "imageUrl": null
+    "imageUrl": "images/maltese-gear.jpg"
   },
   "Mantis": {
     "name": "Mantis",
@@ -861,7 +861,7 @@
     "age": "7+",
     "playtime": "10 minutes",
     "description": "A colorfully cutthroat card game of RAINBOWS and REVENGE.",
-    "imageUrl": null
+    "imageUrl": "images/mantis.jpg"
   },
   "Mare Nostrum": {
     "name": "Mare Nostrum",
@@ -870,7 +870,7 @@
     "age": "10+",
     "playtime": "120 minutes",
     "description": "(German language with printed English instructions)\nExpand your civilization through trade, warfare and architecture.",
-    "imageUrl": null
+    "imageUrl": "images/mare-nostrum.jpg"
   },
   "Monopoloy - Mustang Edition": {
     "name": "Monopoloy - Mustang Edition",
@@ -879,7 +879,7 @@
     "age": "8+",
     "playtime": "60 minutes",
     "description": "The game of Monopoly with a Ford Mustang car model theme.",
-    "imageUrl": null
+    "imageUrl": "images/monopoloy-mustang-edition.jpg"
   },
   "Montana": {
     "name": "Montana",
@@ -888,7 +888,7 @@
     "age": "10+",
     "playtime": "45 minutes",
     "description": "Build settlements and collect resources as you colonize the Western frontier.",
-    "imageUrl": null
+    "imageUrl": "images/montana.jpg"
   },
   "Moon River": {
     "name": "Moon River",
@@ -897,7 +897,7 @@
     "age": "8+",
     "playtime": "45 minutes",
     "description": "Build your own Kingdomino-like tiles into a cattle ranch.",
-    "imageUrl": null
+    "imageUrl": "images/moon-river.jpg"
   },
   "Movie quiz": {
     "name": "Movie quiz",
@@ -906,7 +906,7 @@
     "age": "8+",
     "playtime": "Varies",
     "description": "Take the Movie Quiz and find out if you deserve a star on the Hollywood Walk of Fame or a role in a disaster movie!",
-    "imageUrl": null
+    "imageUrl": "images/movie-quiz.jpg"
   },
   "My Haven No 1 The Craft Shed - ": {
     "name": "My Haven No 1: The Craft Shed - 1,000 piece jigsaw puzzle",
@@ -915,7 +915,7 @@
     "age": "12+",
     "playtime": "Varies",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/my-haven-no-1-the-craft-shed-1000-piece-jigsaw-puzzle.jpg"
   },
   "My Haven No 4 The Sewing Shed -": {
     "name": "My Haven No 4: The Sewing Shed - 1,000 piece jigsaw puzzle",
@@ -924,7 +924,7 @@
     "age": "12+",
     "playtime": "Varies",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/my-haven-no-4-the-sewing-shed-1000-piece-jigsaw-puzzle.jpg"
   },
   "My Haven No 7 The Beach Hut - 1": {
     "name": "My Haven No 7: The Beach Hut - 1,000 piece jigsaw puzzle",
@@ -933,7 +933,7 @@
     "age": "12+",
     "playtime": "Varies",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/my-haven-no-7-the-beach-hut-1000-piece-jigsaw-puzzle.jpg"
   },
   "My Haven No 8 The Gardner's She": {
     "name": "My Haven No 8: The Gardner's Shed - 1,000 piece jigsaw puzzle",
@@ -942,7 +942,7 @@
     "age": "12+",
     "playtime": "Varies",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/my-haven-no-8-the-gardners-shed-1000-piece-jigsaw-puzzle.jpg"
   },
   "My Haven No 9 The Tea House - 1": {
     "name": "My Haven No 9: The Tea House - 1,000 piece jigsaw puzzle",
@@ -951,7 +951,7 @@
     "age": "12+",
     "playtime": "Varies",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/my-haven-no-9-the-tea-house-1000-piece-jigsaw-puzzle.jpg"
   },
   "My Rummy": {
     "name": "My Rummy",
@@ -960,7 +960,7 @@
     "age": "8+",
     "playtime": "60 minutes",
     "description": "Race to play all your tiles by forming runs or sets, even if they're not your own!",
-    "imageUrl": null
+    "imageUrl": "images/my-rummy.jpg"
   },
   "Nexum Galaxy": {
     "name": "Nexum Galaxy",
@@ -969,7 +969,7 @@
     "age": "12+",
     "playtime": "22-55 minutes",
     "description": "Live a space adventure fighting, exploiting and expanding to get the Nexum Relics.",
-    "imageUrl": null
+    "imageUrl": "images/nexum-galaxy.jpg"
   },
   "Nexum Galaxy 120 miniatures": {
     "name": "Nexum Galaxy 120 miniatures",
@@ -978,7 +978,7 @@
     "age": "—",
     "playtime": "—",
     "description": "**required to borrow Nexum Galaxy with this expansion**",
-    "imageUrl": null
+    "imageUrl": "images/nexum-galaxy-120-miniatures.jpg"
   },
   "Nexum Galaxy Asteroids Expansio": {
     "name": "Nexum Galaxy Asteroids Expansion",
@@ -987,7 +987,7 @@
     "age": "—",
     "playtime": "—",
     "description": "**required to borrow Nexum Galaxy with this expansion**",
-    "imageUrl": null
+    "imageUrl": "images/nexum-galaxy-asteroids-expansion.jpg"
   },
   "Oh Captain, My Captain!": {
     "name": "Oh Captain, My Captain!",
@@ -996,7 +996,7 @@
     "age": "Unknown",
     "playtime": "30 minutes",
     "description": "Oh Captain, My Captain! is a short form worldbuilding role-playing game (RPG) that explores heroism and the complicated relationships we have with people we admire. It’s approachable for players who have never tried an RPG before and satisfying for players who have been gaming for years. It’s also compact enough to tell unforgettable stories in just thirty minutes.",
-    "imageUrl": null
+    "imageUrl": "images/oh-captain-my-captain.jpg"
   },
   "Oltre Mare": {
     "name": "Oltre Mare",
@@ -1005,7 +1005,7 @@
     "age": "12+",
     "playtime": "60 minutes",
     "description": "(German language with printed English instructions)\nSet sail as you trade and sell off goods, collect riches, and watch out for pirates!",
-    "imageUrl": null
+    "imageUrl": "images/oltre-mare.jpg"
   },
   "On A Scale Of One To T-Rex     ": {
     "name": "On A Scale Of One To T-Rex                                                                        A card game for people who are bad at charades.",
@@ -1014,7 +1014,7 @@
     "age": "7+",
     "playtime": "15 minutes",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/on-a-scale-of-one-to-t-rex-a-card-game-for-people-who-are-bad-at-charades.jpg"
   },
   "On the Underground Paris, New Y": {
     "name": "On the Underground: Paris, New York",
@@ -1023,7 +1023,7 @@
     "age": "14+",
     "playtime": "45-60 minutes",
     "description": "Develop the subway and attract passenger traffic in Paris and New York.",
-    "imageUrl": null
+    "imageUrl": "images/on-the-underground-paris-new-york.jpg"
   },
   "One Week Ultimate Werewolf": {
     "name": "One Week Ultimate Werewolf",
@@ -1032,7 +1032,7 @@
     "age": "8+",
     "playtime": "45-60 minutes",
     "description": "Spend a week in Ludwig's Castle. Investigate others and don't get eaten!",
-    "imageUrl": null
+    "imageUrl": "images/one-week-ultimate-werewolf.jpg"
   },
   "Operation Barclay": {
     "name": "Operation Barclay",
@@ -1041,7 +1041,7 @@
     "age": "14+",
     "playtime": "25-40 minutes",
     "description": "The Allies and Abwehrr tangle to hide—or reveal—invasion information.",
-    "imageUrl": null
+    "imageUrl": "images/operation-barclay.jpg"
   },
   "Our Feathered Friends - 1,000 p": {
     "name": "Our Feathered Friends - 1,000 piece jigsaw puzzle",
@@ -1050,7 +1050,7 @@
     "age": "12+",
     "playtime": "Varies",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/our-feathered-friends-1000-piece-jigsaw-puzzle.jpg"
   },
   "Patchwork": {
     "name": "Patchwork",
@@ -1059,7 +1059,7 @@
     "age": "8+",
     "playtime": "15-30 minutes",
     "description": "Two players compete to build the most aesthetic (and high-scoring) patchwork quilt on a personal 9x9 game board.",
-    "imageUrl": null
+    "imageUrl": "images/patchwork.jpg"
   },
   "Peppa Pig 2x Puzzle + Memos": {
     "name": "Peppa Pig 2x Puzzle + Memos",
@@ -1068,7 +1068,7 @@
     "age": "5+",
     "playtime": "15+ minutes",
     "description": "A box packed with 3 exciting activities for endless fun! Featuring two puzzles with varying levels of difficulty and a classic 24-piece memory game, this set offers delightful challenges for your little one. Puzzle building not only develops dexterity but also provides plenty of enjoyable moments.",
-    "imageUrl": null
+    "imageUrl": "images/peppa-pig-2x-puzzle-memos.jpg"
   },
   "Pandemic": {
     "name": "Pandemic",
@@ -1077,7 +1077,7 @@
     "age": "8+",
     "playtime": "45 minutes",
     "description": "Cooperative game in which you and your teammates travel across the globe, treating infections while finding resources.",
-    "imageUrl": null
+    "imageUrl": "images/pandemic.jpg"
   },
   "Pictionary": {
     "name": "Pictionary",
@@ -1086,7 +1086,7 @@
     "age": "8+",
     "playtime": "10-30 minutes",
     "description": "Draw fast, guess quick! Team up to sketch your way to victory before time runs out!",
-    "imageUrl": null
+    "imageUrl": "images/pictionary.jpg"
   },
   "Pictureka!": {
     "name": "Pictureka!",
@@ -1095,7 +1095,7 @@
     "age": "6+",
     "playtime": "30 minutes",
     "description": "Find pictures fast, and find them first!",
-    "imageUrl": null
+    "imageUrl": "images/pictureka.jpg"
   },
   "Pirates Crossfire (Smart Games)": {
     "name": "Pirates Crossfire (Smart Games)",
@@ -1104,7 +1104,7 @@
     "age": "7+",
     "playtime": "Varies",
     "description": "Can you navigate your ships to bring the enemy into the line of fire and sink his ships? Or will you keep the peace and avoid total war? Fire up your cannons - and your brains - to find out!",
-    "imageUrl": null
+    "imageUrl": "images/pirates-crossfire-smart-games.jpg"
   },
   "Pirate Ship Jigsaw Puzzle & Pos": {
     "name": "Pirate Ship Jigsaw Puzzle & Poster",
@@ -1113,7 +1113,7 @@
     "age": "5-9",
     "playtime": "15+ minutes",
     "description": "Ship ahoy! There’s lots to talk and laugh about in this large, detailed pirate ship jigsaw, including pirates hanging their pants out to dry and floating in rubber rings!\nPirate Ship includes a fun learning guide on the back of the box, which features different discussion points to talk about once the puzzle has been completed. This includes questions to encourage observation, develop counting and promote imaginative play e.g. Can you find a monkey eating pizza? Where do you think the pirates are taking the treasure chest?",
-    "imageUrl": null
+    "imageUrl": "images/pirate-ship-jigsaw-puzzle-poster.jpg"
   },
   "Playing cards- Idaho Big Potato": {
     "name": "Playing cards- Idaho Big Potato",
@@ -1122,7 +1122,7 @@
     "age": "All!",
     "playtime": "Varies",
     "description": "Use this tarditional deck of cards to play what you'd like! Solitaire? Go Fish? Hearts? What will you choose?",
-    "imageUrl": null
+    "imageUrl": "images/playing-cards-idaho-big-potato.jpg"
   },
   "Playing cards- Idaho Collage": {
     "name": "Playing cards- Idaho Collage",
@@ -1131,7 +1131,7 @@
     "age": "All!",
     "playtime": "Varies",
     "description": "Use this tarditional deck of cards to play what you'd like! Solitaire? Go Fish? Hearts? What will you choose?",
-    "imageUrl": null
+    "imageUrl": "images/playing-cards-idaho-collage.jpg"
   },
   "Poetry for Neanderthals": {
     "name": "Poetry for Neanderthals",
@@ -1140,7 +1140,7 @@
     "age": "7+",
     "playtime": "15 minutes",
     "description": "A competitive word-guessing game where u must speak good or get hit with stick.",
-    "imageUrl": null
+    "imageUrl": "images/poetry-for-neanderthals.jpg"
   },
   "Poetry for Neanderthals (Not Sa": {
     "name": "Poetry for Neanderthals (Not Safe For Work Edition)",
@@ -1149,7 +1149,7 @@
     "age": "17+",
     "playtime": "15 minutes",
     "description": "A word game where u must say bad words or get hit with stick.",
-    "imageUrl": null
+    "imageUrl": "images/poetry-for-neanderthals-not-safe-for-work-edition.jpg"
   },
   "Pokemon 3D puzzle": {
     "name": "Pokemon 3D puzzle",
@@ -1158,7 +1158,7 @@
     "age": "6+",
     "playtime": "Varies",
     "description": "Have fun piecing together this 3D Poké Ball Pokemon Puzzle.",
-    "imageUrl": null
+    "imageUrl": "images/pokemon-3d-puzzle.jpg"
   },
   "Pokemon 500 Piece Puzzle": {
     "name": "Pokemon 500 Piece Puzzle",
@@ -1167,7 +1167,7 @@
     "age": "12+",
     "playtime": "Varies",
     "description": "This is a must have item for any Pokemon fan. Containing all characters from #001, through to #151, can you name them all? Build the puzzle and then challenge yourself and your Pokemon knowledge and see if you can correctly guess all the character names!",
-    "imageUrl": null
+    "imageUrl": "images/pokemon-500-piece-puzzle.jpg"
   },
   "Power Hungry Pets": {
     "name": "Power Hungry Pets",
@@ -1176,7 +1176,7 @@
     "age": "7+",
     "playtime": "15 minutes",
     "description": "Use your animalistic powers to eliminate everyone else at the table.",
-    "imageUrl": null
+    "imageUrl": "images/power-hungry-pets.jpg"
   },
   "Professor Puzzle Lost & Found -": {
     "name": "Professor Puzzle: Lost & Found - Egyptian Hieroglyph Puzzle",
@@ -1185,7 +1185,7 @@
     "age": "10+",
     "playtime": "Varies",
     "description": "Can you arrange the seven tiles into the base so that the hieroglyphs on touching sides always match?\n\nThe ancient Egyptians invented one of the earliest known writing systems used from around 3000 BC. Hieroglyphs combined logographic, syllabic and alphabetic elements, with some 1,000 distinct characters.",
-    "imageUrl": null
+    "imageUrl": "images/professor-puzzle-lost-found-egyptian-hieroglyph-puzzle.jpg"
   },
   "Professor Puzzle Myths + Legend": {
     "name": "Professor Puzzle: Myths + Legends - Theseus & The Minotaur Puzzle",
@@ -1194,7 +1194,7 @@
     "age": "10+",
     "playtime": "Varies",
     "description": "Explore the depths of history’s most challenging maze with this captivating wooden brainteaser, based on the Ancient Greek myth. Can you rotate the labyrinth to guide the ball from the ‘start’ point to the ‘end’? Includes a story booklet with the tense tale of Theseus and the ferocious minotaur.",
-    "imageUrl": null
+    "imageUrl": "images/professor-puzzle-myths-legends-theseus-the-minotaur-puzzle.jpg"
   },
   "Propolis": {
     "name": "Propolis",
@@ -1203,7 +1203,7 @@
     "age": "10+",
     "playtime": "15-30 minutes",
     "description": "Propolis is a worker-placement, engine-building, area-control, and tableau-building game. Players take on the role of competing medieval bee colonies and take turns deploying worker bees to collect pollen, fortify their positions, and construct their hives to appease their queen and become the most glorious in the land!\n\nAs bees compete over the realm's floral landscapes, they will be collecting pollen to create the propolis they need to build their hives. Attaining dominance in different realms provides additional glory and building materials. As hives expand, new structures provide additional resources, new scoring opportunities, and the prerequisites to construct a glorious palace for the queen. The player who dominates the realm and builds the most prestigious home wins.",
-    "imageUrl": null
+    "imageUrl": "images/propolis.jpg"
   },
   "Proving Grounds": {
     "name": "Proving Grounds",
@@ -1212,7 +1212,7 @@
     "age": "10+",
     "playtime": "30-45 minutes",
     "description": "Become a single warrior as you fight for your life gladiator-style.",
-    "imageUrl": null
+    "imageUrl": "images/proving-grounds.jpg"
   },
   "Quirky": {
     "name": "Quirky",
@@ -1221,7 +1221,7 @@
     "age": "10+",
     "playtime": "20+ minutes",
     "description": "Quirky is a fast-moving, quick-thinking, fun, question and answer, bluff and banter game for family and friends. It is not like a conventional fact-based quiz - in this game you decide the answers. On your turn you answer against a 40-second sand timer and, if you don't know, try to convince others that you do. Younger players compete on equal terms as quick wit and cheeky confidence are more important in the game than knowledge. You win the cards you answer, unless your answer is challenged, then the winner of the challenge keeps that card and steals another. If you can't answer you don't pass - you roll the QUIRKY die for a chance to win the card anyway, and if you lose you can choose who it goes to.",
-    "imageUrl": null
+    "imageUrl": "images/quirky.jpg"
   },
   "Qwirkle (Travel Size)": {
     "name": "Qwirkle (Travel Size)",
@@ -1230,7 +1230,7 @@
     "age": "6+",
     "playtime": "45 minutes",
     "description": "Complete a set of shapes or colors among the criss-crossing tiles for big points!",
-    "imageUrl": null
+    "imageUrl": "images/qwirkle-travel-size.jpg"
   },
   "Railroad Tiles": {
     "name": "Railroad Tiles",
@@ -1239,7 +1239,7 @@
     "age": "8+",
     "playtime": "45 minutes",
     "description": "Railroad Tiles, a sequel to the roll-and-write series Railroad Ink, is a quick-playing tile placement game in which you pick tiles and place routes to build an interconnected community.",
-    "imageUrl": null
+    "imageUrl": "images/railroad-tiles.jpg"
   },
   "Rick & Morty Total Rickall": {
     "name": "Rick & Morty: Total Rickall",
@@ -1248,7 +1248,7 @@
     "age": "15+",
     "playtime": "20-30 minutes",
     "description": "Rick and Morty: Total Rickall is a cooperative card game designed by Matt Hyra and published by Cryptozoic Entertainment. In this game, players are attempting to figure out which characters are space parasites and which ones are real. You don’t know which are which because the aliens have manipulated your memories to make you think you know all of the different characters.",
-    "imageUrl": null
+    "imageUrl": "images/rick-morty-total-rickall.jpg"
   },
   "Rome Rise to Power": {
     "name": "Rome: Rise to Power",
@@ -1257,7 +1257,7 @@
     "age": "13+",
     "playtime": "60 minutes",
     "description": "In the late Roman Republic, four noble families try to assume power over the strongest nation in the old world.",
-    "imageUrl": null
+    "imageUrl": "images/rome-rise-to-power.jpg"
   },
   "Saboteur": {
     "name": "Saboteur",
@@ -1266,7 +1266,7 @@
     "age": "8+",
     "playtime": "30 minutes",
     "description": "(German language with printed English instructions)\nYou are dwarves laying tunnel cards to get gold: but which one of you is the traitor?",
-    "imageUrl": null
+    "imageUrl": "images/saboteur.jpg"
   },
   "Root": {
     "name": "Root",
@@ -1275,7 +1275,7 @@
     "age": "2-4",
     "playtime": "60-90 minutes",
     "description": "The nefarious Marquise de Cat has seized the great woodland, intent on harvesting its riches. Under her rule, the many creatures of the forest have banded together. This Alliance will seek to strengthen its resources and subvert the rule of Cats. In this effort, the Alliance may enlist the help of the wandering Vagabonds who are able to move through the more dangerous woodland paths. Though some may sympathize with the Alliance’s hopes and dreams, these wanderers are old enough to remember the great birds of prey who once controlled the woods.",
-    "imageUrl": null
+    "imageUrl": "images/root.jpg"
   },
   "Scale Up- Odoo": {
     "name": "Scale Up- Odoo",
@@ -1284,7 +1284,7 @@
     "age": "14+",
     "playtime": "45 minutes",
     "description": "Have you ever dreamed of starting your own business? Or wondered how you could get started? With Odoo Scale-Up! you will learn all of that through 10 different business cases.",
-    "imageUrl": null
+    "imageUrl": "images/scale-up-odoo.jpg"
   },
   "Scotland Yard": {
     "name": "Scotland Yard",
@@ -1293,7 +1293,7 @@
     "age": "10+",
     "playtime": "45 minutes",
     "description": "(Italian & Spanish language with printed English instructions)\nMr. X is on the run in London, will the detectives find him in time?",
-    "imageUrl": null
+    "imageUrl": "images/scotland-yard.jpg"
   },
   "Scrabble": {
     "name": "Scrabble",
@@ -1302,7 +1302,7 @@
     "age": "10+",
     "playtime": "Varies",
     "description": "Carefully place your lettered tiles to make high-scoring words.",
-    "imageUrl": null
+    "imageUrl": "images/scrabble.jpg"
   },
   "Scrabble 2 Games in 1 Classic S": {
     "name": "Scrabble 2 Games in 1: Classic Scrabble & Scrabble Together",
@@ -1311,7 +1311,7 @@
     "age": "8+",
     "playtime": "Varies",
     "description": "Carefully place your lettered tiles to make high-scoring words.",
-    "imageUrl": null
+    "imageUrl": "images/scrabble-2-games-in-1-classic-scrabble-scrabble-together.jpg"
   },
   "Seasons of Arcadia": {
     "name": "Seasons of Arcadia",
@@ -1320,7 +1320,7 @@
     "age": "14+",
     "playtime": "20-30 minutes",
     "description": "Powerful faerie lords vie for seasonal supremacy in this playful abstract game.",
-    "imageUrl": null
+    "imageUrl": "images/seasons-of-arcadia.jpg"
   },
   "Sinking Ships": {
     "name": "Sinking Ships",
@@ -1329,7 +1329,7 @@
     "age": "7+",
     "playtime": "10-60 minutes",
     "description": "Show off your tactical skills by sinking your opponent's ships. Watch out, though! Your opponent will be trying their best to sink yours too.",
-    "imageUrl": null
+    "imageUrl": "images/sinking-ships.jpg"
   },
   "Skull & Dragon Dice Game": {
     "name": "Skull & Dragon Dice Game",
@@ -1338,7 +1338,7 @@
     "age": "14+",
     "playtime": "10 minutes",
     "description": "A quick push-your-luck dice game! Every roll gets harder, but good choices let you limit your risk. You'll be surprised at what just two dice can do!",
-    "imageUrl": null
+    "imageUrl": "images/skull-dragon-dice-game.jpg"
   },
   "Smash Up Marvel": {
     "name": "Smash Up Marvel",
@@ -1347,7 +1347,7 @@
     "age": "12+",
     "playtime": "45 minutes",
     "description": "The \"shufflebuilding\" game Smash Up begins with a simple premise: take the 20-card decks of two factions, shuffle them into a deck of forty cards, then compete to crush more bases than your opponents! Each faction involves a different gaming mechanism, and each combination of factions brings a different gaming experience.\nIn Smash Up: Marvel, players smash up two groups of Marvel characters, such as the vigilant members of The Ultimates or the criminal masterminds HYDRA, to take over bases and score the most victory points.",
-    "imageUrl": null
+    "imageUrl": "images/smash-up-marvel.jpg"
   },
   "Snakes & Ladders and Ludo 2 in ": {
     "name": "Snakes & Ladders and Ludo 2 in 1 Game Set",
@@ -1356,7 +1356,7 @@
     "age": "3+",
     "playtime": "30 minutes",
     "description": "Roll the dice and see who wins in these timeless games of strategy and luck.",
-    "imageUrl": null
+    "imageUrl": "images/snakes-ladders-and-ludo-2-in-1-game-set.jpg"
   },
   "Sorcery Contested Realm - Arthu": {
     "name": "Sorcery: Contested Realm - Arthurian Legends, Valley of Delight Playmat",
@@ -1365,7 +1365,7 @@
     "age": "—",
     "playtime": "—",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/sorcery-contested-realm-arthurian-legends-valley-of-delight-playmat.jpg"
   },
   "Sorcery Contested Realm - Arthu1": {
     "name": "Sorcery: Contested Realm - Arthurian Legends, Valley of Delight Playmat",
@@ -1374,7 +1374,7 @@
     "age": "—",
     "playtime": "—",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/sorcery-contested-realm-arthurian-legends-valley-of-delight-playmat.jpg"
   },
   "Star Wars The Deckbuilding Game": {
     "name": "Star Wars: The Deckbuilding Game",
@@ -1383,7 +1383,7 @@
     "age": "12+",
     "playtime": "30 minutes",
     "description": "Welcome to Star Wars™: The Deckbuilding Game! This new head-to-head game for two players brings the galaxy-spanning war between the Galactic Empire and the Rebel Alliance to your tabletop. In this easy-to-learn game, you and your opponent each choose a side, playing as either the Empire or the Rebels, and as the game progresses you both strengthen the power of your starting decks and work to destroy each other’s bases. The first player to destroy three of their opponent’s bases wins the game!",
-    "imageUrl": null
+    "imageUrl": "images/star-wars-the-deckbuilding-game.jpg"
   },
   "Sumeria": {
     "name": "Sumeria",
@@ -1392,7 +1392,7 @@
     "age": "10+",
     "playtime": "30-60 minutes",
     "description": "Trade routes determine the rise and fall of the city-states of ancient Sumer.",
-    "imageUrl": null
+    "imageUrl": "images/sumeria.jpg"
   },
   "Super Mario Pop Up": {
     "name": "Super Mario Pop Up",
@@ -1401,7 +1401,7 @@
     "age": "4+",
     "playtime": "10 minutes",
     "description": "The classic children's game now with Super Mario! Alternately insert the swords into the tube. Be careful, as one wrong move and Mario will fly out of the tube. Which sword is the first to catapult Mario out of the tube?",
-    "imageUrl": null
+    "imageUrl": "images/super-mario-pop-up.jpg"
   },
   "Sweet Existence Strange Planet ": {
     "name": "Sweet Existence Strange Planet Card Game",
@@ -1410,7 +1410,7 @@
     "age": "13+",
     "playtime": "15-40 minutes",
     "description": "A light card game about existence, perishing, and connections.... and cookies!",
-    "imageUrl": null
+    "imageUrl": "images/sweet-existence-strange-planet-card-game.jpg"
   },
   "Taboo": {
     "name": "Taboo",
@@ -1419,7 +1419,7 @@
     "age": "12+",
     "playtime": "45 minutes",
     "description": "Get your team to guess the target but you can't use the most obvious clues.",
-    "imageUrl": null
+    "imageUrl": "images/taboo.jpg"
   },
   "Tacta": {
     "name": "Tacta",
@@ -1428,7 +1428,7 @@
     "age": "7+",
     "playtime": "20 minutes",
     "description": "It’s all connected! In this sneakily strategic card game, players flip, twist, and turn their cards to align and cover their opponents’ shapes with matching squares, triangles, and rectangles. With an ever-growing board, up to 8 colors light up game night with TACTA. Analyze, strategize, and optimize because in TACTA, every card counts.",
-    "imageUrl": null
+    "imageUrl": "images/tacta.jpg"
   },
   "Taluva": {
     "name": "Taluva",
@@ -1437,7 +1437,7 @@
     "age": "8+",
     "playtime": "45 minutes",
     "description": "(German language with printed English instructions)\nRace to build temples and towers or tribal supremacy on an active volcanic island.",
-    "imageUrl": null
+    "imageUrl": "images/taluva.jpg"
   },
   "Tea Witches": {
     "name": "Tea Witches",
@@ -1446,7 +1446,7 @@
     "age": "12+",
     "playtime": "60-120 minutes",
     "description": "Serve witches during The Tequinox Faire and see if your tea reigns supreme.",
-    "imageUrl": null
+    "imageUrl": "images/tea-witches.jpg"
   },
   "Ten": {
     "name": "Ten",
@@ -1455,7 +1455,7 @@
     "age": "10+",
     "playtime": "15-30 minutes",
     "description": "TEN is an exciting push-your-luck and auction game for the whole family! Players draw cards one-at-a-time, trying to add as many as they can without exceeding a total value of TEN, or they bust!",
-    "imageUrl": null
+    "imageUrl": "images/ten.jpg"
   },
   "The Baffler": {
     "name": "The Baffler",
@@ -1464,7 +1464,7 @@
     "age": "12+",
     "playtime": "Varies",
     "description": "The Baffler is a unique twist on the traditional jigsaw puzzle. Instead of using a recognizable image with distinct subject areas, the Baffler's designs are abstract. Furthermore, each piece is a single color and oddly shaped.",
-    "imageUrl": null
+    "imageUrl": "images/the-baffler.jpg"
   },
   "The Boldest": {
     "name": "The Boldest",
@@ -1473,7 +1473,7 @@
     "age": "10+",
     "playtime": "30-90 minutes",
     "description": "The forgotten creatures of the forest have awoken from their slumber and nobody knows for sure what is lurking in the Iron Valley. You followed the call of your king. Now it is time for heroic deeds in The Boldest!\n\n\nDefeat mechanical monsters, retrieve enigmatic artifacts, use helpful items and lead your faction to glory.",
-    "imageUrl": null
+    "imageUrl": "images/the-boldest.jpg"
   },
   "The Greatest Bookshop - 1,000 p": {
     "name": "The Greatest Bookshop - 1,000 piece jigsaw puzzle",
@@ -1482,7 +1482,7 @@
     "age": "12+",
     "playtime": "Varies",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/the-greatest-bookshop-1000-piece-jigsaw-puzzle.jpg"
   },
   "The mind": {
     "name": "The mind",
@@ -1491,7 +1491,7 @@
     "age": "8+",
     "playtime": "20 minutes",
     "description": "Is more than just a game. It's an experiment, a journey, a team experience in which you can't exchange information, yet will become one to defeat all the levels of the game.",
-    "imageUrl": null
+    "imageUrl": "images/the-mind.jpg"
   },
   "The Puzzler's Desk - 1,000 piec": {
     "name": "The Puzzler's Desk - 1,000 piece jigsaw puzzle",
@@ -1500,7 +1500,7 @@
     "age": "12+",
     "playtime": "Varies",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/the-puzzlers-desk-1000-piece-jigsaw-puzzle.jpg"
   },
   "The Tea Dragon Society": {
     "name": "The Tea Dragon Society",
@@ -1509,7 +1509,7 @@
     "age": "10+",
     "playtime": "30-60",
     "description": "Each player's deck represents their own Tea Dragon. From turn to turn, players choose to draw a card — triggering effects and strengthening their position — or buy a card, improving their deck or scoring points. The game takes place over four seasons, starting in spring and ending in winter. At the end of winter, the player who has the most points wins.",
-    "imageUrl": null
+    "imageUrl": "images/the-tea-dragon-society.jpg"
   },
   "The Ultimate RPG Campfire Deck ": {
     "name": "The Ultimate RPG Campfire Deck - 150 Cards for Sparking In-Game Conversation",
@@ -1518,7 +1518,7 @@
     "age": "Unknown",
     "playtime": "Varies",
     "description": "Whether you're travelling by day or night, feasting at the local tavern, or, in fact, saving the world, your adventuring party does a lot together. But how well do you know your allies? Enter The Ultimate RPG Campfire Card Deck, featuring 150 introspective question cards designed to spark discussion, inspire discovery, and create connections between your characters and their world.",
-    "imageUrl": null
+    "imageUrl": "images/the-ultimate-rpg-campfire-deck-150-cards-for-sparking-in-game-conversation.jpg"
   },
   "Throw Throw Burrito": {
     "name": "Throw Throw Burrito",
@@ -1527,7 +1527,7 @@
     "age": "7+",
     "playtime": "15 minutes",
     "description": "Throw, dodge, rage in this exciting party game!",
-    "imageUrl": null
+    "imageUrl": "images/throw-throw-burrito.jpg"
   },
   "Ticket to Ride": {
     "name": "Ticket to Ride",
@@ -1536,7 +1536,7 @@
     "age": "8+",
     "playtime": "30-60 minutes",
     "description": "(German language with printed English instructions)\nTake Ticket to Ride on tour of Germany and neighbouring countries.",
-    "imageUrl": null
+    "imageUrl": "images/ticket-to-ride.jpg"
   },
   "Tikal": {
     "name": "Tikal",
@@ -1545,7 +1545,7 @@
     "age": "10+",
     "playtime": "90 minutes",
     "description": "(German, Italian, and French with printed English instructions)\nStrategically create pathways through the jungle, collect treasure, and excavate temples.",
-    "imageUrl": null
+    "imageUrl": "images/tikal.jpg"
   },
   "Tiny Epic Game of Thrones": {
     "name": "Tiny Epic Game of Thrones",
@@ -1554,7 +1554,7 @@
     "age": "18+",
     "playtime": "45-60 minutes",
     "description": "Assume the role of a mighty house of the Seven Kingdoms.",
-    "imageUrl": null
+    "imageUrl": "images/tiny-epic-game-of-thrones.jpg"
   },
   "Tiwanaku": {
     "name": "Tiwanaku",
@@ -1563,7 +1563,7 @@
     "age": "14+",
     "playtime": "30-60 minutes",
     "description": "Play a Quechua farmer who needs to respect the rules of the Earth Goddess Pachamama.",
-    "imageUrl": null
+    "imageUrl": "images/tiwanaku.jpg"
   },
   "Tiwanaku add-ons": {
     "name": "Tiwanaku add-ons",
@@ -1572,7 +1572,7 @@
     "age": "—",
     "playtime": "—",
     "description": "**required to borrow Tiwanaku with this expansion**",
-    "imageUrl": null
+    "imageUrl": "images/tiwanaku-add-ons.jpg"
   },
   "Tobago": {
     "name": "Tobago",
@@ -1581,7 +1581,7 @@
     "age": "10+",
     "playtime": "60 minutes",
     "description": "Determine the location of a hidden treasure and race your opponents to it.",
-    "imageUrl": null
+    "imageUrl": "images/tobago.jpg"
   },
   "Top Trumps Squishmallows": {
     "name": "Top Trumps: Squishmallows",
@@ -1590,7 +1590,7 @@
     "age": "6+",
     "playtime": "10-30 minutes",
     "description": "Top Trumps Squishmallows is a fun and exciting card game that features adorable Squishmallows characters. Each card showcases a different Squishmallow with unique traits and abilities. Players compete by comparing their Squishmallows' stats to see who wins the round. With colorful designs and engaging gameplay, Top Trumps Squishmallows is perfect for kids and adults alike.",
-    "imageUrl": null
+    "imageUrl": "images/top-trumps-squishmallows.jpg"
   },
   "Trial by Trolley": {
     "name": "Trial by Trolley",
@@ -1599,7 +1599,7 @@
     "age": "14+",
     "playtime": "30-90 minutes",
     "description": "A Party game of moral dilemmas and trolley murder!\n\nTrial by Trolley is a multiplayer game in which one player plays the conductor on a runaway train intent on killing anything in its path. Every player aside from the conductor must play cards and argue to the conductor and convince him to spare their lives and condemn everyone else to a gruesome death by trolley.",
-    "imageUrl": null
+    "imageUrl": "images/trial-by-trolley.jpg"
   },
   "Tricky Kids": {
     "name": "Tricky Kids",
@@ -1608,7 +1608,7 @@
     "age": "12+",
     "playtime": "20-30 minutes",
     "description": "Welcome to the playground, where you and other kids meet up to trade your toys and snacks! Because you don't actually know how much any of this stuff costs in adult money, you just make up the values of your items as you go along. The player who most effectively navigates these tricky elementary school economics wins!\n\nThis is a must-follow trick-taking game with a twist: you write the values on your own cards each round, making every hand a new puzzle. Win tricks to claim point tokens, but choose carefully, because not all tokens are created equal. Add optional “Tricky Rule” cards to mix things up, and you’ve got a fast, funny, and replayable game of strategy and surprises.",
-    "imageUrl": null
+    "imageUrl": "images/tricky-kids.jpg"
   },
   "Tuscany - 1,000 piece jigsaw pu": {
     "name": "Tuscany - 1,000 piece jigsaw puzzle",
@@ -1617,7 +1617,7 @@
     "age": "12+",
     "playtime": "Varies",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/tuscany-1000-piece-jigsaw-puzzle.jpg"
   },
   "Tyros": {
     "name": "Tyros",
@@ -1626,7 +1626,7 @@
     "age": "10+",
     "playtime": "90 minutes",
     "description": "(German language with printed English instructions)\nThe board shows the ancient Mediterranean area from Lebanon to the straits of Gibraltar.\nEach player receives a number of ships and cities. \n\nPlayers build galleys to control tiles or travel to locations and found a city there. \n\nAt the end of the game players score points for controlling tiles.",
-    "imageUrl": null
+    "imageUrl": "images/tyros.jpg"
   },
   "Umbra Via": {
     "name": "Umbra Via",
@@ -1635,7 +1635,7 @@
     "age": "8+",
     "playtime": "30-45 minutes",
     "description": "Guide missing pieces of your soul out of the shadows by bidding on and building paths.",
-    "imageUrl": null
+    "imageUrl": "images/umbra-via.jpg"
   },
   "Via Romana": {
     "name": "Via Romana",
@@ -1644,7 +1644,7 @@
     "age": "8+",
     "playtime": "45 minutes",
     "description": "(German language with printed English instructions)\nIn Via Romana the players take part in the construction of the road system in the Roman provinces of Gaul. Through carefully planned streets and mighty forts they connect the most important towns and protect the Roman supremacy. They also compete to have the biggest portion in the construction of the province roads, to connect important towns and to build the mightiest forts.",
-    "imageUrl": null
+    "imageUrl": "images/via-romana.jpg"
   },
   "Village Green": {
     "name": "Village Green",
@@ -1653,7 +1653,7 @@
     "age": "14+",
     "playtime": "30 minutes",
     "description": "A game of pretty gardens and petty grudges.",
-    "imageUrl": null
+    "imageUrl": "images/village-green.jpg"
   },
   "Vintage London - 1,500 piece ji": {
     "name": "Vintage London - 1,500 piece jigsaw puzzle",
@@ -1662,7 +1662,7 @@
     "age": "14+",
     "playtime": "Varies",
     "description": "No description available.",
-    "imageUrl": null
+    "imageUrl": "images/vintage-london-1500-piece-jigsaw-puzzle.jpg"
   },
   "Wellness Double-Sided Jigsaw Pu": {
     "name": "Wellness Double-Sided Jigsaw Puzzle - 500 pieces",
@@ -1671,7 +1671,7 @@
     "age": "8+",
     "playtime": "Varies",
     "description": "Detox from the hustle and bustle of modern life as you focus on your mind on this wellness inspired double-sided jigsaw puzzle.",
-    "imageUrl": null
+    "imageUrl": "images/wellness-double-sided-jigsaw-puzzle-500-pieces.jpg"
   },
   "We Love Cats": {
     "name": "We Love Cats",
@@ -1680,7 +1680,7 @@
     "age": "14+",
     "playtime": "15",
     "description": "How many cats can you adopt in this quick, fun-filled game? Each kitty is looking for a cozy home, and it's up to you to bring them in. Whether you're playing with family or friends, this game is sure to have everyone smiling and meowing for more. Designed for three to six players, it's the ideal game for a cat-tastic good time. Play it once, and you'll be eager to adopt even more cats in the next round!",
-    "imageUrl": null
+    "imageUrl": "images/we-love-cats.jpg"
   },
   "Where's Wally Memory Card Game": {
     "name": "Where's Wally Memory Card Game",
@@ -1689,7 +1689,7 @@
     "age": "3+",
     "playtime": "5-15 minutes",
     "description": "Where's Wally is a bright and colourful memory card game featuring the elusive Wally, Wenda, Woof and Wizard Whitebeard. The aim of the game is to collect the most matching pairs by remembering where the cards are located once turned upside down but watch out for the mischievous Odlow, he's out to mess things up!",
-    "imageUrl": null
+    "imageUrl": "images/wheres-wally-memory-card-game.jpg"
   },
   "Who Wants to be a Millionaire": {
     "name": "Who Wants to be a Millionaire",
@@ -1698,7 +1698,7 @@
     "age": "12+",
     "playtime": "60 minutes",
     "description": "Test your trivia in this adaptation of the famous show.",
-    "imageUrl": null
+    "imageUrl": "images/who-wants-to-be-a-millionaire.jpg"
   },
   "Wingspan": {
     "name": "Wingspan",
@@ -1707,7 +1707,7 @@
     "age": "14+",
     "playtime": "40-70 minutes",
     "description": "You are bird enthusiasts—researchers, bird watchers, ornithologists, and collectors—seeking to discover and attract the best birds to your network of wildlife preserves. Each bird extends a chain of powerful combinations in one of your habitats (actions).\nWingspan is a competitive, medium-weight, card-driven, engine-building board game.",
-    "imageUrl": null
+    "imageUrl": "images/wingspan.jpg"
   },
   "Woma Flower Clusters": {
     "name": "Woma Flower Clusters",
@@ -1716,7 +1716,7 @@
     "age": "6+",
     "playtime": "Varies",
     "description": "The gorgeous flower clusters building set comes with detailed colorful step by step instruction manual. You can bloom your imagination to spell out your favorite patterns to build a flower bouquet.",
-    "imageUrl": null
+    "imageUrl": "images/woma-flower-clusters.jpg"
   },
   "Words in Mind": {
     "name": "Words in Mind",
@@ -1725,7 +1725,7 @@
     "age": "7+",
     "playtime": "30 minutes",
     "description": "Select a category and make up a word from the theme… but watch out: the winner is whoever makes the longest word using the more obscure letters. Fun for everyone!",
-    "imageUrl": null
+    "imageUrl": "images/words-in-mind.jpg"
   },
   "Wordsearch": {
     "name": "Wordsearch",
@@ -1734,7 +1734,7 @@
     "age": "8+",
     "playtime": "30 minutes",
     "description": "Slide letter tiles to make high scoring words.",
-    "imageUrl": null
+    "imageUrl": "images/wordsearch.jpg"
   },
   "Yahtzee": {
     "name": "Yahtzee",
@@ -1743,7 +1743,7 @@
     "age": "6+",
     "playtime": "30 minutes",
     "description": "Yes the dice are fickle, but score your combos strategically to max out on points.",
-    "imageUrl": null
+    "imageUrl": "images/yahtzee.jpg"
   },
   "You've Got Crabs": {
     "name": "You've Got Crabs",
@@ -1752,6 +1752,6 @@
     "age": "7+",
     "playtime": "15-20 minutes",
     "description": "Players collect 4 of the same crabs and secretly signal to each other to get points.",
-    "imageUrl": null
+    "imageUrl": "images/youve-got-crabs.jpg"
   }
 }
