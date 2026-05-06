@@ -24,7 +24,7 @@
     "age": "8+",
     "playtime": "15 minutes",
     "description": "Take a deep breath, match colorful flowers, and relax. AAAA",
-    "imageUrl": "images/a-gentle-rain-bloom-edition.jpg"
+    "imageUrl": "images/a-gentle-rain.jpg"
   },
   "Absolute Balderdash": {
     "name": "Absolute Balderdash",
@@ -42,7 +42,16 @@
     "age": "13+",
     "playtime": "8-20 minutes",
     "description": "(German language with printed English instructions)\nBuild an empire that eclipses your rivals in just 8 minutes!",
-    "imageUrl": "images/acht-minuten-imperium.jpg"
+    "imageUrl": "images/acht-minuten.jpg"
+  },
+  "Alpha Zulu": {
+    "name": "Alpha Zulu",
+    "category": "BOARD GAME",
+    "players": "4-8",
+    "age": "6-199",
+    "playtime": "15 minutes",
+    "description": "Players simultaneously yell words where the first letter spells other words to win the game.",
+    "imageUrl": "images/alpha-zulu.jpg"
   },
   "Anno 1452": {
     "name": "Anno 1452",
@@ -60,7 +69,7 @@
     "age": "10+",
     "playtime": "45-90 minutes",
     "description": "(German language with printed English instructions)\nTake turns building structures in future Antarctica.",
-    "imageUrl": "images/antarctica.jpg"
+    "imageUrl": "images/antarctica.jpeg"
   },
   "Azul": {
     "name": "Azul",
@@ -80,15 +89,6 @@
     "description": "(German language with printed English instructions)\nThe players, representing merchants, visit the trading posts of the five East India companies all over Asia. Every company's station offers a different good, which will be made available to the merchant who visits the trading post.\n\nThe one who is able to travel to the trading posts with the most lucrative goods will be able to procure the best wares for himself and get the most gold for them at game's end.",
     "imageUrl": "images/batavia.jpg"
   },
-  "Alpha Zulu": {
-    "name": "Alpha Zulu",
-    "category": "BOARD GAME",
-    "players": "4-8",
-    "age": "6-199",
-    "playtime": "15 minutes",
-    "description": "Players simultaneously yell words where the first letter spells other words to win the game.",
-    "imageUrl": "images/alpha-zulu.jpg"
-  },
   "Battle at Kemble's Cascade": {
     "name": "Battle at Kemble's Cascade",
     "category": "BOARD GAME",
@@ -96,7 +96,7 @@
     "age": "13+",
     "playtime": "75 minutes",
     "description": "(French language with printed English instructions)\nIt's your favorite 80s shoot-em-up! Blast aliens, asteroids, and a giant final boss!",
-    "imageUrl": "images/battle-at-kembles-cascade.jpg"
+    "imageUrl": "images/the-battle-at-kembles-cascade-main-5323-5323.jpg"
   },
   "Block Tower": {
     "name": "Block Tower",
@@ -105,7 +105,7 @@
     "age": "3+",
     "playtime": "20 minutes",
     "description": "Pull out a block, place it on top, but don't let the tower fall! This fun, challenging game is great for families and kids",
-    "imageUrl": "images/block-tower.jpg"
+    "imageUrl": "images/blocktower.jpg"
   },
   "Bloco Build-A-Friend Puppy": {
     "name": "Bloco Build-A-Friend: Puppy",
@@ -169,15 +169,6 @@
     "playtime": "—",
     "description": "The forest is filled with all sorts of monsters. They watched and waited as you built your castle and trained your soldiers, but now they've gathered their army and are marching out of the woods. Can you work with your friends to defend your castle against the horde, or will the monsters tear down your walls and destroy the precious castle towers? You will all win or lose together, but in the end only one player will be declared the Master Slayer!",
     "imageUrl": "images/castle-panic.jpg"
-  },
-  "Recommended age 8+": {
-    "name": "Recommended age: 8+",
-    "category": "FOR THE YOUNGEST",
-    "players": "1",
-    "age": "7+",
-    "playtime": "As long as you'd like :)",
-    "description": "Players: 1-6\nPlaytime 30-60 minutes",
-    "imageUrl": "images/recommended-age-8.jpg"
   },
   "Cat Between Us": {
     "name": "Cat Between Us",
@@ -260,15 +251,6 @@
     "description": "Players compete to make wacky floating landscapes.",
     "imageUrl": "images/confusing-lands.jpg"
   },
-  "Coup": {
-    "name": "Coup",
-    "category": "BOARD GAME",
-    "players": "2-6",
-    "age": "13+",
-    "playtime": "15 minutes",
-    "description": "In Coup, you want to be the last player with influence in the game.\nThe fifteen card deck consists of three copies of five different characters, each with a unique set of powers.\nBluff your way to the top in this fun, competitive card game.",
-    "imageUrl": "images/coup.jpg"
-  },
   "Consiglio": {
     "name": "Consiglio",
     "category": "BOARD GAME",
@@ -277,6 +259,15 @@
     "playtime": "30-45 minutes",
     "description": "Consiglio is a fast-paced card game of subtle influence, calculated risks, and shifting loyalties set in a fictional Renaissance city inspired by Venice at its peak. Players assume the roles of ambitious nobles, guildmasters, and social climbers vying for power within the Grand Council — the Consiglio. In this world of masked intentions and whispered deals, only the most cunning can rise to the top.",
     "imageUrl": "images/consiglio.jpg"
+  },
+  "Coup": {
+    "name": "Coup",
+    "category": "BOARD GAME",
+    "players": "2-6",
+    "age": "13+",
+    "playtime": "15 minutes",
+    "description": "In Coup, you want to be the last player with influence in the game.\nThe fifteen card deck consists of three copies of five different characters, each with a unique set of powers.\nBluff your way to the top in this fun, competitive card game.",
+    "imageUrl": "images/coup.jpg"
   },
   "Cover Your A$$ets": {
     "name": "Cover Your A$$ets",
@@ -341,15 +332,6 @@
     "description": "No description available.",
     "imageUrl": "images/dgt-2500-official-fide-digital-chess-clocktimer.jpg"
   },
-  "DGT Chess Pieces in a Bag (10 c": {
-    "name": "DGT Chess Pieces in a Bag (10 copies)",
-    "category": "BOARD GAME",
-    "players": "2",
-    "age": "6+",
-    "playtime": "Depends on format",
-    "description": "Checkmate your opponent in this timeless abstract.",
-    "imageUrl": "images/dgt-chess-pieces-in-a-bag-10-copies.jpg"
-  },
   "DGT Chess Foldable Board (10 co": {
     "name": "DGT Chess Foldable Board (10 copies)",
     "category": "BOARD GAME",
@@ -358,6 +340,15 @@
     "playtime": "Depends on format",
     "description": "No description available.",
     "imageUrl": "images/dgt-chess-foldable-board-10-copies.jpg"
+  },
+  "DGT Chess Pieces in a Bag (10 c": {
+    "name": "DGT Chess Pieces in a Bag (10 copies)",
+    "category": "BOARD GAME",
+    "players": "2",
+    "age": "6+",
+    "playtime": "Depends on format",
+    "description": "Checkmate your opponent in this timeless abstract.",
+    "imageUrl": "images/dgt-chess-pieces-in-a-bag-10-copies.jpg"
   },
   "DGT Plastic Expansion Pack (20 ": {
     "name": "DGT Plastic Expansion Pack (20 Queens)",
@@ -584,15 +575,6 @@
     "description": "In Gelatinous, players start out as a wandering slime, using sparkling green dice to grow into a cube. But watch out, the other slimes are growing too! The first to grow into a cube wins – and the rest are lunch.\n\nIncludes 35 glittery green dice and its own dice bag!",
     "imageUrl": "images/gelatinous-be-the-biggest-ooze-or-lose.jpg"
   },
-  "Ghosts Of Christmas": {
-    "name": "Ghosts Of Christmas",
-    "category": "BOARD GAME",
-    "players": "3-4",
-    "age": "14+",
-    "playtime": "40 minutes",
-    "description": "As winter blows in and ghosts start to appear, play \"tricks\" to the past, present, and future. As turns progress, your foes will play - out of order - to any of these time periods, and you will start to figure out who might \"lead\" each trick. Even though you can play to the tricks in any order, the tricks will resolve based on who was leading. Points are awarded to whomever has correctly bid on the number of tricks they thought they'd win. If you’ve played as many hands as there are players, the game is now over, otherwise keep playing! Whoever has the highest score and collected the most wreaths wins the game!",
-    "imageUrl": "images/ghosts-of-christmas.jpg"
-  },
   "Ghost Hunters (Smart Games)": {
     "name": "Ghost Hunters (Smart Games)",
     "category": "FOR THE YOUNGEST",
@@ -601,6 +583,15 @@
     "playtime": "Varies",
     "description": "Catch the ghosts in the light!\nHave you ever wondered what ghosts do in a haunted mansion?\nPlay Ghost Hunters and use your brain to find out!\nLight up all of the ghosts in each challenge by placing all the flashlight puzzle pieces correctly.\nWith 60 challenges it’s a scary good time for players young and old!",
     "imageUrl": "images/ghost-hunters-smart-games.jpg"
+  },
+  "Ghosts Of Christmas": {
+    "name": "Ghosts Of Christmas",
+    "category": "BOARD GAME",
+    "players": "3-4",
+    "age": "14+",
+    "playtime": "40 minutes",
+    "description": "As winter blows in and ghosts start to appear, play \"tricks\" to the past, present, and future. As turns progress, your foes will play - out of order - to any of these time periods, and you will start to figure out who might \"lead\" each trick. Even though you can play to the tricks in any order, the tricks will resolve based on who was leading. Points are awarded to whomever has correctly bid on the number of tricks they thought they'd win. If you’ve played as many hands as there are players, the game is now over, otherwise keep playing! Whoever has the highest score and collected the most wreaths wins the game!",
+    "imageUrl": "images/ghosts-of-christmas.jpg"
   },
   "Ham Helsing": {
     "name": "Ham Helsing",
@@ -1052,6 +1043,15 @@
     "description": "No description available.",
     "imageUrl": "images/our-feathered-friends-1000-piece-jigsaw-puzzle.jpg"
   },
+  "Pandemic": {
+    "name": "Pandemic",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "8+",
+    "playtime": "45 minutes",
+    "description": "Cooperative game in which you and your teammates travel across the globe, treating infections while finding resources.",
+    "imageUrl": "images/pandemic.jpg"
+  },
   "Patchwork": {
     "name": "Patchwork",
     "category": "BOARD GAME",
@@ -1069,15 +1069,6 @@
     "playtime": "15+ minutes",
     "description": "A box packed with 3 exciting activities for endless fun! Featuring two puzzles with varying levels of difficulty and a classic 24-piece memory game, this set offers delightful challenges for your little one. Puzzle building not only develops dexterity but also provides plenty of enjoyable moments.",
     "imageUrl": "images/peppa-pig-2x-puzzle-memos.jpg"
-  },
-  "Pandemic": {
-    "name": "Pandemic",
-    "category": "BOARD GAME",
-    "players": "2-4",
-    "age": "8+",
-    "playtime": "45 minutes",
-    "description": "Cooperative game in which you and your teammates travel across the globe, treating infections while finding resources.",
-    "imageUrl": "images/pandemic.jpg"
   },
   "Pictionary": {
     "name": "Pictionary",
@@ -1097,15 +1088,6 @@
     "description": "Find pictures fast, and find them first!",
     "imageUrl": "images/pictureka.jpg"
   },
-  "Pirates Crossfire (Smart Games)": {
-    "name": "Pirates Crossfire (Smart Games)",
-    "category": "FOR THE YOUNGEST",
-    "players": "1",
-    "age": "7+",
-    "playtime": "Varies",
-    "description": "Can you navigate your ships to bring the enemy into the line of fire and sink his ships? Or will you keep the peace and avoid total war? Fire up your cannons - and your brains - to find out!",
-    "imageUrl": "images/pirates-crossfire-smart-games.jpg"
-  },
   "Pirate Ship Jigsaw Puzzle & Pos": {
     "name": "Pirate Ship Jigsaw Puzzle & Poster",
     "category": "PUZZLE",
@@ -1114,6 +1096,15 @@
     "playtime": "15+ minutes",
     "description": "Ship ahoy! There’s lots to talk and laugh about in this large, detailed pirate ship jigsaw, including pirates hanging their pants out to dry and floating in rubber rings!\nPirate Ship includes a fun learning guide on the back of the box, which features different discussion points to talk about once the puzzle has been completed. This includes questions to encourage observation, develop counting and promote imaginative play e.g. Can you find a monkey eating pizza? Where do you think the pirates are taking the treasure chest?",
     "imageUrl": "images/pirate-ship-jigsaw-puzzle-poster.jpg"
+  },
+  "Pirates Crossfire (Smart Games)": {
+    "name": "Pirates Crossfire (Smart Games)",
+    "category": "FOR THE YOUNGEST",
+    "players": "1",
+    "age": "7+",
+    "playtime": "Varies",
+    "description": "Can you navigate your ships to bring the enemy into the line of fire and sink his ships? Or will you keep the peace and avoid total war? Fire up your cannons - and your brains - to find out!",
+    "imageUrl": "images/pirates-crossfire-smart-games.jpg"
   },
   "Playing cards- Idaho Big Potato": {
     "name": "Playing cards- Idaho Big Potato",
@@ -1241,6 +1232,15 @@
     "description": "Railroad Tiles, a sequel to the roll-and-write series Railroad Ink, is a quick-playing tile placement game in which you pick tiles and place routes to build an interconnected community.",
     "imageUrl": "images/railroad-tiles.jpg"
   },
+  "Recommended age 8+": {
+    "name": "Recommended age: 8+",
+    "category": "FOR THE YOUNGEST",
+    "players": "1",
+    "age": "7+",
+    "playtime": "As long as you'd like :)",
+    "description": "Players: 1-6\nPlaytime 30-60 minutes",
+    "imageUrl": "images/recommended-age-8.jpg"
+  },
   "Rick & Morty Total Rickall": {
     "name": "Rick & Morty: Total Rickall",
     "category": "BOARD GAME",
@@ -1259,15 +1259,6 @@
     "description": "In the late Roman Republic, four noble families try to assume power over the strongest nation in the old world.",
     "imageUrl": "images/rome-rise-to-power.jpg"
   },
-  "Saboteur": {
-    "name": "Saboteur",
-    "category": "BOARD GAME",
-    "players": "3-10",
-    "age": "8+",
-    "playtime": "30 minutes",
-    "description": "(German language with printed English instructions)\nYou are dwarves laying tunnel cards to get gold: but which one of you is the traitor?",
-    "imageUrl": "images/saboteur.jpg"
-  },
   "Root": {
     "name": "Root",
     "category": "BOARD GAME",
@@ -1276,6 +1267,15 @@
     "playtime": "60-90 minutes",
     "description": "The nefarious Marquise de Cat has seized the great woodland, intent on harvesting its riches. Under her rule, the many creatures of the forest have banded together. This Alliance will seek to strengthen its resources and subvert the rule of Cats. In this effort, the Alliance may enlist the help of the wandering Vagabonds who are able to move through the more dangerous woodland paths. Though some may sympathize with the Alliance’s hopes and dreams, these wanderers are old enough to remember the great birds of prey who once controlled the woods.",
     "imageUrl": "images/root.jpg"
+  },
+  "Saboteur": {
+    "name": "Saboteur",
+    "category": "BOARD GAME",
+    "players": "3-10",
+    "age": "8+",
+    "playtime": "30 minutes",
+    "description": "(German language with printed English instructions)\nYou are dwarves laying tunnel cards to get gold: but which one of you is the traitor?",
+    "imageUrl": "images/saboteur.jpg"
   },
   "Scale Up- Odoo": {
     "name": "Scale Up- Odoo",
@@ -1664,15 +1664,6 @@
     "description": "No description available.",
     "imageUrl": "images/vintage-london-1500-piece-jigsaw-puzzle.jpg"
   },
-  "Wellness Double-Sided Jigsaw Pu": {
-    "name": "Wellness Double-Sided Jigsaw Puzzle - 500 pieces",
-    "category": "PUZZLE",
-    "players": "1+",
-    "age": "8+",
-    "playtime": "Varies",
-    "description": "Detox from the hustle and bustle of modern life as you focus on your mind on this wellness inspired double-sided jigsaw puzzle.",
-    "imageUrl": "images/wellness-double-sided-jigsaw-puzzle-500-pieces.jpg"
-  },
   "We Love Cats": {
     "name": "We Love Cats",
     "category": "BOARD GAME",
@@ -1681,6 +1672,15 @@
     "playtime": "15",
     "description": "How many cats can you adopt in this quick, fun-filled game? Each kitty is looking for a cozy home, and it's up to you to bring them in. Whether you're playing with family or friends, this game is sure to have everyone smiling and meowing for more. Designed for three to six players, it's the ideal game for a cat-tastic good time. Play it once, and you'll be eager to adopt even more cats in the next round!",
     "imageUrl": "images/we-love-cats.jpg"
+  },
+  "Wellness Double-Sided Jigsaw Pu": {
+    "name": "Wellness Double-Sided Jigsaw Puzzle - 500 pieces",
+    "category": "PUZZLE",
+    "players": "1+",
+    "age": "8+",
+    "playtime": "Varies",
+    "description": "Detox from the hustle and bustle of modern life as you focus on your mind on this wellness inspired double-sided jigsaw puzzle.",
+    "imageUrl": "images/wellness-double-sided-jigsaw-puzzle-500-pieces.jpg"
   },
   "Where's Wally Memory Card Game": {
     "name": "Where's Wally Memory Card Game",
