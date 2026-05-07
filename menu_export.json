@@ -33,7 +33,7 @@
     "age": "12+",
     "playtime": "60 minutes",
     "description": "A bluffing trivia game where guessing the answer that sounds right probably isn't.",
-    "imageUrl": "images/absolute-balderdash.jpg"
+    "imageUrl": "images/absolutebalderdash.jpg"
   },
   "Acht-Minuten Imperium": {
     "name": "Acht-Minuten Imperium",
@@ -96,7 +96,7 @@
     "age": "13+",
     "playtime": "75 minutes",
     "description": "(French language with printed English instructions)\nIt's your favorite 80s shoot-em-up! Blast aliens, asteroids, and a giant final boss!",
-    "imageUrl": "images/the-battle-at-kembles-cascade-main-5323-5323.jpg"
+    "imageUrl": "images/battle-at-kembles-cascade.jpg"
   },
   "Block Tower": {
     "name": "Block Tower",
@@ -123,7 +123,7 @@
     "age": "5-10 years",
     "playtime": "Varies",
     "description": "Put together a dinosaur friend! The set includes 64 parts: soft elements made of foam and plastic.",
-    "imageUrl": "images/bloco-dinosaurus-micro-raptors.jpg"
+    "imageUrl": "images/bloco_miniraptors.jpg"
   },
   "Butterfly Splendour - 1,000 pie": {
     "name": "Butterfly Splendour - 1,000 piece jigsaw puzzle",
@@ -150,7 +150,7 @@
     "age": "10+",
     "playtime": "30-45 minutes",
     "description": "Cascadia is a puzzly tile-laying game featuring the habitats and wildlife of the Pacific Northwest! In Cascadia, players take turns building their terrain and populating it with wildlife. Players must create a diverse and harmonious ecosystem - each animal species has a different spatial preference and each habitat must be placed to reduce fragmentation and create wildlife corridors.",
-    "imageUrl": "images/cascadia.jpg"
+    "imageUrl": "images/cascadiabox.jpg"
   },
   "Cascadia Junior": {
     "name": "Cascadia Junior",
@@ -159,7 +159,7 @@
     "age": "6+",
     "playtime": "15-30 minutes",
     "description": "Cascadia Junior is the newest game in the Cascadia universe!\nOn your turn, build out your map and match animals and habitats to add sightings to your panorama and score points! Cascadia Junior lets younger players experience the spatial puzzle of the award-winning board game Cascadia. This stand-alone game teaches pattern building, set collection, and basic addition.\nLearn about bears, hawks, elk, salmon, and foxes in this diverse land of mountains, wetlands, prairies, rivers, and forests!",
-    "imageUrl": "images/cascadia-junior.jpg"
+    "imageUrl": "images/cascadia.jpg"
   },
   "Castle panic": {
     "name": "Castle panic",
@@ -240,7 +240,7 @@
     "age": "6+",
     "playtime": "20 minutes",
     "description": "A strategic coloring pictures game! Expand your territory by coloring, each on your turn, a space on the map. These aren’t simple spaces! Don’t let your opponents guess your strategy if you want the best score. Explore Versailles, Tokyo, the jungle, and spectacular sceneries.",
-    "imageUrl": "images/combo-color-danish-with-printed-english-instructions.jpg"
+    "imageUrl": "images/combocolor.jpg"
   },
   "Confusing Lands": {
     "name": "Confusing Lands",
@@ -276,7 +276,7 @@
     "age": "7-99",
     "playtime": "20-40 minutes",
     "description": "The stakes are high in this high-energy, competitive, and cut-throat, set-collection card game for 2 to 6 players ages 7+ from Grandpa Beck's Games! In Cover Your Assets, players compete to become the first millionaire by building towers of matching sets made from 10 different types of asset cards (things like jewels, piggy banks, classic autos, and more). Each new set that is created is stacked crosswise on top of the previous set, covering, and protecting, all the sets beneath it.",
-    "imageUrl": "images/cover-your-aets.jpg"
+    "imageUrl": "images/coveryourassets.jpg"
   },
   "Crooks": {
     "name": "Crooks",
@@ -312,7 +312,7 @@
     "age": "6+",
     "playtime": "20-30 minutes",
     "description": "(Multilingual edition including English)\nNavigate the unseen labyrinth using only your memory to collect the lost artifacts.",
-    "imageUrl": "images/das-magische-labyrinth.jpg"
+    "imageUrl": "images/dasmagischelabyrinth.jpg"
   },
   "Deep Dark Wood (Gruffalo)": {
     "name": "Deep Dark Wood (Gruffalo)",
@@ -321,7 +321,7 @@
     "age": "3+",
     "playtime": "5-15 minutes",
     "description": "A mouse took a stroll through the deep dark wood. A fox, an owl and a snake saw the mouse and the mouse looked good!\n\nCan you help your Mouse through the deep dark wood, avoiding the hungry Fox, Owl and Snake? If a player lands on one of their spaces, they must turn over a tree in search of the Gruffalo to scare the hungry predator away. So while the game is dice-driven, it rewards memory too.\n\nVery fast playing and with lovely illustrations from the book, it's a good introduction to dice and turn-taking for younger children.",
-    "imageUrl": "images/deep-dark-wood-gruffalo.jpg"
+    "imageUrl": "images/deepdarkwood.jpg"
   },
   "DGT 2500 Official Fide Digital ": {
     "name": "DGT 2500 Official Fide Digital Chess Clock/Timer",
@@ -366,7 +366,7 @@
     "age": "8+",
     "playtime": "Varies",
     "description": "Follow the clues. Find the Diamond!\nEnter the SmartGames diamond mine and dig up all of the jewels and discover the location of the red diamond. Use the ‘mine’ of information offered by the hints and clues in each challenge to help. The deeper you dig, the more your deduction skills will be tested! Diamond Quest is a unique puzzle game featuring 80 challenges, from easy to expert.",
-    "imageUrl": "images/diamond-quest-smart-games.jpg"
+    "imageUrl": "images/diamondquest.jpg"
   },
   "Dinosaurs Mystic Islands (Smart": {
     "name": "Dinosaurs Mystic Islands (Smart Games)",
@@ -375,7 +375,7 @@
     "age": "6+",
     "playtime": "Varies",
     "description": "Use your brain to create a Jurassic habitat!\nDinosaurs: Mystic Islands is an exciting shape-matching game that challenges you to separate the plant-eating dinosaurs from the carnivores.\n\nComplete each of the 80 challenges by placing the islands as shown…but make sure the three friendly dinosaurs are separated from their T-Rex counterparts!",
-    "imageUrl": "images/dinosaurs-mystic-islands-smart-games.jpg"
+    "imageUrl": "images/dinosaursmysticislands.jpg"
   },
   "Disney Mickey & Friends Food Fi": {
     "name": "Disney Mickey & Friends Food Fight",
@@ -384,7 +384,7 @@
     "age": "6+",
     "playtime": "15+",
     "description": "Simultaneously roll dice and follow what types of food to toss, how many, and in which direction… while avoiding others’ food! Empty your tray and be the first player with three Mickey Medals to win the Mickey and Friends Food Fight!",
-    "imageUrl": "images/disney-mickey-friends-food-fight.jpg"
+    "imageUrl": "images/foodfight.jpg"
   },
   "Disney Princess Bumper Puzzle P": {
     "name": "Disney Princess Bumper Puzzle Pack",
@@ -402,7 +402,7 @@
     "age": "4+",
     "playtime": "15+ minutes",
     "description": "Dobble is a game of observation and quick reflexes for all! Featuring some of the most iconic Disney Princesses - Belle, Tiana, Jasmine, and more!",
-    "imageUrl": "images/dobble-disney-princess.jpg"
+    "imageUrl": "images/dobbleprincess.jpg"
   },
   "Dobble Marvel": {
     "name": "Dobble: Marvel",
@@ -411,7 +411,7 @@
     "age": "6+",
     "playtime": "15+ minutes",
     "description": "Dobble Marvel Emoji blends the thrill of superheroes with classic matching gameplay. Quick to learn and endlessly replayable, it turns every round into an epic test of speed, focus, and heroic reflexes",
-    "imageUrl": "images/dobble-marvel.jpg"
+    "imageUrl": "images/dobblemarvel.jpg"
   },
   "Draftosaurus": {
     "name": "Draftosaurus",
@@ -429,7 +429,7 @@
     "age": "8+",
     "playtime": "15-20 minutes",
     "description": "**required to borrow Draftosaurus with this expansion**\nPterodactyls will nest on top of the mountains that are now part of your park.",
-    "imageUrl": "images/draftosaurus-aerial-show-expansion.jpg"
+    "imageUrl": "images/draftosaurusaerial.jpg"
   },
   "Dragon Inferno (Smart Games)": {
     "name": "Dragon Inferno (Smart Games)",
@@ -501,7 +501,7 @@
     "age": "14+",
     "playtime": "60-180 minutes",
     "description": "Use military might or diplomacy, feed your people and lead your civilization to glory.",
-    "imageUrl": "images/era-of-tribes.jpg"
+    "imageUrl": "images/eraoftribes.jpg"
   },
   "Escape from Ghost Castle": {
     "name": "Escape from Ghost Castle",
@@ -510,7 +510,7 @@
     "age": "7+",
     "playtime": "20 minutes",
     "description": "There is a chill in the air! Hide in a mysterious castle and avoid the ghosts that have decided to find you in their house. This ghostly adventure game for the whole family sends one player to hide in the castle, while the others play as the ghosts and try to find his or her hiding place.",
-    "imageUrl": "images/escape-from-ghost-castle.jpg"
+    "imageUrl": "images/ghostcastle.jpg"
   },
   "Exploding Kittens (Not Safe For": {
     "name": "Exploding Kittens (Not Safe For Work Edition)",
@@ -519,7 +519,7 @@
     "age": "17+",
     "playtime": "15 minutes",
     "description": "Exploding Kittens: NSFW Edition is a highly-strategic, kitty powered version of Russian Roulette with art much too horrible/incredible to include in a kid-friendly version. Players draw cards until somebody draws an Exploding Kitten, at which point they explode and are out of the game. To avoid exploding, they can defuse the kitten with a crate or via porkback, OR use powerful action cards to move or avoid the Exploding Kitten. Betray your friends. Try not to explode. The last player left alive wins.",
-    "imageUrl": "images/exploding-kittens-not-safe-for-work-edition.jpg"
+    "imageUrl": "images/explodingkittensnsf.jpg"
   },
   "Flesh and Blood Smash Palace": {
     "name": "Flesh and Blood Smash Palace",
@@ -528,7 +528,7 @@
     "age": "16+",
     "playtime": "45+ minutes",
     "description": "Smash Palace brings multiplayer melee to Flesh and Blood like never before, and it’s as simple as Crack, Shuffle, Play! Crack 3 packs, remove the last 3 cards from each pack, Shuffle the rest, and Play.\n\nTo keep our Pit-Fighters on their toes, Smash Palace introduces the Event Deck. When the arena can change with the draw of a card, you’d better keep your wits if you want to win.",
-    "imageUrl": "images/flesh-and-blood-smash-palace.jpg"
+    "imageUrl": "images/smashpalace.jpg"
   },
   "Flip 7": {
     "name": "Flip 7",
@@ -555,7 +555,7 @@
     "age": "6+",
     "playtime": "Varies",
     "description": "Cross the pond... beware of the fish!\nGuide your frogs across the pond and block other players from doing the same. The first player to get their entire frog family to the other side wins the game. But watch out, the fish can scare your frogs back to the start!",
-    "imageUrl": "images/froggit-smart-games.jpg"
+    "imageUrl": "images/froggit.jpg"
   },
   "Garden Guests": {
     "name": "Garden Guests",
@@ -564,7 +564,7 @@
     "age": "8+",
     "playtime": "30 minutes",
     "description": "Race to connect stones and colonies in Garden Guests, but keep quiet to avoid disturbing the beetles. Team up, strategize silently, and build an unbroken path to lead your guests to victory in this whimsical mosaic adventure!",
-    "imageUrl": "images/garden-guests.jpg"
+    "imageUrl": "images/gardenguests.jpg"
   },
   "Gelatinous                     ": {
     "name": "Gelatinous                                                                         Be the biggest ooze . . . or lose!",
@@ -573,7 +573,7 @@
     "age": "10+",
     "playtime": "20 minutes",
     "description": "In Gelatinous, players start out as a wandering slime, using sparkling green dice to grow into a cube. But watch out, the other slimes are growing too! The first to grow into a cube wins – and the rest are lunch.\n\nIncludes 35 glittery green dice and its own dice bag!",
-    "imageUrl": "images/gelatinous-be-the-biggest-ooze-or-lose.jpg"
+    "imageUrl": "images/gelatinous.jpg"
   },
   "Ghost Hunters (Smart Games)": {
     "name": "Ghost Hunters (Smart Games)",
@@ -582,7 +582,7 @@
     "age": "6+",
     "playtime": "Varies",
     "description": "Catch the ghosts in the light!\nHave you ever wondered what ghosts do in a haunted mansion?\nPlay Ghost Hunters and use your brain to find out!\nLight up all of the ghosts in each challenge by placing all the flashlight puzzle pieces correctly.\nWith 60 challenges it’s a scary good time for players young and old!",
-    "imageUrl": "images/ghost-hunters-smart-games.jpg"
+    "imageUrl": "images/ghosthunters.jpg"
   },
   "Ghosts Of Christmas": {
     "name": "Ghosts Of Christmas",
@@ -600,7 +600,7 @@
     "age": "10+",
     "playtime": "60-90 minutes",
     "description": "Ham Helsing is a cooperative adventure board game based on the graphic novel series about a reluctant monster-hunting pig. Join Ham, Ronin, Malcom, and Lobos as they attempt to save the world! Using a card-crafting system with transparent upgrade cards, protect locations from endless swarms of minions while powering up and improving your skills. Can you power up fast enough to stop the Villain from destroying Mud Canyon and save the day?",
-    "imageUrl": "images/ham-helsing.jpg"
+    "imageUrl": "images/hamhelsing.jpg"
   },
   "Harmonies": {
     "name": "Harmonies",
@@ -636,7 +636,7 @@
     "age": "8+",
     "playtime": "20 minutes",
     "description": "Race to catch fish, but don't get stranded as ice disappears beneath your feet.",
-    "imageUrl": "images/hey-thats-my-fish.jpg"
+    "imageUrl": "images/thatsmyfish.png"
   },
   "Hibernia": {
     "name": "Hibernia",
@@ -663,7 +663,7 @@
     "age": "8+",
     "playtime": "30 minutes",
     "description": "How well can you describe a color hue without using a primary color's name?!",
-    "imageUrl": "images/hues-and-cues.jpg"
+    "imageUrl": "images/hues.jpg"
   },
   "Il Principe": {
     "name": "Il Principe",
@@ -672,7 +672,7 @@
     "age": "10+",
     "playtime": "60 minutes",
     "description": "Build cities, control territory and claim court roles to gain the most power.",
-    "imageUrl": "images/il-principe.jpg"
+    "imageUrl": "images/ilprincipe.jpg"
   },
   "Irish Gauge": {
     "name": "Irish Gauge",
@@ -717,7 +717,7 @@
     "age": "7+",
     "playtime": "Varies",
     "description": "Help the rabbits jump and hide!\nCan you help the rabbits jump to safety?\nUse other rabbits, mushrooms and even the moving foxes to jump around and hide the rabbits in their holes.",
-    "imageUrl": "images/jump-in-smart-games.jpg"
+    "imageUrl": "images/jumpin.jpg"
   },
   "Kaboom": {
     "name": "Kaboom",
@@ -726,7 +726,7 @@
     "age": "6+",
     "playtime": "30 minutes",
     "description": "Build towers while opponents simultaneously attempt to knock them down.",
-    "imageUrl": "images/kaboom.jpg"
+    "imageUrl": "images/kabom.jpg"
   },
   "Karen": {
     "name": "Karen",
@@ -762,7 +762,7 @@
     "age": "10+",
     "playtime": "45-60 minutes",
     "description": "Create a travel itinerary and go on your dream vacation to Japan.",
-    "imageUrl": "images/lets-go-to-japan.jpg"
+    "imageUrl": "images/letsgojapan.jpg"
   },
   "Liguria": {
     "name": "Liguria",
