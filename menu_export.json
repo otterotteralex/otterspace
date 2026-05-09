@@ -1762,6 +1762,7 @@
     "playtime": "",
     "description": "Lorem Ipsum",
     "imageUrl": "images/ztestgame.png",
-    "manualUrl": null
+    "manualUrl": null,
+    "hidden": true
   }
 }
