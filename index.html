@@ -38,10 +38,19 @@
     overflow: hidden;
   }
   .sidebar-header {
-    padding: 22px 20px 14px;
+    padding: 16px 20px 14px;
     border-bottom: 1px solid var(--border);
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
+  .sidebar-header img {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+  }
+  .sidebar-header-text { display: flex; flex-direction: column; gap: 1px; }
   .sidebar-logo {
     font-family: 'Playfair Display', serif;
     font-size: 17px;
@@ -478,8 +487,10 @@
 
 <aside class="sidebar">
   <div class="sidebar-header">
-    <div class="sidebar-logo">🎲 Game Library</div>
-    <div class="sidebar-sub">Browse the collection</div>
+    <img src="./otterspace.png" alt="Otter Space">
+    <div class="sidebar-header-text">
+      <div class="sidebar-logo">Game Library</div>
+    </div>
   </div>
   <div class="search-wrap">
     <input class="search-input" type="text" placeholder="Search games…" id="searchInput">
