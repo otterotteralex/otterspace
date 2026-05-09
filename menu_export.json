@@ -1760,8 +1760,8 @@
     "players": "",
     "age": "",
     "playtime": "",
-    "description": "",
-    "imageUrl": null,
+    "description": "Lorem Ipsum",
+    "imageUrl": "images/ztestgame.png",
     "manualUrl": null
   }
 }
