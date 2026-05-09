@@ -1762,6 +1762,7 @@
     "playtime": "",
     "description": "",
     "imageUrl": null,
-    "manualUrl": null
+    "manualUrl": null,
+    "hidden": true
   }
 }
