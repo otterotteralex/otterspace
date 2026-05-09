@@ -23,7 +23,7 @@
     "players": "1",
     "age": "8+",
     "playtime": "15 minutes",
-    "description": "Take a deep breath, match colorful s, and relax. AAAA",
+    "description": "Take a deep breath, match colorful flowers, and relax. AAAA",
     "imageUrl": "images/a-gentle-rain.jpg"
   },
   "Absolute Balderdash": {
@@ -986,7 +986,7 @@
     "players": "Unknown",
     "age": "Unknown",
     "playtime": "30 minutes",
-    "description": "Oh Captain, My Captain! is a short form worldbuilding role-playing game () that explores heroism and the complicated relationships we have with people we admire. It’s approachable for players who have never tried an RPG before and satisfying for players who have been gaming for years. It’s also compact enough to tell unforgettable stories in just thirty minutes.",
+    "description": "Oh Captain, My Captain! is a short form worldbuilding role-playing game (RPG) that explores heroism and the complicated relationships we have with people we admire. It’s approachable for players who have never tried an RPG before and satisfying for players who have been gaming for years. It’s also compact enough to tell unforgettable stories in just thirty minutes.",
     "imageUrl": "images/oh-captain-my-captain.jpg"
   },
   "Oltre Mare": {
@@ -1518,7 +1518,7 @@
     "age": "Unknown",
     "playtime": "Varies",
     "description": "Whether you're travelling by day or night, feasting at the local tavern, or, in fact, saving the world, your adventuring party does a lot together. But how well do you know your allies? Enter The Ultimate RPG Campfire Card Deck, featuring 150 introspective question cards designed to spark discussion, inspire discovery, and create connections between your characters and their world.",
-    "imageUrl": "images/ultimaterpg.jpg"
+    "imageUrl": "images/the-ultimate-rpg-campfire-deck-150-cards-for-sparking-in-game-conversation.jpg"
   },
   "Throw Throw Burrito": {
     "name": "Throw Throw Burrito",
@@ -1716,7 +1716,7 @@
     "age": "6+",
     "playtime": "Varies",
     "description": "The gorgeous flower clusters building set comes with detailed colorful step by step instruction manual. You can bloom your imagination to spell out your favorite patterns to build a flower bouquet.",
-    "imageUrl": "images/womaflowers.jpg"
+    "imageUrl": "images/woma-flower-clusters.jpg"
   },
   "Words in Mind": {
     "name": "Words in Mind",
@@ -1753,5 +1753,15 @@
     "playtime": "15-20 minutes",
     "description": "Players collect 4 of the same crabs and secretly signal to each other to get points.",
     "imageUrl": "images/youve-got-crabs.jpg"
+  },
+  "zTestGame": {
+    "name": "zTestGame",
+    "category": "BOARD GAME",
+    "players": "",
+    "age": "",
+    "playtime": "",
+    "description": "",
+    "imageUrl": null,
+    "manualUrl": null
   }
 }
