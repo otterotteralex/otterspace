@@ -789,7 +789,7 @@
     "age": "4-7 years",
     "playtime": "Varies",
     "description": "Find the path to Grandma’s house!\n\nCan you lay all the pieces on the board so that you build a path for Little Red Riding Hood to reach Grandma’s house? Then you can play the game with the Wolf! But beware, he might get there faster!\n\nTry to solve these challenges by making two paths to Grandma’s House: one for Little Red Riding Hood, and one for the Wolf.\n\nLittle Red Riding Hood includes 48 challenges (24 with the Wolf and 24 without) also features a family-friendly picture book with a modern twist on the original story.",
-    "imageUrl": "images/little-red-riding-hood-delux-smart-games.jpg"
+    "imageUrl": "images/littlered.jpg"
   },
   "Logic Links": {
     "name": "Logic Links",
@@ -798,7 +798,7 @@
     "age": "6+",
     "playtime": "Varies",
     "description": "It's time to let your logic loose!\nUse determination, deductive reasoning and super smarts in this game of puzzles.\nEach puzzle has a series of clues, and players must figure out where to place the coloured chips to solve them!\nThe answers are in the instructions but, NO PEEKING!",
-    "imageUrl": "images/logic-links.jpg"
+    "imageUrl": "images/logiclinks.jpg"
   },
   "Loteria Tim Burton The Nightmar": {
     "name": "Loteria Tim Burton The Nightmare Before Christmas",
@@ -807,7 +807,7 @@
     "age": "4+",
     "playtime": "15 minutes",
     "description": "Take part in holiday mischief with the residents of Halloween Town and Christmas Town with Disney Tim Burton’s The Nightmare Before Christmas: A Loteria Game – an English and Spanish version of the popular game of Bingo! Players win by matching images on their tablas. Features beautiful illustrations of iconic characters, items, and places from the classic film, such as Jack Skellington, Vampire Teddy (Peluche Vampiro), and Christmas Tree (Arbol de Navidad). Share the gifts of luck and learning with this unpredictable and bilingual game for The Nightmare Before Christmas fans of every generation!",
-    "imageUrl": "images/loteria-tim-burton-the-nightmare-before-christmas.jpg"
+    "imageUrl": "images/loteriatimburton.jpg"
   },
   "Lucky Numbers": {
     "name": "Lucky Numbers",
@@ -816,7 +816,7 @@
     "age": "8+",
     "playtime": "20 minutes",
     "description": "(Italian - can play without knowing language)\nFill your grid with numbers first, and be careful to avoid giving up crucial tiles.",
-    "imageUrl": "images/lucky-numbers.jpg"
+    "imageUrl": "images/luckynumbers.jpg"
   },
   "Lustigt Jigsaw Puzzle - 211 pie": {
     "name": "Lustigt Jigsaw Puzzle - 211 pieces",
@@ -834,7 +834,7 @@
     "age": "7+",
     "playtime": "45 minutes",
     "description": "Embark on adventure with the Magic 8-Ball as your guide.",
-    "imageUrl": "images/magical-encounters.jpg"
+    "imageUrl": "images/magicalencounters.jpg"
   },
   "Maltese Gear": {
     "name": "Maltese Gear",
@@ -870,7 +870,7 @@
     "age": "8+",
     "playtime": "60 minutes",
     "description": "The game of Monopoly with a Ford Mustang car model theme.",
-    "imageUrl": "images/monopoloy-mustang-edition.jpg"
+    "imageUrl": "images/monopoloymustang.jpg"
   },
   "Montana": {
     "name": "Montana",
@@ -888,7 +888,7 @@
     "age": "8+",
     "playtime": "45 minutes",
     "description": "Build your own Kingdomino-like tiles into a cattle ranch.",
-    "imageUrl": "images/moon-river.jpg"
+    "imageUrl": "images/moonriver.jpg"
   },
   "Movie quiz": {
     "name": "Movie quiz",
@@ -897,7 +897,7 @@
     "age": "8+",
     "playtime": "Varies",
     "description": "Take the Movie Quiz and find out if you deserve a star on the Hollywood Walk of Fame or a role in a disaster movie!",
-    "imageUrl": "images/movie-quiz.jpg"
+    "imageUrl": "images/themoviequiz.jpg"
   },
   "My Haven No 1 The Craft Shed - ": {
     "name": "My Haven No 1: The Craft Shed - 1,000 piece jigsaw puzzle",
@@ -951,7 +951,7 @@
     "age": "8+",
     "playtime": "60 minutes",
     "description": "Race to play all your tiles by forming runs or sets, even if they're not your own!",
-    "imageUrl": "images/my-rummy.jpg"
+    "imageUrl": "images/myrummy.png"
   },
   "Nexum Galaxy": {
     "name": "Nexum Galaxy",
@@ -969,7 +969,7 @@
     "age": "—",
     "playtime": "—",
     "description": "**required to borrow Nexum Galaxy with this expansion**",
-    "imageUrl": "images/nexum-galaxy-120-miniatures.jpg"
+    "imageUrl": "images/nexumminiatures.jpg"
   },
   "Nexum Galaxy Asteroids Expansio": {
     "name": "Nexum Galaxy Asteroids Expansion",
@@ -978,7 +978,7 @@
     "age": "—",
     "playtime": "—",
     "description": "**required to borrow Nexum Galaxy with this expansion**",
-    "imageUrl": "images/nexum-galaxy-asteroids-expansion.jpg"
+    "imageUrl": "images/nexumasteroids.jpg"
   },
   "Oh Captain, My Captain!": {
     "name": "Oh Captain, My Captain!",
