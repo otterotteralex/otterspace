@@ -374,6 +374,16 @@
     "description": "(Multilingual edition including English)\nNavigate the unseen labyrinth using only your memory to collect the lost artifacts.",
     "imageUrl": "images/dasmagischelabyrinth.jpg"
   },
+  "De Vulgari Eloquentia": {
+    "name": "De Vulgari Eloquentia",
+    "category": "BOARD GAME",
+    "players": "2-5",
+    "age": "14+",
+    "playtime": "120 minutes",
+    "description": "(German language with printed English instructions)\nTravel around Italy, and do your parts to create the Volgare, the new language!",
+    "imageUrl": "images/de-vulgari-eloquentia.jpg",
+    "manualUrl": null
+  },
   "Deep Dark Wood (Gruffalo)": {
     "name": "Deep Dark Wood (Gruffalo)",
     "category": "FOR THE YOUNGEST",
