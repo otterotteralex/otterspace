@@ -465,6 +465,16 @@
     "description": "The Ravensburger Disney Princess 42 Piece Jigsaw 4 Puzzle Bumper Pack includes four bright and colourful Disney Princess jigsaw puzzles in one bumper pack! With gorgeous artwork, each puzzle creates a charming scene thats sure to enchant little Disney fans.",
     "imageUrl": "images/disney-princess-bumper-puzzle-pack.jpg"
   },
+  "Dixit": {
+    "name": "Dixit",
+    "category": "BOARD GAME",
+    "players": "3-6",
+    "age": "8+",
+    "playtime": "30 minutes",
+    "description": "Each turn in Dixit, one player is the storyteller who chooses one of the six cards in their hand, then expresses an idea, with sounds or words, that is reflected on that card's image, and places the card face down on the playing surface. Each other player then selects the card that best matches that expression, and passes the selected card to the storyteller, face down.\n\nThe storyteller shuffles all the cards together, then turns them over to reveal them. Each player other than the storyteller then secretly guesses which card belongs to the storyteller. If nobody or everybody guesses the correct card, the storyteller scores 0 points, and each other player scores 2 points. Otherwise, the storyteller and whoever found the correct answer score 3 points. Additionally, the non-storyteller players score 1 point for every vote received by their card.\n\nThe game ends when the deck is empty or if a player has scored at least 30 points. In either case, the player with the most points wins.    ",
+    "imageUrl": "images/dixit.jpg",
+    "manualUrl": null
+  },
   "Dobble Disney Princess": {
     "name": "Dobble: Disney Princess",
     "category": "FOR THE YOUNGEST",
@@ -482,6 +492,16 @@
     "playtime": "15+ minutes",
     "description": "Dobble Marvel Emoji blends the thrill of superheroes with classic matching gameplay. Quick to learn and endlessly replayable, it turns every round into an epic test of speed, focus, and heroic reflexes",
     "imageUrl": "images/dobblemarvel.jpg"
+  },
+  "Double Ditto": {
+    "name": "Double Ditto",
+    "category": "BOARD GAME",
+    "players": "4-99",
+    "age": "10+",
+    "playtime": "15 minutes",
+    "description": "Double Ditto is a fun party game what will challenge players to be clever and quick. Play with as few as 4 players, or as may as 10 or more!\n\nTake turns being the Ditto Master by reading a card out loud to the group. Players then have 15 seconds to write down two answers that come to mind. Once time is up, take turns reading the answers out loud, crossing off each answer that matches another player's answer.\nThe object of the game is to write down answers you think other players will write. Match an answer with another player to score a \"ditto!\" Match both answers and score a \"double ditto!\"",
+    "imageUrl": "images/double-ditto.jpg",
+    "manualUrl": null
   },
   "Draftosaurus": {
     "name": "Draftosaurus",
