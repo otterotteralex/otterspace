@@ -81,6 +81,16 @@
     "imageUrl": "images/anti-monopoly.jpg",
     "manualUrl": null
   },
+  "Aqua: Biodiversity in the Oceans": {
+    "name": "Aqua: Biodiversity in the Oceans",
+    "category": "BOARD GAME",
+    "players": "1-4",
+    "age": "8+",
+    "playtime": "30-45 minutes",
+    "description": "In AQUA, your starting point is a hot spot that gradually becomes surrounded by expanding coral formations. These corals serve as habitats for small marine animals. By fostering biodiverse habitats, you can then create ideal conditions for attracting the largest marine animals. \n\nAQUA plays over 17 rounds. On your turn, you must take a new coral tile from the market and add it to your reef, then you may also attract animals to your ecosystem if you create the correct patterns of coral. At the end of the game, the player who grew the best coral formations and attracted the most large and small sea animals will score the most points and win.",
+    "imageUrl": "images/aqua-biodiversity-in-the-oceans.jpg",
+    "manualUrl": null
+  },
   "Azul": {
     "name": "Azul",
     "category": "BOARD GAME",
@@ -135,6 +145,16 @@
     "description": "Put together a dinosaur friend! The set includes 64 parts: soft elements made of foam and plastic.",
     "imageUrl": "images/bloco_miniraptors.jpg"
   },
+  "Boss Monster: The Dungeon Building Card Game": {
+    "name": "Boss Monster: The Dungeon Building Card Game",
+    "category": "BOARD GAME",
+    "players": "2 - 4",
+    "age": "13+",
+    "playtime": "30 minutes",
+    "description": "Inspired by a love of classic video games, Boss Monster: The Dungeon Building Card Game pits 2-4 players in a competition to build the ultimate side-scrolling dungeon. Players compete to lure and destroy hapless adventurers, racing to outbid one another to see who can build the most enticing, treasure-filled dungeon. The goal of Boss Monster is to be the first Boss to amass ten Souls, which are gained when a Hero is lured and defeated — but a player can lose if his Boss takes five Wounds from Heroes who survive his dungeon.",
+    "imageUrl": "images/boss-monster-the-dungeon-building-card-game.jpg",
+    "manualUrl": null
+  },
   "Butterfly Splendour - 1,000 pie": {
     "name": "Butterfly Splendour - 1,000 piece jigsaw puzzle",
     "category": "PUZZLE",
@@ -188,6 +208,16 @@
     "playtime": "25 minutes",
     "description": "The Purr-fect Challenge Awaits in Cat Between Us as players use an arsenal of irresistible toys to lure a mischievous cat that has vanished in the house.",
     "imageUrl": "images/cat-between-us.jpg"
+  },
+  "Catan: 6th Edition": {
+    "name": "Catan: 6th Edition",
+    "category": "BOARD GAME",
+    "players": "3-4",
+    "age": "10+",
+    "playtime": "60-120 minutes",
+    "description": "As you and your fellow explorers gaze across the uninhabited landscape of hexagonal tracts of terrain, you quickly realize that this unique land arrangement provides ample space for each of you to put down roots.\n\nYou race off to establish your respective communities by gathering resources from nearby terrain, building your infrastructure, and nurturing trade relationships. ",
+    "imageUrl": "images/catan-6th-edition.jpg",
+    "manualUrl": null
   },
   "Christmas trivia": {
     "name": "Christmas trivia",
