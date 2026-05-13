@@ -631,6 +631,16 @@
     "imageUrl": "images/favourite-after-dinner-card-games.jpg",
     "manualUrl": null
   },
+  "Fiction": {
+    "name": "Fiction",
+    "category": "BOARD GAME",
+    "players": "2-8",
+    "age": "10+",
+    "playtime": "20 minutes",
+    "description": "Fiction is a Wordle-inspired game of deception. One player is the Lie-brarian and will choose a secret word from a classic work of literature. The other players will, as a team, use logic and literacy to deduce the secret word as quickly as possible.\n\nPlayers have ten guesses and two ten-minute time periods to deduce the secret word, but beware! The Lie-brarian's clues will always contain exactly one lie. The Guessers win if they figure out the word; the Lie-brarian wins if the time or number of guesses runs out.",
+    "imageUrl": "images/fiction.jpg",
+    "manualUrl": null
+  },
   "Flesh and Blood Smash Palace": {
     "name": "Flesh and Blood Smash Palace",
     "category": "BOARD GAME",
@@ -648,6 +658,26 @@
     "playtime": "20 minutes",
     "description": "Flip over cards one by one without flipping the same number twice.\n\nSound easy? Think again! This isn't just any deck of cards… In Flip 7 there's only one 1 card, two 2's, three 3’s, etc plus a bunch of special cards that can score you extra points, give you a second chance, or freeze you or your opponents in your tracks.\n\nAre you the type of player to play it safe and bank points before you bust, or are you going to risk it all and go for the bonus points by flipping over seven in a row? Press your luck meets strategy in this addictive card game that's sure to be the greatest card game you’ve ever played!",
     "imageUrl": "images/flip-7.jpg"
+  },
+  "Flip 7 - With a Vengeance": {
+    "name": "Flip 7 - With a Vengeance",
+    "category": "BOARD GAME",
+    "players": "3-28",
+    "age": "8+",
+    "playtime": "20 minutes",
+    "description": "Flip 7 is back - With a Vengeance! All of the fun of the original game, plus new player interactions and special take-that cards!\n\nFlip over cards one by one without flipping the same number twice. Sound easy? Think again! This isn't just any deck of cards…",
+    "imageUrl": "images/flip-7-with-a-vengeance.jpg",
+    "manualUrl": null
+  },
+  "Flow": {
+    "name": "Flow",
+    "category": "BOARD GAME",
+    "players": "1-6",
+    "age": "8+",
+    "playtime": "15 minutes",
+    "description": "Flow is a cooperative game where players work together to connect four animal spaces to the boat tile in the center of the board by drawing and playing tiles. Do you have what it takes to save the animals?\n\nIf players run out of tiles they and the animals have not been connected to the boat, they all lose.\n\nThe game uses a timer, and each time it runs out, players roll two dice that tell them where the giant wave strikes and washes away tiles already placed.",
+    "imageUrl": "images/flow.jpg",
+    "manualUrl": null
   },
   "Fluxx": {
     "name": "Fluxx",
