@@ -907,6 +907,16 @@
     "description": "The game of one star reviews! In Karen, each player is going to sneak their own fake complaints in amongst hilarious REAL one star reviews found online, to try and convince their opponents that THEY are the real Karen.\n\nThis hilarious party game isn’t about getting the RIGHT answer- it’s about coming up with your own funny suggestions and tricking the other players into believing your creation is the real complaint!",
     "imageUrl": "images/karen.jpg"
   },
+  "Keep The Heroes Out": {
+    "name": "Keep The Heroes Out",
+    "category": "BOARD GAME",
+    "players": "1-4",
+    "age": "10+",
+    "playtime": "40 minutes",
+    "description": "An asymmetric, cooperative dungeon defense game where you play as the monsters protecting their hard earned treasures against invading hordes of looters (so-called heroes) trying to steal it.\n\nIn their turn players draw 5 cards and play, these cards allow them to move, activate the tiles they are to perform the tiles actions, attack heroes, and move their units around. After each player, draw and perform cards from the heroes deck.\n\nYour goal as a team in every scenario is to survive the 2 waves of invading heroes by protecting the treasures on each room. If the main treasure is taken, the game ends and you lose, but if you manage to protect the treasures for long enough, you all win.",
+    "imageUrl": "images/keep-the-heroes-out.jpg",
+    "manualUrl": null
+  },
   "Kites": {
     "name": "Kites",
     "category": "BOARD GAME",
@@ -915,6 +925,16 @@
     "playtime": "10 minutes",
     "description": "The sun is shining, the wind is blowing, and you know just what to do — gather your friends to fly some kites!\n\nIn Kites, everyone works together to keep all their kites — represented by colorful sand timers — in the air. Take turns playing cards, flipping the sand timers, and coordinating with other players to ensure none of the timers run out. If it does, a kite has crashed! Add complication cards for additional challenges.\n\nPlay all of the kite cards in the deck, and everybody wins!",
     "imageUrl": "images/kites.jpg"
+  },
+  "Kluster Duo": {
+    "name": "Kluster Duo",
+    "category": "FOR THE YOUNGEST",
+    "players": "1-2",
+    "age": "7+",
+    "playtime": "10-20 minutes",
+    "description": "Kluster DUO is an incredibly fun family-friendly dexterity game! The large, unstable “spinner” magnets can be used alone or as an expansion for Kluster.",
+    "imageUrl": "images/kluster-duo.jpg",
+    "manualUrl": null
   },
   "LEGO  Monkey Palace": {
     "name": "LEGO : Monkey Palace",
