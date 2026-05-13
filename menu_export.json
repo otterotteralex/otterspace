@@ -999,6 +999,16 @@
     "description": "Take part in holiday mischief with the residents of Halloween Town and Christmas Town with Disney Tim Burton’s The Nightmare Before Christmas: A Loteria Game – an English and Spanish version of the popular game of Bingo! Players win by matching images on their tablas. Features beautiful illustrations of iconic characters, items, and places from the classic film, such as Jack Skellington, Vampire Teddy (Peluche Vampiro), and Christmas Tree (Arbol de Navidad). Share the gifts of luck and learning with this unpredictable and bilingual game for The Nightmare Before Christmas fans of every generation!",
     "imageUrl": "images/loteriatimburton.jpg"
   },
+  "Love Letter": {
+    "name": "Love Letter",
+    "category": "BOARD GAME",
+    "players": "2-6",
+    "age": "10+",
+    "playtime": "15 minutes",
+    "description": "The kingdom’s Princess seeks an ideal partner and confidant to help with her royal responsibilities when she one day assumes the throne. In Love Letter, players compete to have their letters delivered to the Princess to prove their worth. In a quick game of risk and deduction, can you outwit your friends and earn the trust of the noble Princess?",
+    "imageUrl": "images/love-letter.png",
+    "manualUrl": null
+  },
   "Lucky Numbers": {
     "name": "Lucky Numbers",
     "category": "BOARD GAME",
@@ -1052,6 +1062,26 @@
     "playtime": "120 minutes",
     "description": "(German language with printed English instructions)\nExpand your civilization through trade, warfare and architecture.",
     "imageUrl": "images/mare-nostrum.jpg"
+  },
+  "Master Dater": {
+    "name": "Master Dater",
+    "category": "BOARD GAME",
+    "players": "3-6",
+    "age": "13+",
+    "playtime": "20-45 minutes",
+    "description": "In Master Dater, the messed-up dating game, players take turns being the sexy single. Other players then combine heads and bodies to make messed-up dates to pander to three unusual interests of the single. The single then awards the player or players who best argued their case with heart, love, and flame cards.\n\nWhen a player has one of each and five total, that player becomes the Master Dater and wins the game. ",
+    "imageUrl": "images/master-dater.jpg",
+    "manualUrl": null
+  },
+  "Mists Over Carcassonne": {
+    "name": "Mists Over Carcassonne",
+    "category": "BOARD GAME",
+    "players": "1-5",
+    "age": "8+",
+    "playtime": "35 minutes",
+    "description": "Mists over Carcassonne is a co-operative version of the well-known tile-laying game Carcassonne. Working together, you place tiles and score points while trying to stop the spread of ghosts, contain haunted ground in cemeteries, and use haunted castles to your advantage. If too many ghosts are loose on the ground or you've collected too few points when the tiles run out, you lose the game. If you do manage to survive three days, you can adjust the difficulty level of the game to increase the challenge.\n\nMists over Carcassonne includes 45 meeples in two new types and 60 tiles that match the graphics of the 2021 edition of Carcassonne, and this game includes rules for how to incorporate material in a regular competitive game of Carcassonne. ",
+    "imageUrl": "images/mists-over-carcassonne.jpg",
+    "manualUrl": null
   },
   "Monopoloy - Mustang Edition": {
     "name": "Monopoloy - Mustang Edition",
