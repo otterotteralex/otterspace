@@ -1338,15 +1338,6 @@
     "description": "Find pictures fast, and find them first!",
     "imageUrl": "images/pictureka.jpg"
   },
-  "Pirate Ship Jigsaw Puzzle & Pos": {
-    "name": "Pirate Ship Jigsaw Puzzle & Poster",
-    "category": "PUZZLE",
-    "players": "1",
-    "age": "5-9",
-    "playtime": "15+ minutes",
-    "description": "Ship ahoy! There’s lots to talk and laugh about in this large, detailed pirate ship jigsaw, including pirates hanging their pants out to dry and floating in rubber rings!\nPirate Ship includes a fun learning guide on the back of the box, which features different discussion points to talk about once the puzzle has been completed. This includes questions to encourage observation, develop counting and promote imaginative play e.g. Can you find a monkey eating pizza? Where do you think the pirates are taking the treasure chest?",
-    "imageUrl": "images/pirate-ship-jigsaw-puzzle-poster.jpg"
-  },
   "Pirate Ship Jigsaw Puzzle & Poster": {
     "name": "Pirate Ship Jigsaw Puzzle & Poster",
     "category": "PUZZLE",
@@ -1475,6 +1466,16 @@
     "description": "Quirky is a fast-moving, quick-thinking, fun, question and answer, bluff and banter game for family and friends. It is not like a conventional fact-based quiz - in this game you decide the answers. On your turn you answer against a 40-second sand timer and, if you don't know, try to convince others that you do. Younger players compete on equal terms as quick wit and cheeky confidence are more important in the game than knowledge. You win the cards you answer, unless your answer is challenged, then the winner of the challenge keeps that card and steals another. If you can't answer you don't pass - you roll the QUIRKY die for a chance to win the card anyway, and if you lose you can choose who it goes to.",
     "imageUrl": "images/quirky.jpg"
   },
+  "Quoridor: Pac-Man": {
+    "name": "Quoridor: Pac-Man",
+    "category": "BOARD GAME",
+    "players": "2-5",
+    "age": "8+",
+    "playtime": "15 minutes",
+    "description": "Embark on a new adventure with Quoridor Pac-Man, an exclusive edition of Quoridor that allows you to play as either PAC-MAN or one of the four ghosts.\n\nExplore two game modes: opt for the classic Quoridor challenge that has you navigating through the maze, or dive into a variant that brings back the nostalgic vibes of the iconic PAC-MAN video game!",
+    "imageUrl": "images/quoridor-pac-man.jpg",
+    "manualUrl": null
+  },
   "Qwirkle (Travel Size)": {
     "name": "Qwirkle (Travel Size)",
     "category": "BOARD GAME",
@@ -1492,15 +1493,6 @@
     "playtime": "45 minutes",
     "description": "Railroad Tiles, a sequel to the roll-and-write series Railroad Ink, is a quick-playing tile placement game in which you pick tiles and place routes to build an interconnected community.",
     "imageUrl": "images/railroad-tiles.jpg"
-  },
-  "Recommended age 8+": {
-    "name": "Recommended age: 8+",
-    "category": "FOR THE YOUNGEST",
-    "players": "1",
-    "age": "7+",
-    "playtime": "As long as you'd like :)",
-    "description": "Players: 1-6\nPlaytime 30-60 minutes",
-    "imageUrl": "images/recommended-age-8.jpg"
   },
   "Rick & Morty Total Rickall": {
     "name": "Rick & Morty: Total Rickall",
