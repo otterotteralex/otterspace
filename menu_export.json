@@ -697,6 +697,16 @@
     "description": "Cross the pond... beware of the fish!\nGuide your frogs across the pond and block other players from doing the same. The first player to get their entire frog family to the other side wins the game. But watch out, the fish can scare your frogs back to the start!",
     "imageUrl": "images/froggit.jpg"
   },
+  "Fun Facts": {
+    "name": "Fun Facts",
+    "category": "FOR THE YOUNGEST",
+    "players": "4-8",
+    "age": "8+",
+    "playtime": "30 minutes",
+    "description": "Each round in Fun Facts, a question is placed in the center of the table, e.g., \"How long is the perfect nap?\", then everyone secretly writes their answer on their colored arrow and places that arrow face down on the table. (You write your name on the other side of the arrow so that everyone knows which arrow is whose.)\n\nOnce everyone has written their answer, take turns placing your arrow in relation to the other players from low to high: \"I know that Mom is super sleepy, so I should definitely place my arrow below hers.\" After everyone has placed their answer in the center of the table, the starting player has the opportunity to move their own arrow — without touching anyone else's!\n\nThen you reveal everyone's numbers, and removes each arrow that is out of order. Each remaining arrow represents a correct answer and provides one point for the entire team. After eight rounds, record the team's score in the Record of Legends. Can you possibly achieve a perfect score? ",
+    "imageUrl": "images/fun-facts.jpg",
+    "manualUrl": null
+  },
   "Garden Guests": {
     "name": "Garden Guests",
     "category": "BOARD GAME",
@@ -796,6 +806,16 @@
     "description": "Celebrate by throwing colored powder at your friends, raining color from above.",
     "imageUrl": "images/holi-festival-of-colors.jpg"
   },
+  "Hot Seat": {
+    "name": "Hot Seat",
+    "category": "BOARD GAME",
+    "players": "3-99",
+    "age": "10+",
+    "playtime": "30-60 minutes",
+    "description": "Hot Seat is the adult party game that's all about you. What's your spirit animal? What's your safe word? What do you refuse to do unless you're drunk? Even more importantly - what do your friends think? Find out who thinks your spirit animal is a drunk alpaca... and who thinks it's an accountant. Are you ready for a round of Hot Seat?",
+    "imageUrl": "images/hot-seat.jpg",
+    "manualUrl": null
+  },
   "Hues and Cues": {
     "name": "Hues and Cues",
     "category": "BOARD GAME",
@@ -813,6 +833,16 @@
     "playtime": "60 minutes",
     "description": "Build cities, control territory and claim court roles to gain the most power.",
     "imageUrl": "images/ilprincipe.jpg"
+  },
+  "IQ Stars": {
+    "name": "IQ Stars",
+    "category": "FOR THE YOUNGEST",
+    "players": "1",
+    "age": "6+",
+    "playtime": "Varies",
+    "description": "Can you fit all the stars in the grid?\n\nAre your brain skills out of this world?\n\nCan you place the 7 stellar puzzle pieces on the grid?\n\nReach for the stars and solve the 120 challenges, from easy to expert",
+    "imageUrl": "images/iq-stars.jpg",
+    "manualUrl": null
   },
   "Irish Gauge": {
     "name": "Irish Gauge",
