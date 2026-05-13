@@ -602,6 +602,16 @@
     "description": "There is a chill in the air! Hide in a mysterious castle and avoid the ghosts that have decided to find you in their house. This ghostly adventure game for the whole family sends one player to hide in the castle, while the others play as the ghosts and try to find his or her hiding place.",
     "imageUrl": "images/ghostcastle.jpg"
   },
+  "Exploding Kittens": {
+    "name": "Exploding Kittens",
+    "category": "BOARD GAME",
+    "players": "2-5",
+    "age": "17+",
+    "playtime": "15 minutes",
+    "description": "Exploding Kittens is a kitty-powered version of Russian Roulette. Players take turns drawing cards until someone draws an exploding kitten and loses the game. The deck is made up of cards that let you avoid exploding by peeking at cards before you draw, forcing your opponent to draw multiple cards, or shuffling the deck.",
+    "imageUrl": "images/exploding-kittens.jpg",
+    "manualUrl": null
+  },
   "Exploding Kittens (Not Safe For": {
     "name": "Exploding Kittens (Not Safe For Work Edition)",
     "category": "BOARD GAME",
