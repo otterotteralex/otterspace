@@ -621,6 +621,16 @@
     "description": "Exploding Kittens: NSFW Edition is a highly-strategic, kitty powered version of Russian Roulette with art much too horrible/incredible to include in a kid-friendly version. Players draw cards until somebody draws an Exploding Kitten, at which point they explode and are out of the game. To avoid exploding, they can defuse the kitten with a crate or via porkback, OR use powerful action cards to move or avoid the Exploding Kitten. Betray your friends. Try not to explode. The last player left alive wins.",
     "imageUrl": "images/explodingkittensnsf.jpg"
   },
+  "Favourite After Dinner Card Games": {
+    "name": "Favourite After Dinner Card Games",
+    "category": "BOARD GAME",
+    "players": "",
+    "age": "14+",
+    "playtime": "",
+    "description": "A collection of 16 favourite card games, ranging from fast and furious to downright silly. This selection is broad enough to suit every taste.",
+    "imageUrl": "images/favourite-after-dinner-card-games.jpg",
+    "manualUrl": null
+  },
   "Flesh and Blood Smash Palace": {
     "name": "Flesh and Blood Smash Palace",
     "category": "BOARD GAME",
