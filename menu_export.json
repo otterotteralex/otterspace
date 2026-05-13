@@ -1110,6 +1110,16 @@
     "description": "Build your own Kingdomino-like tiles into a cattle ranch.",
     "imageUrl": "images/moonriver.jpg"
   },
+  "More or Less Card Game": {
+    "name": "More or Less Card Game",
+    "category": "BOARD GAME",
+    "players": "2-99",
+    "age": "14+",
+    "playtime": "15-60 minutes",
+    "description": "More or Less is a trivia quiz card game, with an outlandish collection of random, surprising and amusing questions where you apply your judgement and answer with More or Less. Jam-packed with obscure trivia questions where you’ll likely answer based on your best judgement rather than knowledge. Unlike some other quiz and board games, More or Less a super-inclusive quiz game for all and means the brain of the group isn’t always going to win.",
+    "imageUrl": "images/more-or-less-card-game.jpg",
+    "manualUrl": null
+  },
   "Movie quiz": {
     "name": "Movie quiz",
     "category": "BOARD GAME",
