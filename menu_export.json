@@ -255,6 +255,26 @@
     "description": "No description available.",
     "imageUrl": "images/coastal-cottage-1000-piece-jigsaw-puzzle.jpg"
   },
+  "Codenames": {
+    "name": "Codenames",
+    "category": "BOARD GAME",
+    "players": "2-8",
+    "age": "10+",
+    "playtime": "15 minutes",
+    "description": "In Codenames, two teams compete to see who can make contact with all of their agents first. Lay out 25 cards, each bearing a single word. The spymasters look at a card showing the identity of each card, then take turns clueing their teammates. \n\nA clue consists of a single word and a number, with the number suggesting how many cards in play have some association to the given clue word. The teammates then identify one agent they think is on their team; if they're correct, they can keep guessing up to one more than the stated number of times; if the agent belongs to the opposing team or is an innocent bystander, the team's turn ends; and if they fingered the assassin, they lose the game.",
+    "imageUrl": "images/codenames.jpg",
+    "manualUrl": null
+  },
+  "Codenames: Pictures": {
+    "name": "Codenames: Pictures",
+    "category": "BOARD GAME",
+    "players": "2-8",
+    "age": "12+",
+    "playtime": "90 minutes",
+    "description": "What are these strange symbols on the map? They are code for locations where spies must contact secret agents!\n\nTwo rival spymasters know the agent in each location. They deliver coded messages telling their field operatives where to go for clandestine meetings. Operatives must be clever. A decoding mistake could lead to an unpleasant encounter with an enemy agent – or worse, with the assassin! Both teams race to contact all their agents, but only one team can win.",
+    "imageUrl": "images/codenames-pictures.jpg",
+    "manualUrl": null
+  },
   "Colonialism": {
     "name": "Colonialism",
     "category": "BOARD GAME",
