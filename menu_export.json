@@ -1987,6 +1987,16 @@
     "description": "No description available.",
     "imageUrl": "images/vintage-london-1500-piece-jigsaw-puzzle.jpg"
   },
+  "Warhammer 40,000 Darktide: Card Game": {
+    "name": "Warhammer 40,000 Darktide: Card Game",
+    "category": "BOARD GAME",
+    "players": "1-4",
+    "age": "14+",
+    "playtime": "45-90 minutes",
+    "description": "The dark and gritty action of Warhammer 40,000: Darktide slips from the screen to the tabletop in a new card game by Cubicle 7 – publishers of tabletop RPG Imperium Maledictum and more. Darktide: The Card Game is a fast and deadly cooperative caper for one to four players, battling hordes of Chaos-warped monsters and traitorous Guardsmen across six missions decreed by their merciless Inquisitor.\n\nThe set includes over 260 cards, six player boards, and all the rules and tokens you need to play out missions packed with nerve-wracking decisions – after all, you’re merely Rejects, and the mission must succeed at any cost. If you’re up for a shorter experience, you can also tackle the terrors of Hive Tertium in solo and single mission game modes.",
+    "imageUrl": "images/warhammer-40000-darktide-card-game.jpg",
+    "manualUrl": null
+  },
   "We Love Cats": {
     "name": "We Love Cats",
     "category": "BOARD GAME",
