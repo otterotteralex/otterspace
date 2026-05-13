@@ -1129,6 +1129,16 @@
     "description": "Take the Movie Quiz and find out if you deserve a star on the Hollywood Walk of Fame or a role in a disaster movie!",
     "imageUrl": "images/themoviequiz.jpg"
   },
+  "Munchkin": {
+    "name": "Munchkin",
+    "category": "BOARD GAME",
+    "players": "3-6",
+    "age": "10+",
+    "playtime": "60-120 minutes",
+    "description": "Go down in the dungeon. Kill everything you meet. Backstab your friends and steal their stuff. Grab the treasure and run.\n\nAdmit it. You love it.",
+    "imageUrl": "images/munchkin.jpg",
+    "manualUrl": null
+  },
   "My Haven No 1 The Craft Shed - ": {
     "name": "My Haven No 1: The Craft Shed - 1,000 piece jigsaw puzzle",
     "category": "PUZZLE",
@@ -1282,6 +1292,16 @@
     "description": "Cooperative game in which you and your teammates travel across the globe, treating infections while finding resources.",
     "imageUrl": "images/pandemic.jpg"
   },
+  "Pantheon": {
+    "name": "Pantheon",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "10+",
+    "playtime": "60-90 minutes",
+    "description": "(German language with printed English instructions)\nA game of building routes and temples and using the power of the gods.",
+    "imageUrl": "images/pantheon.jpg",
+    "manualUrl": null
+  },
   "Patchwork": {
     "name": "Patchwork",
     "category": "BOARD GAME",
@@ -1326,6 +1346,16 @@
     "playtime": "15+ minutes",
     "description": "Ship ahoy! There’s lots to talk and laugh about in this large, detailed pirate ship jigsaw, including pirates hanging their pants out to dry and floating in rubber rings!\nPirate Ship includes a fun learning guide on the back of the box, which features different discussion points to talk about once the puzzle has been completed. This includes questions to encourage observation, develop counting and promote imaginative play e.g. Can you find a monkey eating pizza? Where do you think the pirates are taking the treasure chest?",
     "imageUrl": "images/pirate-ship-jigsaw-puzzle-poster.jpg"
+  },
+  "Pirate Ship Jigsaw Puzzle & Poster": {
+    "name": "Pirate Ship Jigsaw Puzzle & Poster",
+    "category": "PUZZLE",
+    "players": "1",
+    "age": "5-9",
+    "playtime": "15+ minutes",
+    "description": "Ship ahoy! There’s lots to talk and laugh about in this large, detailed pirate ship jigsaw, including pirates hanging their pants out to dry and floating in rubber rings!\nPirate Ship includes a fun learning guide on the back of the box, which features different discussion points to talk about once the puzzle has been completed. This includes questions to encourage observation, develop counting and promote imaginative play e.g. Can you find a monkey eating pizza? Where do you think the pirates are taking the treasure chest?",
+    "imageUrl": "images/pirate-ship-jigsaw-puzzle-poster.jpg",
+    "manualUrl": null
   },
   "Pirates Crossfire (Smart Games)": {
     "name": "Pirates Crossfire (Smart Games)",
@@ -1379,7 +1409,8 @@
     "age": "6+",
     "playtime": "Varies",
     "description": "Have fun piecing together this 3D Poké Ball Pokemon Puzzle.",
-    "imageUrl": "images/pokemon-3d-puzzle.jpg"
+    "imageUrl": "images/pokemon-3d-puzzle.jpg",
+    "manualUrl": null
   },
   "Pokemon 500 Piece Puzzle": {
     "name": "Pokemon 500 Piece Puzzle",
