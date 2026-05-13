@@ -1629,6 +1629,26 @@
     "description": "No description available.",
     "imageUrl": "images/sorcery-contested-realm-arthurian-legends-valley-of-delight-playmat.jpg"
   },
+  "Splendor": {
+    "name": "Splendor",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "10+",
+    "playtime": "30 minutes",
+    "description": "Splendor is a game of chip-collecting and card development. Players are merchants of the Renaissance trying to buy gem mines, means of transportation, shops—all in order to acquire the most prestige points. If you're wealthy enough, you might even receive a visit from a noble at some point, which of course will further increase your prestige.",
+    "imageUrl": "images/splendor.jpg",
+    "manualUrl": null
+  },
+  "Splendor Kids": {
+    "name": "Splendor Kids",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "6+",
+    "playtime": "30 minutes",
+    "description": "Play as travelers who deliver food across the kingdom. Splendor is a game of chip-collecting.",
+    "imageUrl": "images/splendor-kids.jpg",
+    "manualUrl": null
+  },
   "Star Wars The Deckbuilding Game": {
     "name": "Star Wars: The Deckbuilding Game",
     "category": "BOARD GAME",
@@ -1655,6 +1675,16 @@
     "playtime": "10 minutes",
     "description": "The classic children's game now with Super Mario! Alternately insert the swords into the tube. Be careful, as one wrong move and Mario will fly out of the tube. Which sword is the first to catapult Mario out of the tube?",
     "imageUrl": "images/supermariopopup.jpg"
+  },
+  "Sushi Go!": {
+    "name": "Sushi Go!",
+    "category": "BOARD GAME",
+    "players": "2-5",
+    "age": "8+",
+    "playtime": "15 minutes",
+    "description": "In the super-fast sushi card game Sushi Go!, you are eating at a sushi restaurant and trying to grab the best combination of sushi dishes as they whiz by. Score points for collecting the most sushi rolls or making a full set of sashimi. Dip your favorite nigiri in wasabi to triple its value! And once you've eaten it all, finish your meal with all the pudding you've got! But be careful which sushi you allow your friends to take; it might be just what they need to beat you!",
+    "imageUrl": "images/sushi-go.jpeg",
+    "manualUrl": null
   },
   "Sweet Existence Strange Planet ": {
     "name": "Sweet Existence Strange Planet Card Game",
@@ -1773,6 +1803,16 @@
     "description": "Whether you're travelling by day or night, feasting at the local tavern, or, in fact, saving the world, your adventuring party does a lot together. But how well do you know your allies? Enter The Ultimate RPG Campfire Card Deck, featuring 150 introspective question cards designed to spark discussion, inspire discovery, and create connections between your characters and their world.",
     "imageUrl": "images/the-ultimate-rpg-campfire-deck-150-cards-for-sparking-in-game-conversation.jpg"
   },
+  "The Voynich Puzzle": {
+    "name": "The Voynich Puzzle",
+    "category": "BOARD GAME",
+    "players": "1-4",
+    "age": "14+",
+    "playtime": "90-120 minutes",
+    "description": "The Voynich manuscript, named after the bookseller who discovered it in 1912, is an enigma that has resisted human curiosity for over 600 years. Is it an otherworldly botanical treatise? A secret code of alchemists? Or perhaps an elaborate hoax by some medieval genius Every theory falters before the abyss of its unknown author, its incomprehensible purpose, and its unreadable language. But one thing is certain: whoever delves into its pages will never see the world the same way again. Now, the manuscript has fallen into your hands. Will you be able to decipher its secrets and piece together this mysterious puzzle? The ink is dry, but the story lives on... and you are about to write its next chapter.",
+    "imageUrl": "images/the-voynich-puzzle.jpg",
+    "manualUrl": null
+  },
   "Throw Throw Burrito": {
     "name": "Throw Throw Burrito",
     "category": "BOARD GAME",
@@ -1845,6 +1885,16 @@
     "description": "Top Trumps Squishmallows is a fun and exciting card game that features adorable Squishmallows characters. Each card showcases a different Squishmallow with unique traits and abilities. Players compete by comparing their Squishmallows' stats to see who wins the round. With colorful designs and engaging gameplay, Top Trumps Squishmallows is perfect for kids and adults alike.",
     "imageUrl": "images/toptrumps.jpg"
   },
+  "Tranquility": {
+    "name": "Tranquility",
+    "category": "BOARD GAME",
+    "players": "1-5",
+    "age": "8+",
+    "playtime": "15-20 minutes",
+    "description": "Tranquility is a co-operative card game in which players must fill the sea with islands — specifically island cards with numbers on them — and guide the ship home before any player runs out of cards. Note that in the world of Tranquility, the only way to play is in silence.",
+    "imageUrl": "images/tranquility.jpg",
+    "manualUrl": null
+  },
   "Trial by Trolley": {
     "name": "Trial by Trolley",
     "category": "BOARD GAME",
@@ -1889,6 +1939,26 @@
     "playtime": "30-45 minutes",
     "description": "Guide missing pieces of your soul out of the shadows by bidding on and building paths.",
     "imageUrl": "images/umbravia.jpg"
+  },
+  "Uno": {
+    "name": "Uno",
+    "category": "FOR THE YOUNGEST",
+    "players": "2-10",
+    "age": "6+",
+    "playtime": "30-45",
+    "description": "Players race to empty their hands and catch opposing players with cards left in theirs, which score points. In turns, players attempt to play a card by matching its color, number, or word to the topmost card on the discard pile. If unable to play, players draw a card from the draw pile, and if still unable to play, they pass their turn. Wild and special cards spice things up a bit.",
+    "imageUrl": "images/uno.jpg",
+    "manualUrl": null
+  },
+  "Uno Liar's": {
+    "name": "Uno Liar's",
+    "category": "FOR THE YOUNGEST",
+    "players": "2-6",
+    "age": "7+",
+    "playtime": "30 minutes",
+    "description": "Fans of UNO will love this twist on the classic card game, where fibs fly and liars win! A 'Liar's Card' is played FACE DOWN, and then the player announces what it is. Are they telling the truth or bluffing? If they are challenged and get caught lying, they must draw a card. But if they are telling the truth, the accuser has to draw a card. So keep a straight face, hide any tells, and, when down to one card, don't forget to shout 'UNO'!",
+    "imageUrl": "images/uno-liars.jpg",
+    "manualUrl": null
   },
   "Via Romana": {
     "name": "Via Romana",
