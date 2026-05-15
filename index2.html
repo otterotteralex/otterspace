@@ -38,10 +38,19 @@
     overflow: hidden;
   }
   .sidebar-header {
-    padding: 22px 20px 14px;
+    padding: 16px 20px 14px;
     border-bottom: 1px solid var(--border);
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
+  .sidebar-header img {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+  }
+  .sidebar-header-text { display: flex; flex-direction: column; gap: 1px; }
   .sidebar-logo {
     font-family: 'Playfair Display', serif;
     font-size: 17px;
@@ -366,12 +375,274 @@
   }
   .pdot.on { background: var(--accent); width: 16px; border-radius: 3px; }
 
+  /* Mobile-only "List" toggle button */
+  .list-toggle-btn {
+    display: none;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    padding: 7px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    align-items: center;
+    gap: 6px;
+  }
+  .list-toggle-btn:active { background: var(--bg); }
+
   @media (max-width: 700px) {
-    .sidebar { display: none; }
-    .card { grid-template-columns: 1fr; }
-    .card-img-col { border-right: none; border-bottom: 1px solid var(--border); }
-    .game-img, .img-placeholder { aspect-ratio: 16/7; }
+    /* Sidebar becomes a full-screen overlay, hidden by default (slides in from left) */
+    .sidebar {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      max-width: 100%;
+      z-index: 100;
+      transform: translateX(-100%);
+      transition: transform .28s cubic-bezier(.25,.46,.45,.94);
+      display: flex;
+    }
+    body.sidebar-open .sidebar { transform: translateX(0); }
+    body.sidebar-open .main { visibility: hidden; }
+
+    /* List toggle button visible only on mobile */
+    .list-toggle-btn { display: inline-flex; }
+
+    /* Topbar adjustments */
+    .topbar { gap: 8px; }
+    .gcounter { font-size: 11px; }
+
+    /* Card layout: stack vertically; photo + header auto, description fills the rest */
+    .card {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr;
+    }
+    .card-img-col {
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+      flex-direction: column;
+      flex: 0 0 auto;
+    }
+    /* Hide the desktop stats column on mobile (it's the side stats list) */
+    .card-img-meta { display: none; }
+    /* Mobile image: full image visible, no cropping */
+    .game-img, .img-placeholder {
+      aspect-ratio: 16/9;
+      padding: 12px;
+      object-fit: contain;
+    }
+    .img-placeholder { font-size: 44px; }
+
+    /* Title block tighter on mobile */
+    .card-head { padding: 14px 18px 10px; }
+    .card-cat { font-size: 8.5px; margin-bottom: 6px; }
     .card-title { font-size: 22px; }
+
+    /* Mobile-only inline stats row (Players | Age | Time) */
+    .mobile-stats {
+      display: flex;
+      padding: 12px 18px;
+      border-bottom: 1px solid var(--border);
+      gap: 8px;
+    }
+    .mobile-stats .stat-row {
+      flex: 1;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      padding: 0;
+      border-bottom: none;
+      min-width: 0;
+    }
+    .mobile-stats .stat-icon {
+      font-size: 14px;
+      width: auto;
+      text-align: left;
+      margin-bottom: 2px;
+    }
+    .mobile-stats .stat-val {
+      font-size: 13px;
+      line-height: 1.2;
+      word-break: break-word;
+    }
+    .mobile-stats .stat-lbl {
+      font-size: 9px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .card-desc-wrap { padding: 16px 18px 18px; }
+    .card-desc { font-size: 13px; }
+  }
+  /* Desktop hides the mobile-stats row */
+  @media (min-width: 701px) {
+    .mobile-stats { display: none; }
+  }
+
+  /* ── SPECIAL SECTIONS ── */
+  .special-btn {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    width: calc(100% - 8px);
+    margin: 1px 4px;
+    padding: 7px 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    border-radius: 5px;
+    transition: background .15s, color .15s;
+  }
+  .special-btn:hover { background: var(--card); }
+  .special-btn.active { background: rgba(212,168,83,.13); color: var(--accent); }
+  .special-icon { font-size: 14px; flex-shrink: 0; }
+
+  /* Recommend panel */
+  .recommend-panel {
+    display: none;
+    padding: 10px 12px 14px;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin: 0 0 4px;
+  }
+  .recommend-panel.open { display: block; }
+  .rp-row { margin-bottom: 8px; }
+  .rp-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .rp-select {
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 5px 8px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11.5px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color .2s;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238a8070'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    padding-right: 24px;
+  }
+  .rp-select:focus { border-color: var(--accent); }
+  .rp-results {
+    margin-top: 10px;
+    border-top: 1px solid var(--border);
+    padding-top: 8px;
+  }
+  .rp-result-item {
+    display: block;
+    width: 100%;
+    padding: 4px 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11.5px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 4px;
+    transition: color .15s, background .15s;
+  }
+  .rp-result-item:hover { color: var(--text); background: var(--card); }
+  .rp-result-item.cur { color: var(--accent); font-weight: 500; }
+  .rp-empty {
+    font-size: 11px;
+    color: var(--muted);
+    padding: 6px 4px;
+    font-style: italic;
+  }
+  .rp-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+    padding-top: 6px;
+    border-top: 1px solid var(--border);
+  }
+  .rp-page-btn {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: all .15s;
+  }
+  .rp-page-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+  .rp-page-btn:disabled { opacity: .3; cursor: default; }
+  .rp-page-label { font-size: 10px; color: var(--muted); }
+
+  /* New games panel */
+  .new-panel {
+    display: none;
+    padding: 6px 4px 10px;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin: 0 0 4px;
+  }
+  .new-panel.open { display: block; }
+  .new-game-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    width: 100%;
+    padding: 5px 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11.5px;
+    text-align: left;
+    border-radius: 4px;
+    transition: color .15s, background .15s;
+  }
+  .new-game-item:hover { color: var(--text); background: var(--card); }
+  .new-badge {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--bg);
+    background: var(--accent);
+    border-radius: 3px;
+    padding: 1px 4px;
+    flex-shrink: 0;
+  }
+  .new-game-name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 </style>
 </head>
@@ -379,8 +650,10 @@
 
 <aside class="sidebar">
   <div class="sidebar-header">
-    <div class="sidebar-logo">🎲 Game Library</div>
-    <div class="sidebar-sub">Browse the collection</div>
+    <img src="./otterspace.png" alt="Otter Space">
+    <div class="sidebar-header-text">
+      <div class="sidebar-logo">Game Library</div>
+    </div>
   </div>
   <div class="search-wrap">
     <input class="search-input" type="text" placeholder="Search games…" id="searchInput">
@@ -390,6 +663,7 @@
 
 <main class="main">
   <div class="topbar">
+    <button class="list-toggle-btn" id="listToggleBtn" onclick="toggleSidebar()" aria-label="Show list">☰ List</button>
     <div class="gcounter">Showing <b id="gcount">0</b> games</div>
     <div class="nav-row">
       <button class="nav-btn" id="prevBtn" onclick="go(-1)">&#8592;</button>
@@ -407,6 +681,7 @@
 
 <script>
 let GAMES = []; // populated from menu_export.json on init
+let GAMES_RAW = []; // preserves original JSON insertion order (for "New in Library")
 // Map category → CSS class suffix
 // Category lookup uses normalized (Title Case) keys
 const CAT_CLS = {
@@ -426,6 +701,14 @@ function normalizeCategory(s) {
   if (!s) return "Board Game";
   return String(s).toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
 }
+// Image-load fallback when a remote image fails (Drive throttle, network, CORS, etc.)
+// Replaces the broken <img> with a centered 🎲 placeholder.
+function imgFallback(imgEl) {
+  const wrap = imgEl.parentElement;
+  if (!wrap) return;
+  wrap.innerHTML = '<div class="img-placeholder"><span>🎲</span></div>';
+}
+
 // Convert Google Drive "view" URL to a directly embeddable image URL
 function driveUrlToImg(url) {
   if (!url) return null;
@@ -479,6 +762,29 @@ function buildSlideHTML(g, i) {
         <div class="card-cat cc-${cc}">${em} ${escHtml(g.category)}</div>
         <div class="card-title">${escHtml(g.name)}</div>
       </div>
+      <div class="mobile-stats">
+        <div class="stat-row">
+          <div class="stat-icon">👥</div>
+          <div class="stat-info">
+            <div class="stat-val">${escHtml(g.players || "—")}</div>
+            <div class="stat-lbl">Players</div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-icon">🎂</div>
+          <div class="stat-info">
+            <div class="stat-val">${escHtml(g.age || "—")}</div>
+            <div class="stat-lbl">Age</div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-icon">⏱</div>
+          <div class="stat-info">
+            <div class="stat-val">${escHtml(g.playtime || "—")}</div>
+            <div class="stat-lbl">Time</div>
+          </div>
+        </div>
+      </div>
       <div class="card-desc-wrap">
         <div class="card-desc">${escHtml(g.description || "No description available.")}</div>
       </div>
@@ -497,7 +803,7 @@ function makeSlide(idx, posClass) {
   const wrap = slide.querySelector("[data-img-wrap]");
   const imgSrc = driveUrlToImg(g.imageUrl);
   if (wrap && imgSrc) {
-    wrap.innerHTML = `<img class="game-img" src="${imgSrc}" alt="${escHtml(g.name)}" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:1/1;background:#161410;font-size:56px\'>🎲</div>'">`;
+    wrap.innerHTML = `<img class="game-img" src="${imgSrc}" alt="${escHtml(g.name)}" referrerpolicy="no-referrer" onerror="imgFallback(this)">`;
   }
   return slide;
 }
@@ -588,6 +894,11 @@ function go(dir) {
   updateSidebar();
 }
 
+function sidebarPick(idx) {
+  jumpTo(idx);
+  if (isMobileViewport()) closeSidebar();
+}
+
 function jumpTo(idx) {
   if (!filtered.length) return;
   idx = Math.max(0, Math.min(filtered.length - 1, idx));
@@ -617,6 +928,17 @@ function buildDots() {
   ).join("");
 }
 
+// ── RECOMMEND STATE ──
+let recommendOpen = false;
+let rpPlayers = "";
+let rpDuration = "";
+let rpAge = "";
+let rpPage = 0;
+const RP_PER_PAGE = 5;
+
+// ── NEW GAMES STATE ──
+let newGamesOpen = false;
+
 // ── SIDEBAR ──
 function buildSidebar() {
   const cats = ["All", ...new Set(GAMES.map(g => g.category))];
@@ -624,8 +946,109 @@ function buildSidebar() {
   GAMES.forEach(g => counts[g.category] = (counts[g.category]||0)+1);
   
   const dotMap = { All:"d-all", "Board Game":"d-board", "For The Youngest":"d-kids", "Puzzle":"d-puzzle", "Roleplaying Game":"d-rpg" };
-  
-  let html = '<div class="sec-label">Categories</div>';
+
+  // ── Collect unique dropdown values from actual data ──
+  const playersSet = new Set(), durationSet = new Set(), ageSet = new Set();
+  GAMES.forEach(g => {
+    if (g.players)  playersSet.add(g.players.trim());
+    if (g.playtime) durationSet.add(g.playtime.trim());
+    if (g.age)      ageSet.add(g.age.trim());
+  });
+  const sortPlayerOpt = arr => arr.sort((a,b) => {
+    const n = s => parseInt(s)||0;
+    return n(a) - n(b);
+  });
+  const sortDurOpt = arr => arr.sort((a,b) => {
+    const n = s => parseInt(s)||0;
+    return n(a) - n(b);
+  });
+  const sortAgeOpt = arr => arr.sort((a,b) => {
+    const n = s => parseInt(s)||0;
+    return n(a) - n(b);
+  });
+
+  const playerOpts = sortPlayerOpt([...playersSet]);
+  const durOpts    = sortDurOpt([...durationSet]);
+  const ageOpts    = sortAgeOpt([...ageSet]);
+
+  function selOpts(opts, val) {
+    return `<option value="">Any</option>` +
+      opts.map(o => `<option value="${escHtml(o)}"${val===o?" selected":""}>${escHtml(o)}</option>`).join("");
+  }
+
+  // ── Recommend panel ──
+  const rpMatches = rpGetMatches();
+  const rpPageCount = Math.max(1, Math.ceil(rpMatches.length / RP_PER_PAGE));
+  const rpSlice = rpMatches.slice(rpPage * RP_PER_PAGE, (rpPage + 1) * RP_PER_PAGE);
+
+  let rpResultsHtml = "";
+  if (!rpPlayers && !rpDuration && !rpAge) {
+    rpResultsHtml = `<div class="rp-empty">Select at least one filter above.</div>`;
+  } else if (!rpMatches.length) {
+    rpResultsHtml = `<div class="rp-empty">No games match these criteria.</div>`;
+  } else {
+    rpResultsHtml = rpSlice.map(g => {
+      const gi = filtered.indexOf(g);
+      const isCur = gi !== -1 && gi === cur;
+      return `<button class="rp-result-item${isCur?" cur":""}" onclick="rpPick('${escAttr(g.name)}')">${escHtml(g.name)}</button>`;
+    }).join("");
+    if (rpPageCount > 1) {
+      rpResultsHtml += `<div class="rp-pagination">
+        <button class="rp-page-btn" onclick="rpChangePage(-1)" ${rpPage===0?"disabled":""}>‹ Prev</button>
+        <span class="rp-page-label">${rpPage+1} / ${rpPageCount}</span>
+        <button class="rp-page-btn" onclick="rpChangePage(1)" ${rpPage>=rpPageCount-1?"disabled":""}>Next ›</button>
+      </div>`;
+    }
+  }
+
+  // ── New games panel (10 most recently added = last 10 in raw order before sort) ──
+  const newGames = getNewGames();
+
+  let html = '';
+
+  // Special sections
+  html += `<div class="sec-label">Discover</div>`;
+
+  // "Something I May Like" button + panel
+  html += `<button class="special-btn${recommendOpen?" active":""}" onclick="toggleRecommend()">
+    <span class="special-icon">✨</span>Something I May Like
+  </button>`;
+  html += `<div class="recommend-panel${recommendOpen?" open":""}">
+    <div class="rp-row">
+      <div class="rp-label">👥 Players</div>
+      <select class="rp-select" id="rpPlayers" onchange="rpFilter()">
+        ${selOpts(playerOpts, rpPlayers)}
+      </select>
+    </div>
+    <div class="rp-row">
+      <div class="rp-label">⏱ Duration</div>
+      <select class="rp-select" id="rpDuration" onchange="rpFilter()">
+        ${selOpts(durOpts, rpDuration)}
+      </select>
+    </div>
+    <div class="rp-row" style="margin-bottom:0">
+      <div class="rp-label">🎂 Min. Age</div>
+      <select class="rp-select" id="rpAge" onchange="rpFilter()">
+        ${selOpts(ageOpts, rpAge)}
+      </select>
+    </div>
+    <div class="rp-results">${rpResultsHtml}</div>
+  </div>`;
+
+  // "New in the Library" button + panel
+  html += `<button class="special-btn${newGamesOpen?" active":""}" onclick="toggleNewGames()">
+    <span class="special-icon">🆕</span>New in the Library
+  </button>`;
+  html += `<div class="new-panel${newGamesOpen?" open":""}">
+    ${newGames.map(g => `
+      <button class="new-game-item" onclick="newGamePick('${escAttr(g.name)}')">
+        <span class="new-badge">New</span>
+        <span class="new-game-name">${escHtml(g.name)}</span>
+      </button>`).join("")}
+  </div>`;
+
+  // Categories
+  html += '<div class="sec-label" style="margin-top:10px">Categories</div>';
   cats.forEach(cat => {
     const n = cat === "All" ? GAMES.length : (counts[cat]||0);
     const active = activeCategory === cat ? " active" : "";
@@ -636,11 +1059,78 @@ function buildSidebar() {
   
   html += '<div class="sec-label" style="margin-top:14px">Games</div>';
   filtered.forEach((g, i) => {
-    html += `<button class="game-link${i === cur ? " cur" : ""}" onclick="jumpTo(${i})">${escHtml(g.name)}</button>`;
+    html += `<button class="game-link${i === cur ? " cur" : ""}" onclick="sidebarPick(${i})">${escHtml(g.name)}</button>`;
   });
   
   document.getElementById("sidebarScroll").innerHTML = html;
 }
+
+// ── RECOMMEND HELPERS ──
+function rpGetMatches() {
+  if (!rpPlayers && !rpDuration && !rpAge) return [];
+  return GAMES.filter(g => {
+    const mp = !rpPlayers  || (g.players  && g.players.trim()  === rpPlayers);
+    const md = !rpDuration || (g.playtime && g.playtime.trim() === rpDuration);
+    const ma = !rpAge      || (g.age      && g.age.trim()      === rpAge);
+    return mp && md && ma;
+  });
+}
+
+function toggleRecommend() {
+  recommendOpen = !recommendOpen;
+  if (recommendOpen) newGamesOpen = false;
+  buildSidebar();
+}
+
+function toggleNewGames() {
+  newGamesOpen = !newGamesOpen;
+  if (newGamesOpen) recommendOpen = false;
+  buildSidebar();
+}
+
+function rpFilter() {
+  rpPlayers  = document.getElementById("rpPlayers")?.value  || "";
+  rpDuration = document.getElementById("rpDuration")?.value || "";
+  rpAge      = document.getElementById("rpAge")?.value      || "";
+  rpPage = 0;
+  buildSidebar();
+}
+
+function rpChangePage(dir) {
+  const matches = rpGetMatches();
+  const maxPage = Math.max(0, Math.ceil(matches.length / RP_PER_PAGE) - 1);
+  rpPage = Math.max(0, Math.min(maxPage, rpPage + dir));
+  buildSidebar();
+}
+
+function rpPick(name) {
+  // Find the game in ALL games and jump to it regardless of current category filter
+  const gIdx = GAMES.findIndex(g => g.name === name);
+  if (gIdx === -1) return;
+  // Show the game: reset category filter so it's visible
+  activeCategory = "All";
+  searchTerm = "";
+  document.getElementById("searchInput").value = "";
+  filtered = [...GAMES];
+  const fi = filtered.findIndex(g => g.name === name);
+  if (fi === -1) return;
+  cur = fi;
+  buildCards();
+  buildSidebar();
+  if (isMobileViewport()) closeSidebar();
+}
+
+// ── NEW GAMES HELPERS ──
+function getNewGames() {
+  // "Most recently added" = last 10 entries in the original JSON order
+  // GAMES_RAW preserves insertion order before alphabetical sort
+  return GAMES_RAW.slice(-10).reverse();
+}
+
+function newGamePick(name) {
+  rpPick(name); // reuse same logic: reset filter, jump to game
+}
+
 
 function updateSidebar() {
   document.querySelectorAll(".game-link").forEach((el, i) => el.classList.toggle("cur", i === cur));
@@ -662,6 +1152,30 @@ function applyFilters() {
   buildCards();
   buildSidebar();
 }
+
+// ── MOBILE LIST OVERLAY ──
+function isMobileViewport() { return window.matchMedia("(max-width: 700px)").matches; }
+
+function openSidebar() {
+  document.body.classList.add("sidebar-open");
+  const btn = document.getElementById("listToggleBtn");
+  if (btn) { btn.textContent = "✕ Close"; btn.setAttribute("aria-label", "Close list"); }
+}
+function closeSidebar() {
+  document.body.classList.remove("sidebar-open");
+  const btn = document.getElementById("listToggleBtn");
+  if (btn) { btn.textContent = "☰ List"; btn.setAttribute("aria-label", "Show list"); }
+}
+function toggleSidebar() {
+  if (document.body.classList.contains("sidebar-open")) closeSidebar();
+  else openSidebar();
+}
+
+// If the user resizes from mobile to desktop, clear the overlay state so it doesn't
+// leave the sidebar in a stuck position
+window.addEventListener("resize", () => {
+  if (!isMobileViewport()) document.body.classList.remove("sidebar-open");
+});
 
 // ── UTILS ──
 function escHtml(s) { return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
@@ -696,18 +1210,23 @@ async function init() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const raw = await res.json();
     // raw is { "Game Name": { name, category, players, age, playtime, description, imageUrl }, ... }
-    GAMES = Object.values(raw).map(g => ({
+    const mapped = Object.values(raw).map(g => ({
       name: g.name || "",
       category: normalizeCategory(g.category),
       players: g.players || null,
       age: g.age || null,
       playtime: g.playtime || null,
       description: g.description || "",
-      imageUrl: g.imageUrl || null
-    })).filter(g => g.name).sort((a, b) => a.name.localeCompare(b.name));
+      imageUrl: g.imageUrl || null,
+      hidden: !!g.hidden
+    })).filter(g => g.name && !g.hidden);
+    GAMES_RAW = [...mapped]; // preserve insertion order for "New in Library"
+    GAMES = mapped.sort((a, b) => a.name.localeCompare(b.name));
     filtered = [...GAMES];
     buildSidebar();
     buildCards();
+    // On mobile, open the list overlay first so users can browse before picking
+    if (isMobileViewport()) openSidebar();
   } catch (e) {
     console.error("Failed to load menu_export.json", e);
     track.innerHTML = `<div class="slide"><div style="color:var(--muted);text-align:center;max-width:480px">
