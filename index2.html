@@ -505,37 +505,54 @@
   .special-btn.active { background: rgba(212,168,83,.13); color: var(--accent); }
   .special-icon { font-size: 14px; flex-shrink: 0; }
 
-  /* Recommend panel */
-  .recommend-panel {
-    display: none;
-    padding: 10px 12px 14px;
-    background: var(--bg);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    margin: 0 0 4px;
+  /* ── MAIN PANEL VIEWS (recommend / new games) ── */
+  .main-panel {
+    flex: 1;
+    overflow-y: auto;
+    padding: 36px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
-  .recommend-panel.open { display: block; }
-  .rp-row { margin-bottom: 8px; }
+  .main-panel::-webkit-scrollbar { width: 4px; }
+  .main-panel::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+  .panel-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .panel-subtitle {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 28px;
+  }
+
+  /* Recommend filters row */
+  .rp-filters {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+  .rp-filter-group { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 120px; }
   .rp-label {
     font-size: 10px;
     font-weight: 600;
-    letter-spacing: .1em;
+    letter-spacing: .12em;
     text-transform: uppercase;
     color: var(--muted);
-    margin-bottom: 4px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
   }
   .rp-select {
-    width: 100%;
     background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 5px;
-    padding: 5px 8px;
+    border-radius: 7px;
+    padding: 8px 32px 8px 12px;
     color: var(--text);
     font-family: 'DM Sans', sans-serif;
-    font-size: 11.5px;
+    font-size: 13px;
     outline: none;
     cursor: pointer;
     transition: border-color .2s;
@@ -543,90 +560,102 @@
     -webkit-appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238a8070'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: right 8px center;
-    padding-right: 24px;
+    background-position: right 10px center;
+    width: 100%;
   }
   .rp-select:focus { border-color: var(--accent); }
-  .rp-results {
-    margin-top: 10px;
-    border-top: 1px solid var(--border);
-    padding-top: 8px;
-  }
-  .rp-result-item {
-    display: block;
-    width: 100%;
-    padding: 4px 4px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--muted);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11.5px;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border-radius: 4px;
-    transition: color .15s, background .15s;
-  }
-  .rp-result-item:hover { color: var(--text); background: var(--card); }
-  .rp-result-item.cur { color: var(--accent); font-weight: 500; }
-  .rp-empty {
+
+  /* Results grid */
+  .panel-results-header {
     font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
     color: var(--muted);
-    padding: 6px 4px;
-    font-style: italic;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
   }
-  .rp-pagination {
+  .panel-game-list { display: flex; flex-direction: column; gap: 4px; }
+  .panel-game-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 8px;
-    padding-top: 6px;
+    gap: 14px;
+    padding: 11px 16px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color .15s, background .15s;
+    text-align: left;
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .panel-game-row:hover { border-color: var(--accent); background: rgba(212,168,83,.05); }
+  .pgr-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    flex: 1;
+  }
+  .pgr-meta {
+    display: flex;
+    gap: 14px;
+    flex-shrink: 0;
+  }
+  .pgr-chip {
+    font-size: 11px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .pgr-cat {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: rgba(212,168,83,.12);
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .panel-empty {
+    text-align: center;
+    padding: 48px 0;
+    color: var(--muted);
+  }
+  .panel-empty-icon { font-size: 40px; margin-bottom: 12px; }
+  .panel-empty-msg { font-size: 15px; color: var(--text); font-family: 'Playfair Display', serif; margin-bottom: 6px; }
+  .panel-empty-sub { font-size: 13px; }
+
+  /* Pagination */
+  .panel-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 16px;
     border-top: 1px solid var(--border);
   }
-  .rp-page-btn {
+  .pp-btn {
     background: var(--card);
     border: 1px solid var(--border);
     color: var(--text);
-    font-size: 11px;
-    padding: 3px 8px;
-    border-radius: 4px;
+    font-size: 13px;
+    padding: 6px 16px;
+    border-radius: 6px;
     cursor: pointer;
     font-family: 'DM Sans', sans-serif;
     transition: all .15s;
   }
-  .rp-page-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
-  .rp-page-btn:disabled { opacity: .3; cursor: default; }
-  .rp-page-label { font-size: 10px; color: var(--muted); }
+  .pp-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+  .pp-btn:disabled { opacity: .3; cursor: default; }
+  .pp-label { font-size: 12px; color: var(--muted); min-width: 60px; text-align: center; }
 
-  /* New games panel */
-  .new-panel {
-    display: none;
-    padding: 6px 4px 10px;
-    background: var(--bg);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    margin: 0 0 4px;
-  }
-  .new-panel.open { display: block; }
-  .new-game-item {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    width: 100%;
-    padding: 5px 8px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--muted);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11.5px;
-    text-align: left;
-    border-radius: 4px;
-    transition: color .15s, background .15s;
-  }
-  .new-game-item:hover { color: var(--text); background: var(--card); }
+  /* New badge */
   .new-badge {
     font-size: 8px;
     font-weight: 700;
@@ -635,14 +664,8 @@
     color: var(--bg);
     background: var(--accent);
     border-radius: 3px;
-    padding: 1px 4px;
+    padding: 2px 5px;
     flex-shrink: 0;
-  }
-  .new-game-name {
-    flex: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 </style>
 </head>
@@ -672,8 +695,37 @@
     </div>
   </div>
 
+  <!-- Normal game card view -->
   <div class="viewport" id="viewport">
     <div class="track" id="track"></div>
+  </div>
+
+  <!-- Something I May Like panel -->
+  <div class="main-panel" id="recommendPanel" style="display:none">
+    <div class="panel-title">✨ Something I May Like</div>
+    <div class="panel-subtitle">Filter by what works for you and we'll find the right game.</div>
+    <div class="rp-filters">
+      <div class="rp-filter-group">
+        <div class="rp-label">👥 Players</div>
+        <select class="rp-select" id="rpPlayers" onchange="rpFilter()"><option value="">Any</option></select>
+      </div>
+      <div class="rp-filter-group">
+        <div class="rp-label">⏱ Duration</div>
+        <select class="rp-select" id="rpDuration" onchange="rpFilter()"><option value="">Any</option></select>
+      </div>
+      <div class="rp-filter-group">
+        <div class="rp-label">🎂 Min. Age</div>
+        <select class="rp-select" id="rpAge" onchange="rpFilter()"><option value="">Any</option></select>
+      </div>
+    </div>
+    <div id="rpResultsArea"></div>
+  </div>
+
+  <!-- New in the Library panel -->
+  <div class="main-panel" id="newGamesPanel" style="display:none">
+    <div class="panel-title">🆕 New in the Library</div>
+    <div class="panel-subtitle">The 10 most recently added games to our collection.</div>
+    <div id="newGamesArea"></div>
   </div>
 
   <div class="bottom-bar" id="bottomBar"></div>
@@ -895,6 +947,7 @@ function go(dir) {
 }
 
 function sidebarPick(idx) {
+  setMainMode("games");
   jumpTo(idx);
   if (isMobileViewport()) closeSidebar();
 }
@@ -939,133 +992,69 @@ const RP_PER_PAGE = 5;
 // ── NEW GAMES STATE ──
 let newGamesOpen = false;
 
+// ── VIEW SWITCHER ──
+// mode: "games" | "recommend" | "new"
+let mainMode = "games";
+
+function setMainMode(mode) {
+  mainMode = mode;
+  const viewport     = document.getElementById("viewport");
+  const recommendPanel = document.getElementById("recommendPanel");
+  const newGamesPanel  = document.getElementById("newGamesPanel");
+  const bottomBar    = document.getElementById("bottomBar");
+  const prevBtn      = document.getElementById("prevBtn");
+  const nextBtn      = document.getElementById("nextBtn");
+  const posLabel     = document.getElementById("posLabel");
+
+  // Hide/show based on mode
+  viewport.style.display       = mode === "games"     ? "" : "none";
+  recommendPanel.style.display = mode === "recommend" ? "" : "none";
+  newGamesPanel.style.display  = mode === "new"       ? "" : "none";
+  bottomBar.style.display      = mode === "games"     ? "" : "none";
+
+  // Disable nav arrows when not in game mode
+  prevBtn.disabled = mode !== "games" || cur === 0;
+  nextBtn.disabled = mode !== "games" || cur >= filtered.length - 1;
+  if (mode !== "games") posLabel.textContent = "";
+
+  if (mode === "recommend") renderRecommendPanel();
+  if (mode === "new")       renderNewGamesPanel();
+}
+
 // ── SIDEBAR ──
 function buildSidebar() {
   const cats = ["All", ...new Set(GAMES.map(g => g.category))];
   const counts = {};
   GAMES.forEach(g => counts[g.category] = (counts[g.category]||0)+1);
-  
   const dotMap = { All:"d-all", "Board Game":"d-board", "For The Youngest":"d-kids", "Puzzle":"d-puzzle", "Roleplaying Game":"d-rpg" };
 
-  // ── Collect unique dropdown values from actual data ──
-  const playersSet = new Set(), durationSet = new Set(), ageSet = new Set();
-  GAMES.forEach(g => {
-    if (g.players)  playersSet.add(g.players.trim());
-    if (g.playtime) durationSet.add(g.playtime.trim());
-    if (g.age)      ageSet.add(g.age.trim());
-  });
-  const sortPlayerOpt = arr => arr.sort((a,b) => {
-    const n = s => parseInt(s)||0;
-    return n(a) - n(b);
-  });
-  const sortDurOpt = arr => arr.sort((a,b) => {
-    const n = s => parseInt(s)||0;
-    return n(a) - n(b);
-  });
-  const sortAgeOpt = arr => arr.sort((a,b) => {
-    const n = s => parseInt(s)||0;
-    return n(a) - n(b);
-  });
-
-  const playerOpts = sortPlayerOpt([...playersSet]);
-  const durOpts    = sortDurOpt([...durationSet]);
-  const ageOpts    = sortAgeOpt([...ageSet]);
-
-  function selOpts(opts, val) {
-    return `<option value="">Any</option>` +
-      opts.map(o => `<option value="${escHtml(o)}"${val===o?" selected":""}>${escHtml(o)}</option>`).join("");
-  }
-
-  // ── Recommend panel ──
-  const rpMatches = rpGetMatches();
-  const rpPageCount = Math.max(1, Math.ceil(rpMatches.length / RP_PER_PAGE));
-  const rpSlice = rpMatches.slice(rpPage * RP_PER_PAGE, (rpPage + 1) * RP_PER_PAGE);
-
-  let rpResultsHtml = "";
-  if (!rpPlayers && !rpDuration && !rpAge) {
-    rpResultsHtml = `<div class="rp-empty">Select at least one filter above.</div>`;
-  } else if (!rpMatches.length) {
-    rpResultsHtml = `<div class="rp-empty">No games match these criteria.</div>`;
-  } else {
-    rpResultsHtml = rpSlice.map(g => {
-      const gi = filtered.indexOf(g);
-      const isCur = gi !== -1 && gi === cur;
-      return `<button class="rp-result-item${isCur?" cur":""}" onclick="rpPick('${escAttr(g.name)}')">${escHtml(g.name)}</button>`;
-    }).join("");
-    if (rpPageCount > 1) {
-      rpResultsHtml += `<div class="rp-pagination">
-        <button class="rp-page-btn" onclick="rpChangePage(-1)" ${rpPage===0?"disabled":""}>‹ Prev</button>
-        <span class="rp-page-label">${rpPage+1} / ${rpPageCount}</span>
-        <button class="rp-page-btn" onclick="rpChangePage(1)" ${rpPage>=rpPageCount-1?"disabled":""}>Next ›</button>
-      </div>`;
-    }
-  }
-
-  // ── New games panel (10 most recently added = last 10 in raw order before sort) ──
-  const newGames = getNewGames();
-
   let html = '';
-
-  // Special sections
   html += `<div class="sec-label">Discover</div>`;
-
-  // "Something I May Like" button + panel
-  html += `<button class="special-btn${recommendOpen?" active":""}" onclick="toggleRecommend()">
+  html += `<button class="special-btn${mainMode==='recommend'?" active":""}" onclick="toggleRecommend()">
     <span class="special-icon">✨</span>Something I May Like
   </button>`;
-  html += `<div class="recommend-panel${recommendOpen?" open":""}">
-    <div class="rp-row">
-      <div class="rp-label">👥 Players</div>
-      <select class="rp-select" id="rpPlayers" onchange="rpFilter()">
-        ${selOpts(playerOpts, rpPlayers)}
-      </select>
-    </div>
-    <div class="rp-row">
-      <div class="rp-label">⏱ Duration</div>
-      <select class="rp-select" id="rpDuration" onchange="rpFilter()">
-        ${selOpts(durOpts, rpDuration)}
-      </select>
-    </div>
-    <div class="rp-row" style="margin-bottom:0">
-      <div class="rp-label">🎂 Min. Age</div>
-      <select class="rp-select" id="rpAge" onchange="rpFilter()">
-        ${selOpts(ageOpts, rpAge)}
-      </select>
-    </div>
-    <div class="rp-results">${rpResultsHtml}</div>
-  </div>`;
-
-  // "New in the Library" button + panel
-  html += `<button class="special-btn${newGamesOpen?" active":""}" onclick="toggleNewGames()">
+  html += `<button class="special-btn${mainMode==='new'?" active":""}" onclick="toggleNewGames()">
     <span class="special-icon">🆕</span>New in the Library
   </button>`;
-  html += `<div class="new-panel${newGamesOpen?" open":""}">
-    ${newGames.map(g => `
-      <button class="new-game-item" onclick="newGamePick('${escAttr(g.name)}')">
-        <span class="new-badge">New</span>
-        <span class="new-game-name">${escHtml(g.name)}</span>
-      </button>`).join("")}
-  </div>`;
 
-  // Categories
   html += '<div class="sec-label" style="margin-top:10px">Categories</div>';
   cats.forEach(cat => {
     const n = cat === "All" ? GAMES.length : (counts[cat]||0);
-    const active = activeCategory === cat ? " active" : "";
+    const active = activeCategory === cat && mainMode === "games" ? " active" : "";
     html += `<button class="filter-btn${active}" onclick="setCategory('${escAttr(cat)}')">`
           + `<span class="fdot ${dotMap[cat]||"d-all"}"></span>${escHtml(cat)}`
           + `<span class="cbadge">${n}</span></button>`;
   });
-  
+
   html += '<div class="sec-label" style="margin-top:14px">Games</div>';
   filtered.forEach((g, i) => {
-    html += `<button class="game-link${i === cur ? " cur" : ""}" onclick="sidebarPick(${i})">${escHtml(g.name)}</button>`;
+    html += `<button class="game-link${mainMode==='games' && i === cur ? " cur" : ""}" onclick="sidebarPick(${i})">${escHtml(g.name)}</button>`;
   });
-  
+
   document.getElementById("sidebarScroll").innerHTML = html;
 }
 
-// ── RECOMMEND HELPERS ──
+// ── RECOMMEND PANEL ──
 function rpGetMatches() {
   if (!rpPlayers && !rpDuration && !rpAge) return [];
   return GAMES.filter(g => {
@@ -1076,16 +1065,78 @@ function rpGetMatches() {
   });
 }
 
-function toggleRecommend() {
-  recommendOpen = !recommendOpen;
-  if (recommendOpen) newGamesOpen = false;
-  buildSidebar();
+function populateDropdowns() {
+  const playersSet = new Set(), durationSet = new Set(), ageSet = new Set();
+  GAMES.forEach(g => {
+    if (g.players)  playersSet.add(g.players.trim());
+    if (g.playtime) durationSet.add(g.playtime.trim());
+    if (g.age)      ageSet.add(g.age.trim());
+  });
+  const sortNum = arr => arr.sort((a,b) => (parseInt(a)||0) - (parseInt(b)||0));
+  function fillSelect(id, opts, cur) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.innerHTML = `<option value="">Any</option>` +
+      sortNum([...opts]).map(o => `<option value="${escHtml(o)}"${cur===o?" selected":""}>${escHtml(o)}</option>`).join("");
+  }
+  fillSelect("rpPlayers",  playersSet,  rpPlayers);
+  fillSelect("rpDuration", durationSet, rpDuration);
+  fillSelect("rpAge",      ageSet,      rpAge);
 }
 
-function toggleNewGames() {
-  newGamesOpen = !newGamesOpen;
-  if (newGamesOpen) recommendOpen = false;
-  buildSidebar();
+function renderRecommendPanel() {
+  populateDropdowns();
+  const matches = rpGetMatches();
+  const area = document.getElementById("rpResultsArea");
+  if (!area) return;
+
+  if (!rpPlayers && !rpDuration && !rpAge) {
+    area.innerHTML = `<div class="panel-empty">
+      <div class="panel-empty-icon">🎲</div>
+      <div class="panel-empty-msg">Select your preferences above</div>
+      <div class="panel-empty-sub">Choose any combination of players, duration or age to find games that fit.</div>
+    </div>`;
+    return;
+  }
+
+  if (!matches.length) {
+    area.innerHTML = `<div class="panel-empty">
+      <div class="panel-empty-icon">🔍</div>
+      <div class="panel-empty-msg">No matches found</div>
+      <div class="panel-empty-sub">Try adjusting or clearing one of the filters.</div>
+    </div>`;
+    return;
+  }
+
+  const pageCount = Math.max(1, Math.ceil(matches.length / RP_PER_PAGE));
+  rpPage = Math.max(0, Math.min(pageCount - 1, rpPage));
+  const slice = matches.slice(rpPage * RP_PER_PAGE, (rpPage + 1) * RP_PER_PAGE);
+
+  let html = `<div class="panel-results-header">${matches.length} game${matches.length!==1?"s":""} found</div>`;
+  html += `<div class="panel-game-list">`;
+  slice.forEach(g => {
+    const cc = CAT_CLS[g.category] || "board";
+    html += `<button class="panel-game-row" onclick="panelPick('${escAttr(g.name)}')">
+      <span class="pgr-name">${escHtml(g.name)}</span>
+      <span class="pgr-meta">
+        ${g.players  ? `<span class="pgr-chip">👥 ${escHtml(g.players)}</span>`  : ""}
+        ${g.playtime ? `<span class="pgr-chip">⏱ ${escHtml(g.playtime)}</span>` : ""}
+        ${g.age      ? `<span class="pgr-chip">🎂 ${escHtml(g.age)}</span>`      : ""}
+      </span>
+      <span class="pgr-cat">${escHtml(g.category)}</span>
+    </button>`;
+  });
+  html += `</div>`;
+
+  if (pageCount > 1) {
+    html += `<div class="panel-pagination">
+      <button class="pp-btn" onclick="rpChangePage(-1)" ${rpPage===0?"disabled":""}>‹ Prev</button>
+      <span class="pp-label">${rpPage+1} / ${pageCount}</span>
+      <button class="pp-btn" onclick="rpChangePage(1)" ${rpPage>=pageCount-1?"disabled":""}>Next ›</button>
+    </div>`;
+  }
+
+  area.innerHTML = html;
 }
 
 function rpFilter() {
@@ -1093,21 +1144,65 @@ function rpFilter() {
   rpDuration = document.getElementById("rpDuration")?.value || "";
   rpAge      = document.getElementById("rpAge")?.value      || "";
   rpPage = 0;
-  buildSidebar();
+  renderRecommendPanel();
 }
 
 function rpChangePage(dir) {
   const matches = rpGetMatches();
   const maxPage = Math.max(0, Math.ceil(matches.length / RP_PER_PAGE) - 1);
   rpPage = Math.max(0, Math.min(maxPage, rpPage + dir));
+  renderRecommendPanel();
+}
+
+// ── NEW GAMES PANEL ──
+function getNewGames() {
+  return GAMES_RAW.slice(-10).reverse();
+}
+
+function renderNewGamesPanel() {
+  const games = getNewGames();
+  const area = document.getElementById("newGamesArea");
+  if (!area) return;
+
+  let html = `<div class="panel-results-header">${games.length} most recent additions</div>`;
+  html += `<div class="panel-game-list">`;
+  games.forEach(g => {
+    html += `<button class="panel-game-row" onclick="panelPick('${escAttr(g.name)}')">
+      <span class="new-badge">New</span>
+      <span class="pgr-name">${escHtml(g.name)}</span>
+      <span class="pgr-meta">
+        ${g.players  ? `<span class="pgr-chip">👥 ${escHtml(g.players)}</span>`  : ""}
+        ${g.playtime ? `<span class="pgr-chip">⏱ ${escHtml(g.playtime)}</span>` : ""}
+        ${g.age      ? `<span class="pgr-chip">🎂 ${escHtml(g.age)}</span>`      : ""}
+      </span>
+      <span class="pgr-cat">${escHtml(g.category)}</span>
+    </button>`;
+  });
+  html += `</div>`;
+  area.innerHTML = html;
+}
+
+// ── TOGGLE HANDLERS ──
+function toggleRecommend() {
+  if (mainMode === "recommend") {
+    setMainMode("games");
+  } else {
+    setMainMode("recommend");
+  }
   buildSidebar();
 }
 
-function rpPick(name) {
-  // Find the game in ALL games and jump to it regardless of current category filter
-  const gIdx = GAMES.findIndex(g => g.name === name);
-  if (gIdx === -1) return;
-  // Show the game: reset category filter so it's visible
+function toggleNewGames() {
+  if (mainMode === "new") {
+    setMainMode("games");
+  } else {
+    setMainMode("new");
+  }
+  buildSidebar();
+}
+
+// ── PICK FROM PANEL → jump to game card ──
+function panelPick(name) {
   activeCategory = "All";
   searchTerm = "";
   document.getElementById("searchInput").value = "";
@@ -1115,20 +1210,10 @@ function rpPick(name) {
   const fi = filtered.findIndex(g => g.name === name);
   if (fi === -1) return;
   cur = fi;
+  setMainMode("games");
   buildCards();
   buildSidebar();
   if (isMobileViewport()) closeSidebar();
-}
-
-// ── NEW GAMES HELPERS ──
-function getNewGames() {
-  // "Most recently added" = last 10 entries in the original JSON order
-  // GAMES_RAW preserves insertion order before alphabetical sort
-  return GAMES_RAW.slice(-10).reverse();
-}
-
-function newGamePick(name) {
-  rpPick(name); // reuse same logic: reset filter, jump to game
 }
 
 
@@ -1139,6 +1224,7 @@ function updateSidebar() {
 // ── FILTERS ──
 function setCategory(cat) {
   activeCategory = cat;
+  setMainMode("games");
   applyFilters();
 }
 
