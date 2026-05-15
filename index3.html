@@ -785,6 +785,23 @@
     <div id="newGamesArea"></div>
   </div>
 
+  <!-- All Games panel -->
+  <div class="main-panel" id="allGamesPanel" style="display:none">
+    <div class="panel-title">📚 All Games</div>
+    <div class="panel-subtitle">Browse the full library with filters.</div>
+    <div class="rp-filters" id="agFilters">
+      <div class="rp-filter-group">
+        <div class="rp-label">🎯 Category</div>
+        <select class="rp-select" id="agCategory" onchange="agFilter()"><option value="">All</option></select>
+      </div>
+      <div class="rp-filter-group">
+        <div class="rp-label">👥 Players</div>
+        <select class="rp-select" id="agPlayers" onchange="agFilter()"><option value="">Any</option></select>
+      </div>
+    </div>
+    <div id="agResultsArea"></div>
+  </div>
+
   <div class="bottom-bar" id="bottomBar"></div>
 </main>
 
@@ -1049,33 +1066,40 @@ const RP_PER_PAGE = 5;
 // ── NEW GAMES STATE ──
 let newGamesOpen = false;
 
+// ── ALL GAMES STATE ──
+let agCategory = "";
+let agPlayers  = "";
+let agPage     = 0;
+const AG_PER_PAGE = 10;
+
 // ── VIEW SWITCHER ──
-// mode: "games" | "recommend" | "new"
+// mode: "games" | "recommend" | "new" | "all"
 let mainMode = "games";
 
 function setMainMode(mode) {
   mainMode = mode;
-  const viewport     = document.getElementById("viewport");
+  const viewport       = document.getElementById("viewport");
   const recommendPanel = document.getElementById("recommendPanel");
   const newGamesPanel  = document.getElementById("newGamesPanel");
-  const bottomBar    = document.getElementById("bottomBar");
-  const prevBtn      = document.getElementById("prevBtn");
-  const nextBtn      = document.getElementById("nextBtn");
-  const posLabel     = document.getElementById("posLabel");
+  const allGamesPanel  = document.getElementById("allGamesPanel");
+  const bottomBar      = document.getElementById("bottomBar");
+  const prevBtn        = document.getElementById("prevBtn");
+  const nextBtn        = document.getElementById("nextBtn");
+  const posLabel       = document.getElementById("posLabel");
 
-  // Hide/show based on mode
-  viewport.style.display       = mode === "games"     ? "" : "none";
+  viewport.style.display       = mode === "games" ? "" : "none";
   recommendPanel.style.display = mode === "recommend" ? "" : "none";
   newGamesPanel.style.display  = mode === "new"       ? "" : "none";
+  allGamesPanel.style.display  = mode === "all"       ? "" : "none";
   bottomBar.style.display      = mode === "games"     ? "" : "none";
 
-  // Disable nav arrows when not in game mode
   prevBtn.disabled = mode !== "games" || cur === 0;
   nextBtn.disabled = mode !== "games" || cur >= filtered.length - 1;
   if (mode !== "games") posLabel.textContent = "";
 
   if (mode === "recommend") renderRecommendPanel();
   if (mode === "new")       renderNewGamesPanel();
+  if (mode === "all")       renderAllGamesPanel();
 }
 
 // ── SIDEBAR ──
@@ -1092,6 +1116,9 @@ function buildSidebar() {
   </button>`;
   html += `<button class="special-btn${mainMode==='new'?" active":""}" onclick="toggleNewGames()">
     <span class="special-icon">🆕</span>New in the Library
+  </button>`;
+  html += `<button class="special-btn${mainMode==='all'?" active":""}" onclick="toggleAllGames()">
+    <span class="special-icon">📚</span>All Games
   </button>`;
 
   html += '<div class="sec-label" style="margin-top:10px">Categories</div>';
@@ -1283,6 +1310,95 @@ function toggleNewGames() {
     if (isMobileViewport()) closeSidebar();
   }
   buildSidebar();
+}
+
+function toggleAllGames() {
+  if (mainMode === "all") {
+    setMainMode("games");
+  } else {
+    agPage = 0;
+    setMainMode("all");
+    if (isMobileViewport()) closeSidebar();
+  }
+  buildSidebar();
+}
+
+// ── ALL GAMES PANEL ──
+function agGetMatches() {
+  return GAMES.filter(g => {
+    const mc = !agCategory || g.category === agCategory;
+    const mp = !agPlayers  || (g.players && g.players.trim() === agPlayers);
+    return mc && mp;
+  });
+}
+
+function populateAgDropdowns() {
+  const catEl = document.getElementById("agCategory");
+  const plEl  = document.getElementById("agPlayers");
+  if (!catEl || !plEl) return;
+
+  const cats = [...new Set(GAMES.map(g => g.category))].sort();
+  catEl.innerHTML = `<option value="">All Categories</option>` +
+    cats.map(c => `<option value="${escHtml(c)}"${agCategory===c?" selected":""}>${escHtml(c)}</option>`).join("");
+
+  const playersSet = new Set();
+  GAMES.forEach(g => { if (g.players) playersSet.add(g.players.trim()); });
+  const sortedP = [...playersSet].sort((a,b) => (parseInt(a)||0)-(parseInt(b)||0));
+  plEl.innerHTML = `<option value="">Any</option>` +
+    sortedP.map(p => `<option value="${escHtml(p)}"${agPlayers===p?" selected":""}>${escHtml(p)}</option>`).join("");
+}
+
+function renderAllGamesPanel() {
+  populateAgDropdowns();
+  const matches = agGetMatches();
+  const area = document.getElementById("agResultsArea");
+  if (!area) return;
+
+  if (!matches.length) {
+    area.innerHTML = `<div class="panel-empty">
+      <div class="panel-empty-icon">🔍</div>
+      <div class="panel-empty-msg">No games found</div>
+      <div class="panel-empty-sub">Try adjusting the filters above.</div>
+    </div>`;
+    return;
+  }
+
+  const pageCount = Math.max(1, Math.ceil(matches.length / AG_PER_PAGE));
+  agPage = Math.max(0, Math.min(pageCount - 1, agPage));
+  const slice = matches.slice(agPage * AG_PER_PAGE, (agPage + 1) * AG_PER_PAGE);
+
+  let html = `<div class="panel-results-header">${matches.length} game${matches.length!==1?"s":""}</div>`;
+  html += `<div class="panel-game-list">`;
+  slice.forEach(g => html += buildPanelCard(g));
+  html += `</div>`;
+
+  if (pageCount > 1) {
+    html += `<div class="panel-pagination">
+      <button class="pp-btn" onclick="agChangePage(-1)" ${agPage===0?"disabled":""}>‹ Prev</button>
+      <span class="pp-label">${agPage+1} / ${pageCount}</span>
+      <button class="pp-btn" onclick="agChangePage(1)" ${agPage>=pageCount-1?"disabled":""}>Next ›</button>
+    </div>`;
+  }
+
+  area.innerHTML = html;
+  area.querySelectorAll("[data-pc-img]").forEach(wrap => {
+    const src = driveUrlToImg(wrap.dataset.pcImg);
+    if (src) wrap.innerHTML = `<img class="pc-img" src="${src}" alt="${wrap.dataset.pcAlt}" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='<div class=\\'pc-img-placeholder\\'><span>🎲</span></div>'">`;
+  });
+}
+
+function agFilter() {
+  agCategory = document.getElementById("agCategory")?.value || "";
+  agPlayers  = document.getElementById("agPlayers")?.value  || "";
+  agPage = 0;
+  renderAllGamesPanel();
+}
+
+function agChangePage(dir) {
+  const matches = agGetMatches();
+  const maxPage = Math.max(0, Math.ceil(matches.length / AG_PER_PAGE) - 1);
+  agPage = Math.max(0, Math.min(maxPage, agPage + dir));
+  renderAllGamesPanel();
 }
 
 // ── PICK FROM PANEL → jump to game card ──
