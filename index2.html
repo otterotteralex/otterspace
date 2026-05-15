@@ -572,54 +572,111 @@
     letter-spacing: .12em;
     text-transform: uppercase;
     color: var(--muted);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--border);
   }
-  .panel-game-list { display: flex; flex-direction: column; gap: 4px; }
-  .panel-game-row {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 11px 16px;
+  .panel-game-list { display: flex; flex-direction: column; gap: 16px; }
+
+  /* Panel game card — same feel as the main card but clickable and stacked */
+  .panel-card {
     background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    overflow: hidden;
     cursor: pointer;
-    transition: border-color .15s, background .15s;
+    transition: border-color .18s, box-shadow .18s;
     text-align: left;
     width: 100%;
     font-family: 'DM Sans', sans-serif;
+    box-shadow: 0 4px 20px rgba(0,0,0,.3);
   }
-  .panel-game-row:hover { border-color: var(--accent); background: rgba(212,168,83,.05); }
-  .pgr-name {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--text);
-    flex: 1;
-  }
-  .pgr-meta {
+  .panel-card:hover { border-color: var(--accent); box-shadow: 0 6px 28px rgba(212,168,83,.15); }
+
+  .pc-img-col {
+    border-right: 1px solid var(--border);
     display: flex;
-    gap: 14px;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .pc-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    background: #161410;
+    padding: 14px;
     flex-shrink: 0;
   }
-  .pgr-chip {
-    font-size: 11px;
-    color: var(--muted);
+  .pc-img-placeholder {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: #161410;
     display: flex;
     align-items: center;
-    gap: 4px;
-  }
-  .pgr-cat {
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    padding: 2px 7px;
-    border-radius: 4px;
-    background: rgba(212,168,83,.12);
-    color: var(--accent);
+    justify-content: center;
+    font-size: 48px;
     flex-shrink: 0;
+  }
+  .pc-stats {
+    padding: 12px 14px;
+    border-top: 1px solid var(--border);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .pc-stat {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .pc-stat:last-child { border-bottom: none; }
+  .pc-stat-icon { font-size: 14px; width: 20px; text-align: center; flex-shrink: 0; }
+  .pc-stat-val { font-size: 12px; font-weight: 600; color: var(--text); }
+  .pc-stat-lbl { font-size: 10px; color: var(--muted); margin-top: 1px; }
+
+  .pc-info {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .pc-head {
+    padding: 18px 22px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .pc-cat {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
+  }
+  .pc-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text);
+  }
+  .pc-desc {
+    padding: 14px 22px 18px;
+    font-size: 13px;
+    line-height: 1.72;
+    color: #a09080;
+    white-space: pre-wrap;
+    flex: 1;
+    /* clamp description to ~5 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .panel-empty {
     text-align: center;
@@ -1114,18 +1171,7 @@ function renderRecommendPanel() {
 
   let html = `<div class="panel-results-header">${matches.length} game${matches.length!==1?"s":""} found</div>`;
   html += `<div class="panel-game-list">`;
-  slice.forEach(g => {
-    const cc = CAT_CLS[g.category] || "board";
-    html += `<button class="panel-game-row" onclick="panelPick('${escAttr(g.name)}')">
-      <span class="pgr-name">${escHtml(g.name)}</span>
-      <span class="pgr-meta">
-        ${g.players  ? `<span class="pgr-chip">👥 ${escHtml(g.players)}</span>`  : ""}
-        ${g.playtime ? `<span class="pgr-chip">⏱ ${escHtml(g.playtime)}</span>` : ""}
-        ${g.age      ? `<span class="pgr-chip">🎂 ${escHtml(g.age)}</span>`      : ""}
-      </span>
-      <span class="pgr-cat">${escHtml(g.category)}</span>
-    </button>`;
-  });
+  slice.forEach(g => html += buildPanelCard(g));
   html += `</div>`;
 
   if (pageCount > 1) {
@@ -1137,6 +1183,11 @@ function renderRecommendPanel() {
   }
 
   area.innerHTML = html;
+  // Set images after DOM insert
+  area.querySelectorAll("[data-pc-img]").forEach(wrap => {
+    const src = driveUrlToImg(wrap.dataset.pcImg);
+    if (src) wrap.innerHTML = `<img class="pc-img" src="${src}" alt="${wrap.dataset.pcAlt}" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='<div class=\\'pc-img-placeholder\\'><span>🎲</span></div>'">`;
+  });
 }
 
 function rpFilter() {
@@ -1154,6 +1205,42 @@ function rpChangePage(dir) {
   renderRecommendPanel();
 }
 
+// ── PANEL CARD BUILDER (shared by recommend + new games) ──
+function buildPanelCard(g) {
+  const cc = CAT_CLS[g.category] || "board";
+  const em = CAT_EMOJI[g.category] || "🎲";
+  const imgSrc = driveUrlToImg(g.imageUrl);
+  const imgHtml = imgSrc
+    ? `<div class="pc-img-placeholder" data-pc-img="${escHtml(imgSrc)}" data-pc-alt="${escHtml(g.name)}"><span>🎲</span></div>`
+    : `<div class="pc-img-placeholder"><span>🎲</span></div>`;
+  return `<button class="panel-card" onclick="panelPick('${escAttr(g.name)}')">
+    <div class="pc-img-col">
+      ${imgHtml}
+      <div class="pc-stats">
+        <div class="pc-stat">
+          <div class="pc-stat-icon">👥</div>
+          <div><div class="pc-stat-val">${escHtml(g.players||"—")}</div><div class="pc-stat-lbl">Players</div></div>
+        </div>
+        <div class="pc-stat">
+          <div class="pc-stat-icon">🎂</div>
+          <div><div class="pc-stat-val">${escHtml(g.age||"—")}</div><div class="pc-stat-lbl">Recommended Age</div></div>
+        </div>
+        <div class="pc-stat">
+          <div class="pc-stat-icon">⏱</div>
+          <div><div class="pc-stat-val">${escHtml(g.playtime||"—")}</div><div class="pc-stat-lbl">Play Time</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="pc-info">
+      <div class="pc-head">
+        <div class="pc-cat cc-${cc}">${em} ${escHtml(g.category)}</div>
+        <div class="pc-title">${escHtml(g.name)}</div>
+      </div>
+      <div class="pc-desc">${escHtml(g.description || "No description available.")}</div>
+    </div>
+  </button>`;
+}
+
 // ── NEW GAMES PANEL ──
 function getNewGames() {
   return GAMES_RAW.slice(-10).reverse();
@@ -1166,20 +1253,15 @@ function renderNewGamesPanel() {
 
   let html = `<div class="panel-results-header">${games.length} most recent additions</div>`;
   html += `<div class="panel-game-list">`;
-  games.forEach(g => {
-    html += `<button class="panel-game-row" onclick="panelPick('${escAttr(g.name)}')">
-      <span class="new-badge">New</span>
-      <span class="pgr-name">${escHtml(g.name)}</span>
-      <span class="pgr-meta">
-        ${g.players  ? `<span class="pgr-chip">👥 ${escHtml(g.players)}</span>`  : ""}
-        ${g.playtime ? `<span class="pgr-chip">⏱ ${escHtml(g.playtime)}</span>` : ""}
-        ${g.age      ? `<span class="pgr-chip">🎂 ${escHtml(g.age)}</span>`      : ""}
-      </span>
-      <span class="pgr-cat">${escHtml(g.category)}</span>
-    </button>`;
-  });
+  games.forEach(g => html += buildPanelCard(g));
   html += `</div>`;
   area.innerHTML = html;
+
+  // Set images after DOM insert
+  area.querySelectorAll("[data-pc-img]").forEach(wrap => {
+    const src = driveUrlToImg(wrap.dataset.pcImg);
+    if (src) wrap.innerHTML = `<img class="pc-img" src="${src}" alt="${wrap.dataset.pcAlt}" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='<div class=\\'pc-img-placeholder\\'><span>🎲</span></div>'">`;
+  });
 }
 
 // ── TOGGLE HANDLERS ──
