@@ -246,7 +246,8 @@
     "age": "12+",
     "playtime": "360 minutes",
     "description": "(German language with printed English instructions)\nExpand and develop your historical empire while trading with competing civilizations.",
-    "imageUrl": "images/civilization.jpg"
+    "imageUrl": "images/civilization.jpg",
+    "manualUrl": "https://images-cdn.fantasyflightgames.com/ffg_content/civilization/support/civilization-rules.pdf"
   },
   "Cluedo": {
     "name": "Cluedo",
@@ -255,7 +256,8 @@
     "age": "8+",
     "playtime": "40 minutes",
     "description": "Catch the culprit of a crime by identifying who did it, with what, and where.",
-    "imageUrl": "images/cluedo.jpg"
+    "imageUrl": "images/cluedo.jpg",
+    "manualUrl": "https://instructions.hasbro.com/api/download/38712_en-nz_clue-the-classic-mystery-game.pdf"
   },
   "Coastal Cottage - 1,000 piece j": {
     "name": "Coastal Cottage - 1,000 piece jigsaw puzzle",
@@ -274,7 +276,7 @@
     "playtime": "15 minutes",
     "description": "In Codenames, two teams compete to see who can make contact with all of their agents first. Lay out 25 cards, each bearing a single word. The spymasters look at a card showing the identity of each card, then take turns clueing their teammates. \n\nA clue consists of a single word and a number, with the number suggesting how many cards in play have some association to the given clue word. The teammates then identify one agent they think is on their team; if they're correct, they can keep guessing up to one more than the stated number of times; if the agent belongs to the opposing team or is an innocent bystander, the team's turn ends; and if they fingered the assassin, they lose the game.",
     "imageUrl": "images/codenames.jpg",
-    "manualUrl": null
+    "manualUrl": "https://filemanager.czechgames.com/storage/files/codenames/rules/CN%20rulebook%20EN%2030.pdf"
   },
   "Codenames: Pictures": {
     "name": "Codenames: Pictures",
@@ -284,7 +286,7 @@
     "playtime": "90 minutes",
     "description": "What are these strange symbols on the map? They are code for locations where spies must contact secret agents!\n\nTwo rival spymasters know the agent in each location. They deliver coded messages telling their field operatives where to go for clandestine meetings. Operatives must be clever. A decoding mistake could lead to an unpleasant encounter with an enemy agent – or worse, with the assassin! Both teams race to contact all their agents, but only one team can win.",
     "imageUrl": "images/codenames-pictures.jpg",
-    "manualUrl": null
+    "manualUrl": "https://filemanager.czechgames.com/storage/files/codenames-pictures/rules/CP%20rulebook%20EN%2021.pdf"
   },
   "Colonialism": {
     "name": "Colonialism",
