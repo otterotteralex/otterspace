@@ -725,7 +725,36 @@
     flex-shrink: 0;
   }
 
-  /* ── MOBILE panel card overrides ── */
+  /* ── RULES BUTTON ── */
+  .rules-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 18px;
+    padding: 9px 20px;
+    background: rgba(212,168,83,.12);
+    border: 1px solid rgba(212,168,83,.35);
+    border-radius: 8px;
+    color: var(--accent);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background .18s, border-color .18s;
+    cursor: pointer;
+  }
+  .rules-btn:hover {
+    background: rgba(212,168,83,.22);
+    border-color: var(--accent);
+  }
+  /* Panel card variant — sits at bottom of info col */
+  .pc-rules-btn {
+    margin: 0 22px 18px;
+    align-self: flex-start;
+  }
+  @media (max-width: 700px) {
+    .pc-rules-btn { margin: 0 14px 12px; font-size: 12px; padding: 7px 14px; }
+  }
   @media (max-width: 700px) {
     .main-panel { padding: 16px 14px 24px; }
 
@@ -967,6 +996,7 @@ function buildSlideHTML(g, i) {
       </div>
       <div class="card-desc-wrap">
         <div class="card-desc">${escHtml(g.description || "No description available.")}</div>
+        ${g.manual ? `<a class="rules-btn" href="${escHtml(g.manual)}" target="_blank" rel="noopener">📖 Read the Rules</a>` : ""}
       </div>
     </div>
   </div>`;
@@ -1318,6 +1348,7 @@ function buildPanelCard(g) {
         <div class="pc-title">${escHtml(g.name)}</div>
       </div>
       <div class="pc-desc">${escHtml(g.description || "No description available.")}</div>
+      ${g.manual ? `<a class="rules-btn pc-rules-btn" href="${escHtml(g.manual)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">📖 Read the Rules</a>` : ""}
     </div>
   </button>`;
 }
@@ -1558,6 +1589,7 @@ async function init() {
       playtime: g.playtime || null,
       description: g.description || "",
       imageUrl: g.imageUrl || null,
+      manual: g.manual || g.manualUrl || g.rulebookUrl || g.rulebook || null,
       hidden: !!g.hidden
     })).filter(g => g.name && !g.hidden);
     GAMES_RAW = [...mapped]; // preserve insertion order for "New in Library"
