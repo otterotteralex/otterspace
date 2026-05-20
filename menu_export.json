@@ -121,7 +121,8 @@
     "age": "13+",
     "playtime": "75 minutes",
     "description": "(French language with printed English instructions)\nIt's your favorite 80s shoot-em-up! Blast aliens, asteroids, and a giant final boss!",
-    "imageUrl": "images/battle-at-kembles-cascade.jpg"
+    "imageUrl": "images/battle-at-kembles-cascade.jpg",
+    "manualUrl": "https://cdn.1j1ju.com/medias/44/3a/7a-the-battle-at-kembles-cascade-rulebook.pdf"
   },
   "Block Tower": {
     "name": "Block Tower",
@@ -158,7 +159,7 @@
     "playtime": "30 minutes",
     "description": "Inspired by a love of classic video games, Boss Monster: The Dungeon Building Card Game pits 2-4 players in a competition to build the ultimate side-scrolling dungeon. Players compete to lure and destroy hapless adventurers, racing to outbid one another to see who can build the most enticing, treasure-filled dungeon. The goal of Boss Monster is to be the first Boss to amass ten Souls, which are gained when a Hero is lured and defeated — but a player can lose if his Boss takes five Wounds from Heroes who survive his dungeon.",
     "imageUrl": "images/boss-monster-the-dungeon-building-card-game.jpg",
-    "manualUrl": null
+    "manualUrl": "https://static1.squarespace.com/static/6508a57d4f618044bb0f8544/t/654bad7f8f59ac72d3b07d53/1699458433991/Boss%2BMonster%2BRules10th%2BAnniversary.pdf"
   },
   "Butterfly Splendour - 1,000 pie": {
     "name": "Butterfly Splendour - 1,000 piece jigsaw puzzle",
@@ -176,7 +177,8 @@
     "age": "10+",
     "playtime": "30-45 minutes",
     "description": "Calico is a puzzly tile-laying game of quilts and cats. In Calico, players compete to sew the coziest quilt as they collect and place patches of different colors and patterns. Each quilt has a special pattern that must be adhered to, and players are also trying to create color and pattern combinations that are not only aesthetically pleasing, but also able to attract the cuddliest cats.",
-    "imageUrl": "images/calico.jpg"
+    "imageUrl": "images/calico.jpg",
+    "manualUrl": "https://boardgame.bg/calico%20rules.pdf"
   },
   "Cascadia": {
     "name": "Cascadia",
@@ -185,7 +187,8 @@
     "age": "10+",
     "playtime": "30-45 minutes",
     "description": "Cascadia is a puzzly tile-laying game featuring the habitats and wildlife of the Pacific Northwest! In Cascadia, players take turns building their terrain and populating it with wildlife. Players must create a diverse and harmonious ecosystem - each animal species has a different spatial preference and each habitat must be placed to reduce fragmentation and create wildlife corridors.",
-    "imageUrl": "images/cascadiabox.jpg"
+    "imageUrl": "images/cascadiabox.jpg",
+    "manualUrl": "https://www.alderac.com/wp-content/uploads/2021/08/Cascadia-Rules.pdf"
   },
   "Cascadia Junior": {
     "name": "Cascadia Junior",
@@ -194,7 +197,8 @@
     "age": "6+",
     "playtime": "15-30 minutes",
     "description": "Cascadia Junior is the newest game in the Cascadia universe!\nOn your turn, build out your map and match animals and habitats to add sightings to your panorama and score points! Cascadia Junior lets younger players experience the spatial puzzle of the award-winning board game Cascadia. This stand-alone game teaches pattern building, set collection, and basic addition.\nLearn about bears, hawks, elk, salmon, and foxes in this diverse land of mountains, wetlands, prairies, rivers, and forests!",
-    "imageUrl": "images/cascadia.jpg"
+    "imageUrl": "images/cascadia.jpg",
+    "manualUrl": "https://www.alderac.com/wp-content/uploads/2025/04/Cascadia_Junior_Rulebook_Optimized.pdf"
   },
   "Castle panic": {
     "name": "Castle panic",
@@ -203,7 +207,8 @@
     "age": "8+",
     "playtime": "—",
     "description": "The forest is filled with all sorts of monsters. They watched and waited as you built your castle and trained your soldiers, but now they've gathered their army and are marching out of the woods. Can you work with your friends to defend your castle against the horde, or will the monsters tear down your walls and destroy the precious castle towers? You will all win or lose together, but in the end only one player will be declared the Master Slayer!",
-    "imageUrl": "images/castle-panic.jpg"
+    "imageUrl": "images/castle-panic.jpg",
+    "manualUrl": "https://firesidegames.com/cdn/shop/files/CP-2E-Rules-WEB.pdf?v=11778975604452676332"
   },
   "Cat Between Us": {
     "name": "Cat Between Us",
@@ -212,7 +217,8 @@
     "age": "8+",
     "playtime": "25 minutes",
     "description": "The Purr-fect Challenge Awaits in Cat Between Us as players use an arsenal of irresistible toys to lure a mischievous cat that has vanished in the house.",
-    "imageUrl": "images/cat-between-us.jpg"
+    "imageUrl": "images/cat-between-us.jpg",
+    "manualUrl": "https://cdn.shopify.com/s/files/1/0611/3958/3198/files/Reduced_CBU_Rulebook_Pages.pdf?v=1747171149"
   },
   "Catan: 6th Edition": {
     "name": "Catan: 6th Edition",
