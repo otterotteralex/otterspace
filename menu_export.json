@@ -6,7 +6,8 @@
     "age": "12+",
     "playtime": "30 minutes",
     "description": "How easy is it to play? It’s soooo easy! potato\nPick your teams, throw the die, and you’re ready to go.\n\nTurn the timer, then pick a card and describe the names (in any order!) to your team mates as quickly as you can, but without saying the actual words on the card…\n\nThe more names your teammates guess correctly in 30 Seconds, the faster you move along the board!",
-    "imageUrl": "images/30-seconds.jpg"
+    "imageUrl": "images/30-seconds.jpg",
+    "manualUrl": "https://www.30seconds.ie/"
   },
   "7 wonders": {
     "name": "7 wonders",
@@ -33,7 +34,8 @@
     "age": "12+",
     "playtime": "60 minutes",
     "description": "A bluffing trivia game where guessing the answer that sounds right probably isn't.",
-    "imageUrl": "images/absolutebalderdash.jpg"
+    "imageUrl": "images/absolutebalderdash.jpg",
+    "manualUrl": "https://www.drumondpark.co.uk/rules/absolutebalderdash.pdf"
   },
   "Acht-Minuten Imperium": {
     "name": "Acht-Minuten Imperium",
@@ -42,7 +44,8 @@
     "age": "13+",
     "playtime": "8-20 minutes",
     "description": "(German language with printed English instructions)\nBuild an empire that eclipses your rivals in just 8 minutes!",
-    "imageUrl": "images/acht-minuten.jpg"
+    "imageUrl": "images/acht-minuten.jpg",
+    "manualUrl": "https://www.ultraboardgames.com/eight-minute-empire/game-rules.php"
   },
   "Alpha Zulu": {
     "name": "Alpha Zulu",
