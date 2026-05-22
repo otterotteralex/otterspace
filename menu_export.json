@@ -1105,6 +1105,17 @@
     "description": "The game of Monopoly with a Ford Mustang car model theme.",
     "imageUrl": "images/monopolymustang.jpg"
   },
+  "Monopoly Junior Dragons": {
+    "name": "Monopoly Junior Dragons",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "5+",
+    "playtime": "",
+    "description": "Play with your favourite dragons! How many characters will you collect? The player with the most money wins!",
+    "imageUrl": "images/monopoly-junior-dragons.jpg",
+    "manualUrl": null,
+    "dateAdded": "2026-05-22"
+  },
   "Montana": {
     "name": "Montana",
     "category": "BOARD GAME",
