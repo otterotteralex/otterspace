@@ -1571,6 +1571,17 @@
     "description": "Rick and Morty: Total Rickall is a cooperative card game designed by Matt Hyra and published by Cryptozoic Entertainment. In this game, players are attempting to figure out which characters are space parasites and which ones are real. You don’t know which are which because the aliens have manipulated your memories to make you think you know all of the different characters.",
     "imageUrl": "images/rick-morty-total-rickall.jpg"
   },
+  "Risk": {
+    "name": "Risk",
+    "category": "BOARD GAME",
+    "players": "2-5",
+    "age": "10+",
+    "playtime": "1-8 Hours",
+    "description": "Build your army and lead your troops to glory in the all-time classic strategic combat game.",
+    "imageUrl": "images/risk.jpg",
+    "manualUrl": null,
+    "dateAdded": "2026-05-22"
+  },
   "Rome Rise to Power": {
     "name": "Rome: Rise to Power",
     "category": "BOARD GAME",
