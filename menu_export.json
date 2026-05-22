@@ -1206,6 +1206,17 @@
     "description": "Race to play all your tiles by forming runs or sets, even if they're not your own!",
     "imageUrl": "images/myrummy.png"
   },
+  "Narnia: The Lion, the Witch and the Wardrobe": {
+    "name": "Narnia: The Lion, the Witch and the Wardrobe",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "8+",
+    "playtime": "",
+    "description": "Enter the enchanted world and discover the magic!",
+    "imageUrl": "images/narnia-the-lion-the-witch-and-the-wardrobe.jpg",
+    "manualUrl": "https://instructions.hasbro.com/api/download/42652_en-us_the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe-game.pdf",
+    "dateAdded": "2026-05-22"
+  },
   "Nexum Galaxy": {
     "name": "Nexum Galaxy",
     "category": "BOARD GAME",
