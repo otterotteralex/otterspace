@@ -1116,6 +1116,17 @@
     "description": "The game of Monopoly with a Ford Mustang car model theme.",
     "imageUrl": "images/monopolymustang.jpg"
   },
+  "Monopoly Gamer": {
+    "name": "Monopoly Gamer",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "8+",
+    "playtime": "50-60 mins",
+    "description": "Collect coins, Buy property and battle bosses to rack up points and win!",
+    "imageUrl": "images/monopoly-gamer.jpg",
+    "manualUrl": null,
+    "dateAdded": "2026-05-22"
+  },
   "Monopoly Junior Dragons": {
     "name": "Monopoly Junior Dragons",
     "category": "BOARD GAME",
