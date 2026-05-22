@@ -710,6 +710,17 @@
     "description": "Cross the pond... beware of the fish!\nGuide your frogs across the pond and block other players from doing the same. The first player to get their entire frog family to the other side wins the game. But watch out, the fish can scare your frogs back to the start!",
     "imageUrl": "images/froggit.jpg"
   },
+  "Frustration": {
+    "name": "Frustration",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "6+",
+    "playtime": "30 mins",
+    "description": "The slam-Tastic chasing game that drives you mad!",
+    "imageUrl": "images/frustration.jpg",
+    "manualUrl": null,
+    "dateAdded": "2026-05-22"
+  },
   "Fun Facts": {
     "name": "Fun Facts",
     "category": "FOR THE YOUNGEST",
