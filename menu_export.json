@@ -740,6 +740,17 @@
     "description": "Race to connect stones and colonies in Garden Guests, but keep quiet to avoid disturbing the beetles. Team up, strategize silently, and build an unbroken path to lead your guests to victory in this whimsical mosaic adventure!",
     "imageUrl": "images/gardenguests.jpg"
   },
+  "Gargoyles Awakening": {
+    "name": "Gargoyles Awakening",
+    "category": "BOARD GAME",
+    "players": "2-5",
+    "age": "10+",
+    "playtime": "45-60 minutes",
+    "description": "In Disney Gargoyles: Awakening, which is named after the TV show, players each represent one of six Gargoyles characters — Goliath, Brooklyn, Lexington, Broadway, Hudson, or NYPD detective Elisa Maza — fight against baddies Xanatos and Demona in one of four scenarios on a three-dimensional cityscape board showing Manhattan as it was depicted in the cartoon. ",
+    "imageUrl": "images/gargoyles-awakening.jpg",
+    "manualUrl": null,
+    "dateAdded": "2026-06-05"
+  },
   "Gelatinous                     ": {
     "name": "Gelatinous                                                                         Be the biggest ooze . . . or lose!",
     "category": "BOARD GAME",
