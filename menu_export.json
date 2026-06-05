@@ -94,6 +94,17 @@
     "imageUrl": "images/aqua-biodiversity-in-the-oceans.jpg",
     "manualUrl": "https://www.brdgmz.nl/wp-content/uploads/Spelregels-Aqua-English.pdf"
   },
+  "Articulate! The Fast Talking Description Game": {
+    "name": "Articulate! The Fast Talking Description Game",
+    "category": "BOARD GAME",
+    "players": "4-8",
+    "age": "12+",
+    "playtime": "60 minutes",
+    "description": "Articulate! is a fast-paced and hilarious party game where players race against the clock to describe as many words as possible for their teammates to guess. In this guide, we’ll explain the rules and provide tips to help you master the art of description and lead your team to victory!",
+    "imageUrl": "images/articulate.jpg",
+    "manualUrl": "https://www.drumondpark.co.uk/rules/articulate.pdf",
+    "dateAdded": "2026-06-05"
+  },
   "Azul": {
     "name": "Azul",
     "category": "BOARD GAME",
@@ -103,6 +114,17 @@
     "description": "(Italian language with printed English instructions)\nIn the game Azul, players take turns drafting colored tiles from suppliers to their player board. Later in the round, players score points based on how they've placed their tiles to decorate the palace. Extra points are scored for specific patterns and completing sets; wasted supplies harm the player's score. The player with the most points at the end of the game wins.",
     "imageUrl": "images/azul.jpg",
     "manualUrl": "https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN-Azul-Rules-Next-Move-web.pdf"
+  },
+  "Bandido": {
+    "name": "Bandido",
+    "category": "FOR THE YOUNGEST",
+    "players": "1-4",
+    "age": "6+",
+    "playtime": "10-15 minutes",
+    "description": "A light-security prisoner is trying to escape through tunnels starting underneath his cell. Will you be able to join forces and cards to stop him? Bandido is a cooperative game of strategy and observation for the entire family.",
+    "imageUrl": "images/bandido.jpg",
+    "manualUrl": "https://static1.squarespace.com/static/591861c529687fd2ca03c3f3/t/673f31cb35097d0772fc0a16/1732194764445/Bandido+rules.pdf",
+    "dateAdded": "2026-06-05"
   },
   "Batavia": {
     "name": "Batavia",
@@ -277,6 +299,17 @@
     "description": "In Codenames, two teams compete to see who can make contact with all of their agents first. Lay out 25 cards, each bearing a single word. The spymasters look at a card showing the identity of each card, then take turns clueing their teammates. \n\nA clue consists of a single word and a number, with the number suggesting how many cards in play have some association to the given clue word. The teammates then identify one agent they think is on their team; if they're correct, they can keep guessing up to one more than the stated number of times; if the agent belongs to the opposing team or is an innocent bystander, the team's turn ends; and if they fingered the assassin, they lose the game.",
     "imageUrl": "images/codenames.jpg",
     "manualUrl": "https://filemanager.czechgames.com/storage/files/codenames/rules/CN%20rulebook%20EN%2030.pdf"
+  },
+  "Codenames Duet": {
+    "name": "Codenames Duet",
+    "category": "BOARD GAME",
+    "players": "2",
+    "age": "11+",
+    "playtime": "10-20 minutes",
+    "description": "Codenames Duet keeps the basic elements of Codenames — give one-word clues to try to get someone to identify your agents among those on the table — but now you're working together as a team to find all of your agents.",
+    "imageUrl": "images/codenames-duet.jpg",
+    "manualUrl": "https://www.themindcafe.sg/wp-content/uploads/1970/01/Codenames-Duet.pdf",
+    "dateAdded": "2026-06-05"
   },
   "Codenames: Pictures": {
     "name": "Codenames: Pictures",
