@@ -1728,6 +1728,17 @@
     "imageUrl": "images/splendor-kids.jpg",
     "manualUrl": null
   },
+  "Star Trek Expeditions": {
+    "name": "Star Trek Expeditions",
+    "category": "BOARD GAME",
+    "players": "1-4",
+    "age": "14+",
+    "playtime": "1h +",
+    "description": "Designed by award winning game designer Reiner Knizia, Star Trek Expeditions is a cooperative mission game for 1-4 players. Lead your teams of crew and resources from the Enterprise to solve major story arcs and key side missions.",
+    "imageUrl": "images/star-trek-expeditions.jpg",
+    "manualUrl": null,
+    "dateAdded": "2026-06-05"
+  },
   "Star Wars The Deckbuilding Game": {
     "name": "Star Wars: The Deckbuilding Game",
     "category": "BOARD GAME",
