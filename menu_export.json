@@ -1919,6 +1919,17 @@
     "description": "(German, Italian, and French with printed English instructions)\nStrategically create pathways through the jungle, collect treasure, and excavate temples.",
     "imageUrl": "images/tikal.jpg"
   },
+  "Timeline Twist": {
+    "name": "Timeline Twist",
+    "category": "FOR THE YOUNGEST",
+    "players": "2-6",
+    "age": "8+",
+    "playtime": "20 minutes",
+    "description": "Team up to untangle time!\n\nTimeline Twist is a new version of the game Timeline, with gameplay now being co-operative instead of competitive.\n\nIn this game, players team up, communicate, and co-ordinate to find the best strategy to play all 36 cards in the game. The team's goal is to get rid of all the cards players have in hand, either by placing as many events as possible in the right order on the timelines or by discarding them wisely.",
+    "imageUrl": "images/timeline-twist.jpg",
+    "manualUrl": "https://www.zygomatic-games.com/wp-content/uploads/2023/07/timelinetwist_en_rules-min.pdf",
+    "dateAdded": "2026-06-05"
+  },
   "Tiny Epic Game of Thrones": {
     "name": "Tiny Epic Game of Thrones",
     "category": "BOARD GAME",
@@ -2018,6 +2029,17 @@
     "playtime": "30-45 minutes",
     "description": "Guide missing pieces of your soul out of the shadows by bidding on and building paths.",
     "imageUrl": "images/umbravia.jpg"
+  },
+  "Unicorn Glitterluck": {
+    "name": "Unicorn Glitterluck",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "3+",
+    "playtime": "10 - 20 minutes",
+    "description": "Step into the magical world of Unicorn Glitterluck with HABA’s enchanting game collection! This delightful set features 9 games that let your little ones join Glitterluck, Stardust, Marvel Flower, and Magic Swirl on whimsical adventures filled with sparkle and fun. Follow along as four charming unicorns embark on daily adventures, sparking creativity and storytelling skills in your little ones. Enhance cognitive skills and social interactions through cooperative and imaginative play.\n\nPerfect for Family Time: Designed for 2 to 4 players, each game offers a quick 10-20 minute playtime, making it the ideal choice for family game nights and gatherings.\nFor Unicorn Lovers: Perfect for kids who adore unicorns and magical adventures, this collection is sure to be a favorite addition to your family’s game shelf.\nUnique and Engaging Gameplay: Each game offers different challenges and experiences, keeping your child engaged and eager to play again and again. ",
+    "imageUrl": "images/unicorn-glitterluck.jpg",
+    "manualUrl": "https://cdn.shopify.com/s/files/1/0559/3445/1810/files/Unicorn-Glitterluck-Game-Collection-Instructions.pdf?v=1738085915",
+    "dateAdded": "2026-06-05"
   },
   "Uno": {
     "name": "Uno",
@@ -2132,7 +2154,7 @@
   },
   "Wonky": {
     "name": "Wonky",
-    "category": "BOARD GAME",
+    "category": "FOR THE YOUNGEST",
     "players": "1+",
     "age": "8+",
     "playtime": "20 minutes",
@@ -2148,7 +2170,8 @@
     "age": "7+",
     "playtime": "30 minutes",
     "description": "Select a category and make up a word from the theme… but watch out: the winner is whoever makes the longest word using the more obscure letters. Fun for everyone!",
-    "imageUrl": "images/words-in-mind.jpg"
+    "imageUrl": "images/words-in-mind.jpg",
+    "manualUrl": null
   },
   "Wordsearch": {
     "name": "Wordsearch",
