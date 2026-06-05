@@ -989,6 +989,17 @@
     "description": "Create a travel itinerary and go on your dream vacation to Japan.",
     "imageUrl": "images/letsgojapan.jpg"
   },
+  "Lets Go! To Japan": {
+    "name": "Lets Go! To Japan",
+    "category": "BOARD GAME",
+    "players": "1-4",
+    "age": "10+",
+    "playtime": "45-60 minutes.",
+    "description": "In Let's Go! To Japan, you are a traveler planning, then experiencing your own dream vacation to Japan.\n\nThe game consists of thirteen rounds in which players draw activity cards illustrated by Japan-based artists and strategically place them in different days in their week-long itinerary. These can't-miss tourist attractions will have you bouncing between Tokyo and Kyoto as you try to puzzle out the optimal activities to maximize your experience while balancing your resources. The game ends with a final round in which you ultimately go on your planned trip, activating each of your cards in order along the way.\n\nThe player who collects the most points by the end of their trip wins!",
+    "imageUrl": "images/lets-go-japan.jpg",
+    "manualUrl": "https://www.alderac.com/wp-content/uploads/2023/03/LetsGoToJapan_Influencer_EN_1P_Rulebook_FINAL-copy.pdf",
+    "dateAdded": "2026-06-05"
+  },
   "Liguria": {
     "name": "Liguria",
     "category": "BOARD GAME",
