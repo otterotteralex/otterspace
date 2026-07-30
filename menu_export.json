@@ -24,8 +24,9 @@
     "players": "1",
     "age": "8+",
     "playtime": "15 minutes",
-    "description": "Take a deep breath, match colorful flowers, and relax. AAAA",
-    "imageUrl": "images/a-gentle-rain.jpg"
+    "description": "Take a deep breath, match colorful flowers, and relax.",
+    "imageUrl": "images/a-gentle-rain.jpg",
+    "manualUrl": null
   },
   "Absolute Balderdash": {
     "name": "Absolute Balderdash",
