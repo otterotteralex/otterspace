@@ -1,35 +1,99 @@
 {
+  "Americano": {
+    "name": "Americano",
+    "category": "Coffee Based Drinks",
+    "price": "3.40",
+    "description": "Also known as black coffee, a good start for a good day!",
+    "ingredients": "One shot of espresso and 300 ml of water.",
+    "allergens": [],
+    "image": "images/coffee/americano.jpg",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [
+      {
+        "text": "Grind the coffee and press the button in the machiiineee\nThis is all placeholder, so we need to edit the recipes and take some nice pictures of the drinks.",
+        "image": ""
+      }
+    ],
+    "dateAdded": "2026-07-31"
+  },
+  "Black Herbal Tea": {
+    "name": "Black Herbal Tea",
+    "category": "Teas",
+    "price": "2.80",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Cappuccino": {
+    "name": "Cappuccino",
+    "category": "Coffee Based Drinks",
+    "price": "3.80",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Chai Latte": {
+    "name": "Chai Latte",
+    "category": "Coffee Based Drinks",
+    "price": "3.90",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
   "Flat White": {
     "name": "Flat White",
     "category": "Coffee Based Drinks",
     "price": "3.80",
-    "description": "Two ristretto shots under a thin layer of steamed milk. Strong, smooth, no foam to speak of.",
-    "ingredients": "Espresso, whole milk",
-    "allergens": [
-      "Milk"
-    ],
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
     "image": "",
     "hidden": false,
-    "dateAdded": "2026-07-31",
-    "recipeNotes": "18g in, 36g out, 25-28 seconds. Milk to 60°C, no higher.",
-    "steps": [
-      {
-        "text": "Grind and dose 18g into the double basket. Level, then tamp flat.",
-        "image": ""
-      },
-      {
-        "text": "Pull two ristretto shots into a 6oz cup — 36g out in 25-28 seconds.",
-        "image": ""
-      },
-      {
-        "text": "Steam 130ml whole milk to 60°C. Stretch for two seconds only, then drop the tip in to spin it smooth.",
-        "image": ""
-      },
-      {
-        "text": "Pour from height to break through the crema, then drop close and finish with a small dot in the centre.",
-        "image": ""
-      }
-    ]
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Frappe": {
+    "name": "Frappe",
+    "category": "Refreshments",
+    "price": "4.50",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Frappuccino": {
+    "name": "Frappuccino",
+    "category": "Coffee Based Drinks",
+    "price": "5.00",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
   },
   "Homemade Lemonade": {
     "name": "Homemade Lemonade",
@@ -56,6 +120,162 @@
         "image": ""
       }
     ]
+  },
+  "Hot Chocolate": {
+    "name": "Hot Chocolate",
+    "category": "Refreshments",
+    "price": "3.90",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Iced Americano": {
+    "name": "Iced Americano",
+    "category": "Coffee Based Drinks",
+    "price": "3.50",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Iced Latte": {
+    "name": "Iced Latte",
+    "category": "Coffee Based Drinks",
+    "price": "4.00",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Iced Matcha": {
+    "name": "Iced Matcha",
+    "category": "Coffee Based Drinks",
+    "price": "5.50",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Iced Mocha": {
+    "name": "Iced Mocha",
+    "category": "Coffee Based Drinks",
+    "price": "4.49",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Iced White Mocha": {
+    "name": "Iced White Mocha",
+    "category": "Coffee Based Drinks",
+    "price": "4.49",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Italian Soda": {
+    "name": "Italian Soda",
+    "category": "Refreshments",
+    "price": "3.30",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Latte": {
+    "name": "Latte",
+    "category": "Coffee Based Drinks",
+    "price": "3.80",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Lemonade": {
+    "name": "Lemonade",
+    "category": "Refreshments",
+    "price": "3.49",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Matcha": {
+    "name": "Matcha",
+    "category": "Teas",
+    "price": "5.50",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Mocha": {
+    "name": "Mocha",
+    "category": "Coffee Based Drinks",
+    "price": "3.90",
+    "description": "",
+    "ingredients": "",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
+  },
+  "Single Espresso": {
+    "name": "Single Espresso",
+    "category": "Coffee Based Drinks",
+    "price": "3.00",
+    "description": "A shot of espresso, and that's it!",
+    "ingredients": "Coffee",
+    "allergens": [],
+    "image": "images/coffee/single-espresso.jpg",
+    "hidden": false,
+    "recipeNotes": "",
+    "steps": [],
+    "dateAdded": "2026-07-31"
   },
   "Test Earl Grey": {
     "name": "Test Earl Grey",
