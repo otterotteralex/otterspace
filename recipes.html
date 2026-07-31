@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Recipe Book</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0f0e0c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Recipes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="./otterspace.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f0e0c;
+    --surface: #1a1814;
+    --surface-2: #201e1a;
+    --card: #252219;
+    --border: #2e2b24;
+    --border-light: #3d382e;
+    --accent: #d4a853;
+    --accent-glow: rgba(212, 168, 83, .12);
+    --text: #e8e2d5;
+    --muted: #8a8070;
+    --sidebar: 300px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; overscroll-behavior: none; }
+  body {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background: var(--bg); color: var(--text);
+    display: flex; overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    width: var(--sidebar); min-width: var(--sidebar); height: 100%;
+    background: var(--surface); border-right: 1px solid var(--border);
+    display: flex; flex-direction: column; overflow: hidden;
+  }
+  .sb-head {
+    padding: 16px 18px 14px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 11px; flex-shrink: 0;
+  }
+  .sb-head img { height: 38px; width: auto; object-fit: contain; }
+  .sb-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px; font-weight: 900; color: var(--accent);
+    letter-spacing: .05em; text-transform: uppercase; line-height: 1.2;
+  }
+  .sb-sub { font-size: 10px; color: var(--muted); letter-spacing: .09em; text-transform: uppercase; margin-top: 2px; }
+
+  .sb-search { padding: 12px 14px 8px; flex-shrink: 0; }
+  .search-input {
+    width: 100%; font-family: inherit; font-size: 15px;
+    padding: 12px 14px; border-radius: 10px;
+    border: 1px solid var(--border); background: var(--bg); color: var(--text); outline: none;
+  }
+  .search-input:focus { border-color: var(--accent); }
+  .search-input::placeholder { color: var(--muted); }
+
+  .sb-tabs { display: flex; gap: 6px; padding: 0 14px 12px; overflow-x: auto; scrollbar-width: none; flex-shrink: 0; }
+  .sb-tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    font-family: inherit; font-size: 12px; font-weight: 600;
+    padding: 8px 13px; border-radius: 999px; white-space: nowrap;
+    border: 1px solid var(--border); background: var(--bg); color: var(--muted);
+    cursor: pointer; transition: all .12s; flex-shrink: 0;
+  }
+  .tab.on { background: var(--accent); border-color: var(--accent); color: #0f0e0c; }
+  .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .sb-list { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; padding-bottom: 20px; }
+  .sb-list::-webkit-scrollbar { width: 6px; }
+  .sb-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+  .sb-group {
+    font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--muted); padding: 14px 18px 6px;
+  }
+  .sb-item {
+    display: flex; align-items: center; gap: 11px;
+    padding: 13px 18px; cursor: pointer;
+    border-bottom: 1px solid var(--border); transition: background .1s;
+  }
+  .sb-item:active { background: var(--surface-2); }
+  .sb-item.on { background: var(--accent-glow); border-left: 3px solid var(--accent); padding-left: 15px; }
+  .sb-thumb {
+    width: 40px; height: 40px; border-radius: 8px; flex-shrink: 0;
+    background: var(--bg); border: 1px solid var(--border); overflow: hidden;
+    display: flex; align-items: center; justify-content: center; font-size: 18px;
+  }
+  .sb-thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .sb-item-name { font-size: 14.5px; font-weight: 600; line-height: 1.3; }
+  .sb-item-meta { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .sb-item-meta .warn { color: #d9534f; }
+
+  /* ── MAIN ── */
+  .main { flex: 1; height: 100%; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  .main::-webkit-scrollbar { width: 8px; }
+  .main::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+  .back-btn {
+    display: none; position: sticky; top: 0; z-index: 30;
+    width: 100%; text-align: left;
+    font-family: inherit; font-size: 14px; font-weight: 600;
+    padding: 14px 18px; border: 0; border-bottom: 1px solid var(--border);
+    background: var(--surface); color: var(--accent); cursor: pointer;
+  }
+
+  .recipe { max-width: 820px; margin: 0 auto; padding: 28px 28px 80px; }
+
+  .r-head { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 8px; }
+  .r-photo {
+    width: 132px; height: 132px; flex-shrink: 0;
+    border-radius: 14px; overflow: hidden;
+    background: var(--surface); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center; font-size: 44px;
+  }
+  .r-photo img { width: 100%; height: 100%; object-fit: cover; }
+  .r-titles { flex: 1; min-width: 0; padding-top: 4px; }
+  .r-cat {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    letter-spacing: .1em; text-transform: uppercase;
+    color: var(--accent); background: var(--accent-glow);
+    padding: 4px 11px; border-radius: 999px; margin-bottom: 9px;
+  }
+  .r-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 34px; font-weight: 900; line-height: 1.1; letter-spacing: -.01em;
+  }
+  .r-price { font-size: 15px; color: var(--muted); margin-top: 7px; }
+
+  .r-facts {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    margin: 22px 0 8px;
+  }
+  .fact {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 13px 15px;
+  }
+  .fact-label {
+    font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 5px;
+  }
+  .fact-value { font-size: 14.5px; line-height: 1.5; }
+  .allergen-tag {
+    display: inline-block; font-size: 12px; font-weight: 600;
+    padding: 3px 10px; border-radius: 999px; margin: 0 5px 5px 0;
+    background: rgba(217,83,79,.14); color: #e8836f;
+  }
+
+  .r-notes {
+    background: var(--accent-glow); border: 1px solid rgba(212,168,83,.28);
+    border-radius: 12px; padding: 14px 16px; margin: 16px 0 4px;
+    font-size: 14.5px; line-height: 1.6;
+  }
+  .r-notes b {
+    display: block; font-size: 10px; font-weight: 700;
+    letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 5px;
+  }
+
+  .steps-head {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 21px; color: var(--accent);
+    margin: 32px 0 16px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: baseline; gap: 10px;
+  }
+  .steps-head span { font-family: 'DM Sans', sans-serif; font-size: 11px; color: var(--muted); letter-spacing: .09em; text-transform: uppercase; }
+
+  .step {
+    display: flex; gap: 18px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .step:last-child { border-bottom: 0; }
+  .step-num {
+    width: 42px; height: 42px; flex-shrink: 0;
+    border-radius: 50%; background: var(--accent); color: #0f0e0c;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700;
+  }
+  .step-body { flex: 1; min-width: 0; }
+  .step-text { font-size: 17px; line-height: 1.65; }
+  .step-photo {
+    margin-top: 14px; border-radius: 12px; overflow: hidden;
+    border: 1px solid var(--border); background: var(--surface);
+    max-width: 440px;
+  }
+  .step-photo img { width: 100%; display: block; cursor: zoom-in; }
+
+  .empty { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px; gap: 10px; }
+  .empty .icon { font-size: 56px; opacity: .4; }
+  .empty .title { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--accent); }
+  .empty .sub { font-size: 14px; color: var(--muted); max-width: 400px; line-height: 1.6; }
+
+  .stale-banner {
+    background: rgba(217,83,79,.14); border-bottom: 1px solid rgba(217,83,79,.3);
+    color: #e8836f; font-size: 12.5px; padding: 9px 18px; text-align: center;
+  }
+
+  /* lightbox */
+  .lightbox {
+    position: fixed; inset: 0; background: rgba(0,0,0,.92);
+    display: none; align-items: center; justify-content: center; z-index: 200; padding: 20px;
+    cursor: zoom-out;
+  }
+  .lightbox.show { display: flex; }
+  .lightbox img { max-width: 100%; max-height: 100%; border-radius: 10px; }
+
+  /* ── PHONE / PORTRAIT ── */
+  @media (max-width: 780px) {
+    body { display: block; overflow: auto; }
+    .sidebar { width: 100%; min-width: 0; height: auto; border-right: 0; }
+    .sidebar.hide { display: none; }
+    .sb-list { max-height: none; overflow: visible; }
+    .main { display: none; height: auto; overflow: visible; }
+    .main.show { display: block; }
+    .back-btn { display: block; }
+    .recipe { padding: 22px 18px 70px; }
+    .r-head { gap: 15px; }
+    .r-photo { width: 92px; height: 92px; font-size: 32px; }
+    .r-name { font-size: 26px; }
+    .r-facts { grid-template-columns: 1fr; }
+    .step { gap: 14px; padding: 18px 0; }
+    .step-num { width: 36px; height: 36px; font-size: 17px; }
+    .step-text { font-size: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sb-head">
+    <img src="./otterspace.png" alt="" onerror="this.style.display='none'">
+    <div>
+      <div class="sb-title">Recipe Book</div>
+      <div class="sb-sub">Staff only</div>
+    </div>
+  </div>
+  <div class="sb-search">
+    <input class="search-input" id="searchInput" type="search" placeholder="Search drinks…" aria-label="Search drinks">
+  </div>
+  <div class="sb-tabs" id="tabs"></div>
+  <div class="sb-list" id="list"></div>
+</aside>
+
+<main class="main" id="main">
+  <button class="back-btn" id="backBtn" onclick="showList()">← All drinks</button>
+  <div id="recipeArea">
+    <div class="empty">
+      <div class="icon">📖</div>
+      <div class="title">Pick a drink</div>
+      <div class="sub">Every recipe the bar makes, with the steps and photos as written by the team.</div>
+    </div>
+  </div>
+</main>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()"><img id="lightboxImg" alt=""></div>
+
+<script>
+const CONFIG = {
+  dataFile: "coffee_export.json",
+  currency: "€",
+  cacheKey: "otterspace_recipes_cache"
+};
+
+const CATEGORIES = ["Coffee Based Drinks", "Teas", "Refreshments"];
+const CAT_EMOJI = { "Coffee Based Drinks": "☕", "Teas": "🍵", "Refreshments": "🥤" };
+const CAT_LABEL = { "Coffee Based Drinks": "Coffee", "Teas": "Teas", "Refreshments": "Refreshments" };
+
+let DRINKS = [];
+let activeCategory = "All";
+let searchTerm = "";
+let selected = null;
+let usingCache = false;
+
+/* ── LOAD ── */
+function boot() {
+  // Show the cached copy instantly, then refresh in the background.
+  const cached = localStorage.getItem(CONFIG.cacheKey);
+  if (cached) {
+    try { DRINKS = normalize(JSON.parse(cached)); usingCache = true; render(); } catch (_) {}
+  }
+
+  if (window.parent !== window) {
+    window.parent.postMessage({ type: "previewReady" }, "*");
+    setTimeout(() => { if (!DRINKS.length) loadFromFile(); }, 700);
+  } else {
+    loadFromFile();
+  }
+}
+
+window.addEventListener("message", e => {
+  if (e.data && e.data.type === "previewData") {
+    DRINKS = normalize(e.data.payload);
+    usingCache = false;
+    render();
+  }
+});
+
+async function loadFromFile() {
+  try {
+    const res = await fetch(CONFIG.dataFile, { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const raw = await res.json();
+    localStorage.setItem(CONFIG.cacheKey, JSON.stringify(raw));
+    DRINKS = normalize(raw);
+    usingCache = false;
+    render();
+  } catch (e) {
+    if (!DRINKS.length) {
+      document.getElementById("list").innerHTML = "";
+      document.getElementById("recipeArea").innerHTML = `
+        <div class="empty">
+          <div class="icon">📡</div>
+          <div class="title">No connection, no saved copy</div>
+          <div class="sub">Get back on wifi once and this page will keep working offline afterwards.</div>
+        </div>`;
+    }
+  }
+}
+
+function normalize(obj) {
+  return Object.keys(obj)
+    .filter(k => !k.startsWith("_"))
+    .map(k => Object.assign({ name: k }, obj[k]))
+    .sort((a, b) => (a.name || "").localeCompare(b.name || ""));
+}
+
+/* ── SIDEBAR ── */
+function stepsOf(d) { return Array.isArray(d.steps) ? d.steps.filter(s => (s.text || "").trim() || s.image) : []; }
+
+function visible() {
+  return DRINKS.filter(d => {
+    if (activeCategory !== "All" && d.category !== activeCategory) return false;
+    if (!searchTerm) return true;
+    return (d.name || "").toLowerCase().includes(searchTerm)
+        || (d.ingredients || "").toLowerCase().includes(searchTerm)
+        || (d.recipeNotes || "").toLowerCase().includes(searchTerm)
+        || stepsOf(d).some(s => (s.text || "").toLowerCase().includes(searchTerm));
+  });
+}
+
+function renderTabs() {
+  const counts = { All: DRINKS.length };
+  CATEGORIES.forEach(c => counts[c] = DRINKS.filter(d => d.category === c).length);
+  const items = [{ key: "All", label: "All", emoji: "" }]
+    .concat(CATEGORIES.filter(c => counts[c] > 0).map(c => ({ key: c, label: CAT_LABEL[c], emoji: CAT_EMOJI[c] })));
+  document.getElementById("tabs").innerHTML = items
+    .map(t => `<button class="tab${activeCategory === t.key ? " on" : ""}" data-cat="${t.key}">${t.emoji ? t.emoji + " " : ""}${t.label} ${counts[t.key]}</button>`)
+    .join("");
+}
+
+function renderList() {
+  const list = visible();
+  const el = document.getElementById("list");
+  if (!list.length) {
+    el.innerHTML = `<div class="sb-group">No matches</div>`;
+    return;
+  }
+  const banner = usingCache ? `<div class="stale-banner">Showing the last saved copy — reconnect to get the newest recipes.</div>` : "";
+
+  if (activeCategory !== "All") {
+    el.innerHTML = banner + list.map(row).join("");
+    return;
+  }
+  el.innerHTML = banner + CATEGORIES.map(cat => {
+    const items = list.filter(d => d.category === cat);
+    if (!items.length) return "";
+    return `<div class="sb-group">${CAT_EMOJI[cat]} ${CAT_LABEL[cat]}</div>` + items.map(row).join("");
+  }).join("");
+}
+
+function row(d) {
+  const n = stepsOf(d).length;
+  return `<div class="sb-item${selected === d.name ? " on" : ""}" data-name="${escAttr(d.name)}">
+    <div class="sb-thumb">${d.image ? `<img src="${esc(d.image)}" alt="" loading="lazy" onerror="this.parentElement.textContent='${CAT_EMOJI[d.category] || "☕"}'">` : (CAT_EMOJI[d.category] || "☕")}</div>
+    <div style="flex:1;min-width:0">
+      <div class="sb-item-name">${esc(d.name)}${d.hidden ? " · off menu" : ""}</div>
+      <div class="sb-item-meta">${n ? n + " step" + (n > 1 ? "s" : "") : '<span class="warn">no recipe written</span>'}</div>
+    </div>
+  </div>`;
+}
+
+document.getElementById("tabs").addEventListener("click", e => {
+  const btn = e.target.closest("[data-cat]");
+  if (!btn) return;
+  activeCategory = btn.dataset.cat;
+  render();
+});
+
+document.getElementById("list").addEventListener("click", e => {
+  const item = e.target.closest("[data-name]");
+  if (!item) return;
+  selected = item.dataset.name;
+  renderList();
+  renderRecipe();
+  showDetail();
+});
+
+document.getElementById("searchInput").addEventListener("input", e => {
+  searchTerm = e.target.value.trim().toLowerCase();
+  renderList();
+});
+
+/* ── RECIPE ── */
+function renderRecipe() {
+  const d = DRINKS.find(x => x.name === selected);
+  const area = document.getElementById("recipeArea");
+  if (!d) { area.innerHTML = ""; return; }
+
+  const steps = stepsOf(d);
+  const allerg = Array.isArray(d.allergens) ? d.allergens : (d.allergens ? String(d.allergens).split(",").map(s => s.trim()) : []);
+
+  area.innerHTML = `
+    <div class="recipe">
+      <div class="r-head">
+        <div class="r-photo">${d.image ? `<img src="${esc(d.image)}" alt="" onerror="this.parentElement.textContent='${CAT_EMOJI[d.category] || "☕"}'">` : (CAT_EMOJI[d.category] || "☕")}</div>
+        <div class="r-titles">
+          <div class="r-cat">${CAT_EMOJI[d.category] || ""} ${esc(CAT_LABEL[d.category] || d.category || "")}</div>
+          <h1 class="r-name">${esc(d.name)}</h1>
+          <div class="r-price">${CONFIG.currency}${esc(d.price || "—")}${d.hidden ? " · currently off the menu" : ""}</div>
+        </div>
+      </div>
+
+      <div class="r-facts">
+        <div class="fact">
+          <div class="fact-label">Ingredients</div>
+          <div class="fact-value">${esc(d.ingredients || "—")}</div>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Allergens</div>
+          <div class="fact-value">${allerg.length ? allerg.map(a => `<span class="allergen-tag">${esc(a)}</span>`).join("") : "None listed"}</div>
+        </div>
+      </div>
+
+      ${d.recipeNotes ? `<div class="r-notes"><b>Notes</b>${esc(d.recipeNotes)}</div>` : ""}
+
+      <div class="steps-head">Method <span>${steps.length ? steps.length + " steps" : ""}</span></div>
+
+      ${steps.length ? steps.map((s, i) => `
+        <div class="step">
+          <div class="step-num">${i + 1}</div>
+          <div class="step-body">
+            <div class="step-text">${esc(s.text || "")}</div>
+            ${s.image ? `<div class="step-photo"><img src="${esc(s.image)}" alt="Step ${i + 1}" loading="lazy" onclick="openLightbox(this.src)" onerror="this.parentElement.remove()"></div>` : ""}
+          </div>
+        </div>`).join("") : `
+        <div class="empty" style="height:auto;padding:36px 10px">
+          <div class="icon">✍️</div>
+          <div class="title">No recipe written yet</div>
+          <div class="sub">Add the steps in the editor and publish — it'll show up here.</div>
+        </div>`}
+    </div>`;
+  document.getElementById("main").scrollTop = 0;
+}
+
+/* ── PHONE NAV ── */
+function showDetail() {
+  if (window.innerWidth <= 780) {
+    document.getElementById("sidebar").classList.add("hide");
+    document.getElementById("main").classList.add("show");
+    window.scrollTo(0, 0);
+  }
+}
+function showList() {
+  document.getElementById("sidebar").classList.remove("hide");
+  document.getElementById("main").classList.remove("show");
+  window.scrollTo(0, 0);
+}
+
+/* ── LIGHTBOX ── */
+function openLightbox(src) {
+  document.getElementById("lightboxImg").src = src;
+  document.getElementById("lightbox").classList.add("show");
+}
+function closeLightbox() { document.getElementById("lightbox").classList.remove("show"); }
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeLightbox(); });
+
+/* ── RENDER ── */
+function render() { renderTabs(); renderList(); if (selected) renderRecipe(); }
+
+function esc(s) { return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+function escAttr(s) { return esc(s).replace(/'/g, "&#39;"); }
+
+boot();
+</script>
+</body>
+</html>

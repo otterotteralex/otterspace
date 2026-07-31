@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu</title>
+<meta name="theme-color" content="#0f0e0c">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f0e0c;
+    --surface: #1a1814;
+    --card: #201e1a;
+    --border: #2e2b24;
+    --border-light: #3d382e;
+    --accent: #d4a853;
+    --accent-glow: rgba(212, 168, 83, .12);
+    --text: #e8e2d5;
+    --muted: #8a8070;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  .site-head {
+    padding: 22px 20px 16px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .site-head img { height: 46px; width: auto; object-fit: contain; margin-bottom: 8px; }
+  .site-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 27px; font-weight: 900; color: var(--accent);
+    letter-spacing: .04em; text-transform: uppercase; line-height: 1.15;
+  }
+  .site-sub { font-size: 12px; color: var(--muted); margin-top: 5px; letter-spacing: .06em; text-transform: uppercase; }
+
+  /* ── FILTERS ── */
+  .filter-bar {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(26,24,20,.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 14px;
+    display: flex; gap: 8px; overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .filter-bar::-webkit-scrollbar { display: none; }
+  .filter-btn {
+    font-family: inherit; font-size: 13px; font-weight: 600;
+    padding: 9px 16px; border-radius: 999px; white-space: nowrap;
+    border: 1px solid var(--border); background: var(--card); color: var(--muted);
+    cursor: pointer; transition: all .15s; flex-shrink: 0;
+  }
+  .filter-btn:hover { border-color: var(--border-light); color: var(--text); }
+  .filter-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .filter-btn.on {
+    background: var(--accent); border-color: var(--accent); color: #0f0e0c;
+  }
+  .filter-btn .count { opacity: .65; font-weight: 500; margin-left: 4px; }
+
+  /* ── SEARCH ── */
+  .search-wrap { padding: 12px 14px 0; max-width: 760px; margin: 0 auto; }
+  .search-input {
+    width: 100%; font-family: inherit; font-size: 14px;
+    padding: 11px 14px; border-radius: 10px;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text); outline: none;
+  }
+  .search-input:focus { border-color: var(--accent); }
+  .search-input::placeholder { color: var(--muted); }
+
+  /* ── LIST ── */
+  .menu { max-width: 760px; margin: 0 auto; padding: 16px 14px 60px; }
+  .section-label {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 19px; color: var(--accent);
+    margin: 22px 4px 12px; letter-spacing: .02em;
+    display: flex; align-items: baseline; gap: 9px;
+  }
+  .section-label:first-child { margin-top: 6px; }
+  .section-label span { font-family: 'DM Sans', sans-serif; font-size: 11px; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+
+  .drink {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 16px 14px;
+    margin-bottom: 12px;
+    animation: rise .3s ease both;
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+  /* order the customer reads: name → picture → description → price */
+  .drink-name {
+    font-size: 17px; font-weight: 700; letter-spacing: .01em;
+    line-height: 1.25; margin-bottom: 12px;
+  }
+  .drink-img {
+    width: 100%; aspect-ratio: 16 / 10;
+    border-radius: 10px; overflow: hidden;
+    background: var(--surface); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 40px; color: var(--border-light);
+    margin-bottom: 12px;
+  }
+  .drink-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .drink-desc {
+    font-size: 13px; font-weight: 300; line-height: 1.6;
+    color: var(--muted); margin-bottom: 12px;
+  }
+  .drink-price {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 21px; font-weight: 700; color: var(--accent);
+  }
+  .drink-meta {
+    margin-top: 12px; padding-top: 12px;
+    border-top: 1px solid var(--border);
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .meta-line { font-size: 11.5px; line-height: 1.55; color: var(--muted); }
+  .meta-line b {
+    color: var(--text); font-weight: 600;
+    letter-spacing: .06em; text-transform: uppercase; font-size: 10px;
+    display: block; margin-bottom: 2px;
+  }
+  .allergen-tag {
+    display: inline-block; font-size: 10.5px; font-weight: 600;
+    padding: 2px 8px; border-radius: 999px; margin: 0 4px 4px 0;
+    background: var(--accent-glow); color: var(--accent);
+  }
+
+  .empty {
+    text-align: center; padding: 60px 24px; color: var(--muted);
+  }
+  .empty .icon { font-size: 44px; opacity: .4; margin-bottom: 12px; }
+  .empty .title { font-family: 'Playfair Display', serif; font-size: 19px; color: var(--text); margin-bottom: 6px; }
+  .empty .sub { font-size: 13px; line-height: 1.6; }
+
+  .foot {
+    text-align: center; padding: 24px 20px 40px;
+    font-size: 11px; color: var(--muted); line-height: 1.7;
+    border-top: 1px solid var(--border); margin-top: 20px;
+  }
+
+  /* two columns once there's room */
+  @media (min-width: 620px) {
+    .list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .drink { margin-bottom: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <img src="./otterspace.png" alt="" onerror="this.style.display='none'">
+  <div class="site-title">Menu</div>
+  <div class="site-sub">Coffee · Tea · Refreshments</div>
+</header>
+
+<nav class="filter-bar" id="filterBar" aria-label="Menu categories"></nav>
+
+<div class="search-wrap">
+  <input class="search-input" id="searchInput" type="search" placeholder="Search the menu…" aria-label="Search the menu">
+</div>
+
+<main class="menu" id="menu"></main>
+
+<div class="foot">
+  Allergen information is a guide only. Please tell us about any allergy before you order.
+</div>
+
+<script>
+const CONFIG = {
+  dataFile: "coffee_export.json",
+  baseUrl: "https://otterotteralex.github.io/otterspace/",
+  currency: "€"
+};
+
+const CATEGORIES = ["Coffee Based Drinks", "Teas", "Refreshments"];
+const CAT_EMOJI = { "Coffee Based Drinks": "☕", "Teas": "🍵", "Refreshments": "🥤" };
+const CAT_LABEL = { "Coffee Based Drinks": "Coffee", "Teas": "Teas", "Refreshments": "Refreshments" };
+
+let DRINKS = [];
+let activeCategory = "All";
+let searchTerm = "";
+
+/* ── LOAD ── */
+async function boot() {
+  // In the editor's preview pane the parent hands us live, unsaved data.
+  if (window.parent !== window) {
+    window.parent.postMessage({ type: "previewReady" }, "*");
+    setTimeout(() => { if (!DRINKS.length) loadFromFile(); }, 700);
+  } else {
+    loadFromFile();
+  }
+}
+
+window.addEventListener("message", e => {
+  if (e.data && e.data.type === "previewData") {
+    DRINKS = normalize(e.data.payload);
+    render();
+  }
+});
+
+async function loadFromFile() {
+  try {
+    const res = await fetch(CONFIG.dataFile, { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    DRINKS = normalize(await res.json());
+    render();
+  } catch (e) {
+    document.getElementById("menu").innerHTML = `
+      <div class="empty">
+        <div class="icon">☕</div>
+        <div class="title">The menu didn't load</div>
+        <div class="sub">Check your connection and pull down to refresh.</div>
+      </div>`;
+  }
+}
+
+function normalize(obj) {
+  return Object.keys(obj)
+    .filter(k => !k.startsWith("_"))
+    .map(k => Object.assign({ name: k }, obj[k]))
+    .filter(d => !d.hidden)
+    .sort((a, b) => (a.name || "").localeCompare(b.name || ""));
+}
+
+/* ── FILTERS ── */
+function renderFilters() {
+  const bar = document.getElementById("filterBar");
+  const counts = { All: DRINKS.length };
+  CATEGORIES.forEach(c => counts[c] = DRINKS.filter(d => d.category === c).length);
+
+  const buttons = [{ key: "All", label: "All", emoji: "" }]
+    .concat(CATEGORIES.map(c => ({ key: c, label: CAT_LABEL[c], emoji: CAT_EMOJI[c] })));
+
+  bar.innerHTML = buttons
+    .filter(b => b.key === "All" || counts[b.key] > 0)
+    .map(b => `<button class="filter-btn${activeCategory === b.key ? " on" : ""}" data-cat="${b.key}" aria-pressed="${activeCategory === b.key}">${b.emoji ? b.emoji + " " : ""}${b.label}<span class="count">${counts[b.key]}</span></button>`)
+    .join("");
+}
+
+document.getElementById("filterBar").addEventListener("click", e => {
+  const btn = e.target.closest("[data-cat]");
+  if (!btn) return;
+  activeCategory = btn.dataset.cat;
+  render();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+document.getElementById("searchInput").addEventListener("input", e => {
+  searchTerm = e.target.value.trim().toLowerCase();
+  render();
+});
+
+/* ── RENDER ── */
+function visible() {
+  return DRINKS.filter(d => {
+    if (activeCategory !== "All" && d.category !== activeCategory) return false;
+    if (!searchTerm) return true;
+    return (d.name || "").toLowerCase().includes(searchTerm)
+        || (d.description || "").toLowerCase().includes(searchTerm)
+        || (d.ingredients || "").toLowerCase().includes(searchTerm);
+  });
+}
+
+function render() {
+  renderFilters();
+  const list = visible();
+  const menu = document.getElementById("menu");
+
+  if (!list.length) {
+    menu.innerHTML = `
+      <div class="empty">
+        <div class="icon">🔍</div>
+        <div class="title">Nothing here yet</div>
+        <div class="sub">Try another category, or clear the search.</div>
+      </div>`;
+    return;
+  }
+
+  // One category selected → flat list. "All" → grouped by category.
+  if (activeCategory !== "All") {
+    menu.innerHTML = `<div class="list">${list.map(card).join("")}</div>`;
+    return;
+  }
+
+  menu.innerHTML = CATEGORIES.map(cat => {
+    const items = list.filter(d => d.category === cat);
+    if (!items.length) return "";
+    return `<div class="section-label">${CAT_EMOJI[cat]} ${CAT_LABEL[cat]} <span>${items.length}</span></div>
+            <div class="list">${items.map(card).join("")}</div>`;
+  }).join("");
+}
+
+function card(d) {
+  const allerg = Array.isArray(d.allergens) ? d.allergens : (d.allergens ? String(d.allergens).split(",").map(s => s.trim()) : []);
+  return `<article class="drink">
+    <h2 class="drink-name">${esc(d.name)}</h2>
+    <div class="drink-img">${d.image
+      ? `<img src="${esc(resolveImg(d.image))}" alt="${esc(d.name)}" loading="lazy" onerror="this.parentElement.textContent='${CAT_EMOJI[d.category] || "☕"}'">`
+      : (CAT_EMOJI[d.category] || "☕")}</div>
+    ${d.description ? `<p class="drink-desc">${esc(d.description)}</p>` : ""}
+    <div class="drink-price">${CONFIG.currency}${esc(d.price || "—")}</div>
+    ${(d.ingredients || allerg.length) ? `<div class="drink-meta">
+      ${d.ingredients ? `<div class="meta-line"><b>Ingredients</b>${esc(d.ingredients)}</div>` : ""}
+      ${allerg.length ? `<div class="meta-line"><b>Allergens</b>${allerg.map(a => `<span class="allergen-tag">${esc(a)}</span>`).join("")}</div>` : ""}
+    </div>` : ""}
+  </article>`;
+}
+
+/* ── UTILITIES ── */
+function esc(s) { return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+
+function resolveImg(url) {
+  const s = String(url || "").trim();
+  if (!s) return "";
+  if (s.startsWith("http://") || s.startsWith("https://") || s.startsWith("data:")) return s;
+  return s; // relative to this page — same folder on GitHub Pages
+}
+
+boot();
+</script>
+</body>
+</html>
