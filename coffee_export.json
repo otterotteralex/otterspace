@@ -1,0 +1,54 @@
+{
+  "Flat White": {
+    "name": "Flat White",
+    "category": "Coffee Based Drinks",
+    "price": "3.80",
+    "description": "Two ristretto shots under a thin layer of steamed milk. Strong, smooth, no foam to speak of.",
+    "ingredients": "Espresso, whole milk",
+    "allergens": ["Milk"],
+    "image": "",
+    "hidden": false,
+    "dateAdded": "2026-07-31",
+    "recipeNotes": "18g in, 36g out, 25-28 seconds. Milk to 60°C, no higher.",
+    "steps": [
+      { "text": "Grind and dose 18g into the double basket. Level, then tamp flat.", "image": "" },
+      { "text": "Pull two ristretto shots into a 6oz cup — 36g out in 25-28 seconds.", "image": "" },
+      { "text": "Steam 130ml whole milk to 60°C. Stretch for two seconds only, then drop the tip in to spin it smooth.", "image": "" },
+      { "text": "Pour from height to break through the crema, then drop close and finish with a small dot in the centre.", "image": "" }
+    ]
+  },
+  "Earl Grey": {
+    "name": "Earl Grey",
+    "category": "Teas",
+    "price": "3.20",
+    "description": "Black tea with bergamot. Served as a pot with a jug of milk on the side.",
+    "ingredients": "Black tea, bergamot oil",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "dateAdded": "2026-07-31",
+    "recipeNotes": "Water at 95°C — boiling scalds it.",
+    "steps": [
+      { "text": "Warm the pot with a splash of hot water, then tip it out.", "image": "" },
+      { "text": "One heaped teaspoon of leaf per pot. Fill with 95°C water.", "image": "" },
+      { "text": "Serve with the timer card set to 4 minutes and a small jug of cold milk.", "image": "" }
+    ]
+  },
+  "Homemade Lemonade": {
+    "name": "Homemade Lemonade",
+    "category": "Refreshments",
+    "price": "4.00",
+    "description": "Pressed lemons, cane sugar and soda water over ice, with mint from the windowsill.",
+    "ingredients": "Lemon juice, cane sugar syrup, soda water, mint",
+    "allergens": [],
+    "image": "",
+    "hidden": false,
+    "dateAdded": "2026-07-31",
+    "recipeNotes": "Syrup is 1:1 sugar to water — batch is in the fridge, marked with the date.",
+    "steps": [
+      { "text": "Fill a highball with ice to the brim.", "image": "" },
+      { "text": "Add 40ml fresh lemon juice and 30ml sugar syrup.", "image": "" },
+      { "text": "Top with soda water, stir once from the bottom, and add a clapped mint sprig.", "image": "" }
+    ]
+  }
+}
