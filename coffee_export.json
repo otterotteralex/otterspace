@@ -9,6 +9,7 @@
     "allergens": [],
     "image": "images/coffee/americano.jpg",
     "hidden": false,
+    "featured": true,
     "recipeNotes": "",
     "steps": [
       {
