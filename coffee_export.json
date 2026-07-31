@@ -2,6 +2,7 @@
   "Americano": {
     "name": "Americano",
     "category": "Coffee Based Drinks",
+    "temp": "Hot",
     "price": "3.40",
     "description": "Also known as black coffee, a good start for a good day!",
     "ingredients": "One shot of espresso and 300 ml of water.",
@@ -20,14 +21,20 @@
   "Black Herbal Tea": {
     "name": "Black Herbal Tea",
     "category": "Teas",
+    "temp": "Hot",
     "price": "2.80",
     "description": "",
     "ingredients": "",
     "allergens": [],
     "image": "",
-    "hidden": false,
+    "hidden": true,
     "recipeNotes": "",
-    "steps": [],
+    "steps": [
+      {
+        "text": "Grab tha tea bag thingy, put it in the cup. Pour hot water on top.",
+        "image": ""
+      }
+    ],
     "dateAdded": "2026-07-31"
   },
   "Cappuccino": {
