@@ -2,198 +2,229 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Menu</title>
-<meta name="theme-color" content="#0f0e0c">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#3B352F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0f0e0c;
-    --surface: #1a1814;
-    --card: #201e1a;
-    --border: #2e2b24;
-    --border-light: #3d382e;
-    --accent: #d4a853;
-    --accent-glow: rgba(212, 168, 83, .12);
-    --text: #e8e2d5;
-    --muted: #8a8070;
+    --paper:    #F4F2ED;   /* warm off-white — the wall in the reference */
+    --paper-2:  #EAE6DE;   /* image beds, empty states */
+    --band:     #3B352F;   /* dark header band */
+    --ink:      #2A2521;   /* body text */
+    --ink-soft: #6E655C;   /* descriptions, meta */
+    --rule:     #C6BEB2;   /* dotted dividers */
+    --clay:     #B4553A;   /* the stool. used sparingly */
+    --serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
+    --sans: 'DM Sans', system-ui, -apple-system, sans-serif;
   }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { scroll-behavior: smooth; }
   body {
-    font-family: 'DM Sans', system-ui, sans-serif;
-    background: var(--bg);
-    color: var(--text);
+    font-family: var(--serif);
+    background: var(--paper);
+    color: var(--ink);
     -webkit-font-smoothing: antialiased;
-    min-height: 100vh;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  img { display: block; max-width: 100%; }
+
+  .label {
+    font-family: var(--sans);
+    font-size: 10.5px; font-weight: 600;
+    letter-spacing: .16em; text-transform: uppercase;
   }
 
-  /* ── HEADER ── */
-  .site-head {
-    padding: 22px 20px 16px;
-    text-align: center;
-    border-bottom: 1px solid var(--border);
-    background: var(--surface);
+  /* ── HEADER BAND ── */
+  .band {
+    background: var(--band); color: var(--paper);
+    padding: 26px 22px 24px; text-align: center;
   }
-  .site-head img { height: 46px; width: auto; object-fit: contain; margin-bottom: 8px; }
-  .site-title {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 27px; font-weight: 900; color: var(--accent);
-    letter-spacing: .04em; text-transform: uppercase; line-height: 1.15;
+  .band img { height: 44px; width: auto; margin: 0 auto 12px; object-fit: contain; }
+  .band-title {
+    font-size: 34px; font-weight: 400;
+    letter-spacing: .26em; text-transform: uppercase;
+    text-indent: .26em; line-height: 1;
   }
-  .site-sub { font-size: 12px; color: var(--muted); margin-top: 5px; letter-spacing: .06em; text-transform: uppercase; }
+  .band-sub {
+    font-family: var(--sans);
+    font-size: 9.5px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase;
+    color: rgba(244,242,237,.6); margin-top: 12px;
+  }
+
+  /* ── ROTATOR ── */
+  .rot-stage {
+    position: relative; aspect-ratio: 4 / 5;
+    overflow: hidden; background: var(--paper-2);
+  }
+  .rot-slide { position: absolute; inset: 0; opacity: 0; transition: opacity .55s ease; }
+  .rot-slide.on { opacity: 1; }
+  .rot-slide img { width: 100%; height: 100%; object-fit: cover; }
+  .mark-fallback {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 54px; color: var(--rule);
+  }
+  .rot-arrow {
+    position: absolute; bottom: 0; z-index: 5;
+    width: 58px; height: 58px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--paper); border: 0; color: var(--ink);
+    cursor: pointer; transition: background .2s;
+  }
+  .rot-arrow:hover { background: #fff; }
+  .rot-arrow:focus-visible { outline: 2px solid var(--clay); outline-offset: -4px; }
+  .rot-arrow.prev { left: 0; }
+  .rot-arrow.next { right: 0; }
+  .rot-arrow svg { width: 22px; height: 12px; }
+
+  .rot-caption {
+    display: flex; gap: 20px; align-items: flex-start;
+    padding: 24px 22px 28px;
+  }
+  .rot-cap-body { flex: 1; min-width: 0; }
+  .rot-cap-index {
+    font-family: var(--sans); font-size: 11px; font-weight: 500;
+    color: var(--ink-soft); letter-spacing: .06em;
+    margin-right: 12px; vertical-align: 3px;
+  }
+  .rot-cap-name { font-size: 29px; font-weight: 500; line-height: 1.12; display: inline; letter-spacing: -.005em; }
+  .rot-cap-desc { color: var(--ink-soft); font-size: 16.5px; line-height: 1.55; margin-top: 12px; max-width: 46ch; }
+  .rot-cap-price { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: .1em; margin-top: 12px; }
+  .rot-cap-thumb { width: 108px; height: 128px; flex-shrink: 0; background: var(--paper-2); overflow: hidden; }
+  .rot-cap-thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .rot-cap-thumb .mark-fallback { font-size: 28px; }
 
   /* ── FILTERS ── */
-  .filter-bar {
-    position: sticky; top: 0; z-index: 20;
-    background: rgba(26,24,20,.96);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border);
-    padding: 12px 14px;
-    display: flex; gap: 8px; overflow-x: auto;
-    scrollbar-width: none;
+  .filters {
+    position: sticky; top: 0; z-index: 40;
+    background: var(--paper);
+    border-top: 1px dotted var(--rule);
+    border-bottom: 1px dotted var(--rule);
   }
-  .filter-bar::-webkit-scrollbar { display: none; }
+  .filter-inner { max-width: 940px; margin: 0 auto; padding: 0 22px; }
+  .filter-row { display: flex; gap: 26px; overflow-x: auto; padding: 15px 0; scrollbar-width: none; }
+  .filter-row::-webkit-scrollbar { display: none; }
   .filter-btn {
-    font-family: inherit; font-size: 13px; font-weight: 600;
-    padding: 9px 16px; border-radius: 999px; white-space: nowrap;
-    border: 1px solid var(--border); background: var(--card); color: var(--muted);
-    cursor: pointer; transition: all .15s; flex-shrink: 0;
+    font-family: var(--sans);
+    font-size: 10.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+    background: none; border: 0; padding: 0 0 4px;
+    color: var(--ink-soft); cursor: pointer; white-space: nowrap;
+    border-bottom: 1.5px solid transparent;
+    transition: color .18s, border-color .18s;
   }
-  .filter-btn:hover { border-color: var(--border-light); color: var(--text); }
-  .filter-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  .filter-btn.on {
-    background: var(--accent); border-color: var(--accent); color: #0f0e0c;
-  }
-  .filter-btn .count { opacity: .65; font-weight: 500; margin-left: 4px; }
+  .filter-btn:hover { color: var(--ink); }
+  .filter-btn:focus-visible { outline: 2px solid var(--clay); outline-offset: 3px; }
+  .filter-btn.on { color: var(--clay); border-bottom-color: var(--clay); }
+  .filter-btn .n { font-weight: 400; opacity: .55; margin-left: 5px; letter-spacing: .06em; }
 
-  .temp-bar {
-    position: sticky; top: 61px; z-index: 19;
-    background: rgba(15,14,12,.96);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border);
-    padding: 9px 14px;
-    display: flex; gap: 7px; justify-content: center;
-  }
-  .temp-bar:empty { display: none; }
+  .temp-row { display: flex; gap: 20px; padding: 12px 0 13px; border-top: 1px dotted var(--rule); }
+  .temp-row:empty { display: none; }
   .temp-btn {
-    font-family: inherit; font-size: 12px; font-weight: 600;
-    padding: 6px 14px; border-radius: 999px; white-space: nowrap;
-    border: 1px solid var(--border); background: transparent; color: var(--muted);
-    cursor: pointer; transition: all .15s;
+    font-family: var(--sans);
+    font-size: 10px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase;
+    background: none; border: 0; padding: 0;
+    color: var(--ink-soft); cursor: pointer; white-space: nowrap;
   }
-  .temp-btn:hover { color: var(--text); border-color: var(--border-light); }
-  .temp-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  .temp-btn.on { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
-
-  .temp-tag {
-    display: inline-block; font-size: 10px; font-weight: 700;
-    letter-spacing: .07em; text-transform: uppercase;
-    padding: 2px 8px; border-radius: 999px; margin-left: 8px;
-    vertical-align: middle;
-    border: 1px solid var(--border-light); color: var(--muted);
-  }
+  .temp-btn:hover { color: var(--ink); }
+  .temp-btn:focus-visible { outline: 2px solid var(--clay); outline-offset: 3px; }
+  .temp-btn.on { color: var(--clay); font-weight: 700; }
 
   /* ── SEARCH ── */
-  .search-wrap { padding: 12px 14px 0; max-width: 760px; margin: 0 auto; }
+  .search-wrap { max-width: 940px; margin: 0 auto; padding: 18px 22px 0; }
   .search-input {
-    width: 100%; font-family: inherit; font-size: 14px;
-    padding: 11px 14px; border-radius: 10px;
-    border: 1px solid var(--border); background: var(--surface); color: var(--text); outline: none;
+    width: 100%; font-family: var(--serif); font-size: 17px;
+    padding: 10px 0; border: 0; border-bottom: 1px solid var(--rule);
+    background: none; color: var(--ink); outline: none;
   }
-  .search-input:focus { border-color: var(--accent); }
-  .search-input::placeholder { color: var(--muted); }
+  .search-input:focus { border-bottom-color: var(--clay); }
+  .search-input::placeholder { color: var(--ink-soft); font-style: italic; }
 
-  /* ── LIST ── */
-  .menu { max-width: 760px; margin: 0 auto; padding: 16px 14px 60px; }
-  .section-label {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 19px; color: var(--accent);
-    margin: 22px 4px 12px; letter-spacing: .02em;
-    display: flex; align-items: baseline; gap: 9px;
-  }
-  .section-label:first-child { margin-top: 6px; }
-  .section-label span { font-family: 'DM Sans', sans-serif; font-size: 11px; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+  /* ── MENU ── */
+  .menu { max-width: 940px; margin: 0 auto; padding: 8px 22px 40px; }
+  .cat-head { display: flex; align-items: baseline; gap: 14px; padding: 34px 0 4px; }
+  .cat-head h2 { font-size: 24px; font-weight: 500; }
+  .cat-head .label { color: var(--ink-soft); }
 
-  .drink {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 16px 16px 14px;
-    margin-bottom: 12px;
-    animation: rise .3s ease both;
+  .item { padding: 26px 0 28px; border-top: 1px dotted var(--rule); }
+  .item-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px; }
+  .item-num { font-family: var(--sans); font-size: 11px; font-weight: 500; color: var(--ink-soft); letter-spacing: .06em; flex-shrink: 0; }
+  .item-name { font-size: 25px; font-weight: 500; line-height: 1.15; flex: 1; min-width: 0; letter-spacing: -.005em; }
+  .item-price { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: .08em; flex-shrink: 0; }
+  .item-img { aspect-ratio: 3 / 2; background: var(--paper-2); overflow: hidden; margin-bottom: 16px; }
+  .item-img img { width: 100%; height: 100%; object-fit: cover; }
+  .item-desc { color: var(--ink-soft); font-size: 16.5px; line-height: 1.58; max-width: 52ch; }
+  .item-meta { margin-top: 16px; display: flex; flex-direction: column; gap: 8px; }
+  .meta-line { font-family: var(--sans); font-size: 12px; line-height: 1.55; color: var(--ink-soft); }
+  .meta-line .label { display: block; color: var(--ink); margin-bottom: 3px; font-size: 9.5px; }
+  .temp-mark {
+    font-family: var(--sans); font-size: 9.5px; font-weight: 600;
+    letter-spacing: .14em; text-transform: uppercase;
+    color: var(--clay); margin-left: 10px; white-space: nowrap;
   }
-  @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-
-  /* order the customer reads: name → picture → description → price */
-  .drink-name {
-    font-size: 17px; font-weight: 700; letter-spacing: .01em;
-    line-height: 1.25; margin-bottom: 12px;
-  }
-  .drink-img {
-    width: 100%; aspect-ratio: 16 / 10;
-    border-radius: 10px; overflow: hidden;
-    background: var(--surface); border: 1px solid var(--border);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 40px; color: var(--border-light);
-    margin-bottom: 12px;
-  }
-  .drink-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .drink-desc {
-    font-size: 13px; font-weight: 300; line-height: 1.6;
-    color: var(--muted); margin-bottom: 12px;
-  }
-  .drink-price {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 21px; font-weight: 700; color: var(--accent);
-  }
-  .drink-meta {
-    margin-top: 12px; padding-top: 12px;
-    border-top: 1px solid var(--border);
-    display: flex; flex-direction: column; gap: 6px;
-  }
-  .meta-line { font-size: 11.5px; line-height: 1.55; color: var(--muted); }
-  .meta-line b {
-    color: var(--text); font-weight: 600;
-    letter-spacing: .06em; text-transform: uppercase; font-size: 10px;
-    display: block; margin-bottom: 2px;
-  }
-  .allergen-tag {
-    display: inline-block; font-size: 10.5px; font-weight: 600;
-    padding: 2px 8px; border-radius: 999px; margin: 0 4px 4px 0;
-    background: var(--accent-glow); color: var(--accent);
+  .allergen {
+    display: inline-block; margin: 0 6px 5px 0; padding: 2px 9px;
+    border: 1px solid var(--rule); border-radius: 999px;
+    font-size: 10.5px; letter-spacing: .06em;
   }
 
-  .empty {
-    text-align: center; padding: 60px 24px; color: var(--muted);
-  }
-  .empty .icon { font-size: 44px; opacity: .4; margin-bottom: 12px; }
-  .empty .title { font-family: 'Playfair Display', serif; font-size: 19px; color: var(--text); margin-bottom: 6px; }
-  .empty .sub { font-size: 13px; line-height: 1.6; }
+  .empty { text-align: center; padding: 70px 30px; color: var(--ink-soft); }
+  .empty .mark { font-size: 40px; margin-bottom: 14px; opacity: .35; }
+  .empty h3 { font-size: 22px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
 
   .foot {
-    text-align: center; padding: 24px 20px 40px;
-    font-size: 11px; color: var(--muted); line-height: 1.7;
-    border-top: 1px solid var(--border); margin-top: 20px;
+    border-top: 1px dotted var(--rule);
+    max-width: 940px; margin: 0 auto;
+    padding: 26px 22px 46px;
+    font-family: var(--sans); font-size: 11px; line-height: 1.75;
+    color: var(--ink-soft); text-align: center;
   }
 
-  /* two columns once there's room */
-  @media (min-width: 620px) {
-    .list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .drink { margin-bottom: 0; }
+  @media (min-width: 760px) {
+    body { font-size: 18px; }
+    .band { padding: 40px 22px 36px; }
+    .band-title { font-size: 46px; }
+    .rot-stage { aspect-ratio: 16 / 9; }
+    .rotator { max-width: 940px; margin: 0 auto; }
+    .rot-cap-name { font-size: 34px; }
+    .list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 34px; }
   }
-  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; animation: none !important; }
+  }
 </style>
 </head>
 <body>
 
-<header class="site-head">
+<header class="band">
   <img src="./otterspace.png" alt="" onerror="this.style.display='none'">
-  <div class="site-title">Menu</div>
-  <div class="site-sub">Coffee · Tea · Hot Drinks · Refreshments</div>
+  <div class="band-title">Menu</div>
+  <div class="band-sub">Coffee · Tea · Hot Drinks · Refreshments</div>
 </header>
 
-<nav class="filter-bar" id="filterBar" aria-label="Menu categories"></nav>
-<nav class="temp-bar" id="tempBar" aria-label="Hot or cold"></nav>
+<section class="rotator" id="rotator" aria-label="Featured drinks" hidden>
+  <div class="rot-stage" id="rotStage">
+    <button class="rot-arrow prev" onclick="rotGo(-1)" aria-label="Previous drink">
+      <svg viewBox="0 0 24 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M23 6H1M1 6l6-5M1 6l6 5"/></svg>
+    </button>
+    <button class="rot-arrow next" onclick="rotGo(1)" aria-label="Next drink">
+      <svg viewBox="0 0 24 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M1 6h22M23 6l-6-5M23 6l-6 5"/></svg>
+    </button>
+  </div>
+  <div class="rot-caption" id="rotCaption" aria-live="polite"></div>
+</section>
+
+<nav class="filters" aria-label="Menu filters">
+  <div class="filter-inner">
+    <div class="filter-row" id="filterRow"></div>
+    <div class="temp-row" id="tempRow"></div>
+  </div>
+</nav>
 
 <div class="search-wrap">
   <input class="search-input" id="searchInput" type="search" placeholder="Search the menu…" aria-label="Search the menu">
@@ -202,29 +233,32 @@
 <main class="menu" id="menu"></main>
 
 <div class="foot">
-  Allergen information is a guide only. Please tell us about any allergy before you order.
+  Allergen information is a guide only.<br>Please tell us about any allergy before you order.
 </div>
 
 <script>
 const CONFIG = {
   dataFile: "coffee_export.json",
-  baseUrl: "https://otterotteralex.github.io/otterspace/",
-  currency: "€"
+  currency: "€",
+  rotateEvery: 6000        // ms between slides — set to 0 to stop auto-advancing
 };
 
 const CATEGORIES = ["Coffee Based Drinks", "Teas", "Hot Beverages", "Refreshments"];
-const CAT_EMOJI = { "Coffee Based Drinks": "☕", "Teas": "🍵", "Hot Beverages": "🍫", "Refreshments": "🥤" };
-const CAT_LABEL = { "Coffee Based Drinks": "Coffee", "Teas": "Teas", "Hot Beverages": "Hot Drinks", "Refreshments": "Refreshments" };
-const TEMP_EMOJI = { "Hot": "🔥", "Cold": "❄️" };
+const CAT_LABEL = {
+  "Coffee Based Drinks": "Coffee",
+  "Teas": "Teas",
+  "Hot Beverages": "Hot Drinks",
+  "Refreshments": "Refreshments"
+};
+const FALLBACK = '<div class="mark-fallback">◍</div>';
 
 let DRINKS = [];
 let activeCategory = "All";
 let activeTemp = "All";
 let searchTerm = "";
 
-/* ── LOAD ── */
-async function boot() {
-  // In the editor's preview pane the parent hands us live, unsaved data.
+/* ═══════════ LOAD ═══════════ */
+function boot() {
   if (window.parent !== window) {
     window.parent.postMessage({ type: "previewReady" }, "*");
     setTimeout(() => { if (!DRINKS.length) loadFromFile(); }, 700);
@@ -247,12 +281,8 @@ async function loadFromFile() {
     DRINKS = normalize(await res.json());
     render();
   } catch (e) {
-    document.getElementById("menu").innerHTML = `
-      <div class="empty">
-        <div class="icon">☕</div>
-        <div class="title">The menu didn't load</div>
-        <div class="sub">Check your connection and pull down to refresh.</div>
-      </div>`;
+    document.getElementById("menu").innerHTML =
+      `<div class="empty"><div class="mark">◍</div><h3>The menu didn't load</h3><p>Check your connection and refresh the page.</p></div>`;
   }
 }
 
@@ -264,57 +294,136 @@ function normalize(obj) {
     .sort((a, b) => (a.name || "").localeCompare(b.name || ""));
 }
 
-/* ── FILTERS ── */
-function renderFilters() {
-  const bar = document.getElementById("filterBar");
-  const counts = { All: DRINKS.length };
-  CATEGORIES.forEach(c => counts[c] = DRINKS.filter(d => d.category === c).length);
+function photo(d, cls, eager) {
+  if (!d.image) return FALLBACK;
+  return `<img src="${esc(d.image)}" alt="${esc(cls === "thumb" ? "" : d.name)}"${eager ? "" : ' loading="lazy"'} onerror="this.parentElement.innerHTML=window.FALLBACK_HTML">`;
+}
+window.FALLBACK_HTML = FALLBACK;
 
-  const buttons = [{ key: "All", label: "All", emoji: "" }]
-    .concat(CATEGORIES.map(c => ({ key: c, label: CAT_LABEL[c], emoji: CAT_EMOJI[c] })));
+/* ═══════════ ROTATOR ═══════════ */
+let rotItems = [];
+let rotIndex = 0;
+let rotTimer = null;
 
-  bar.innerHTML = buttons
-    .filter(b => b.key === "All" || counts[b.key] > 0)
-    .map(b => `<button class="filter-btn${activeCategory === b.key ? " on" : ""}" data-cat="${b.key}" aria-pressed="${activeCategory === b.key}">${b.emoji ? b.emoji + " " : ""}${b.label}<span class="count">${counts[b.key]}</span></button>`)
-    .join("");
+function featured() {
+  const tagged = DRINKS.filter(d => d.featured);
+  // Nothing tagged yet — show a few with pictures so the top of the page isn't bare.
+  return tagged.length ? tagged : DRINKS.filter(d => d.image).slice(0, 4);
 }
 
-function renderTempBar() {
-  // Only offer the toggle when the current view actually has both.
+function renderRotator() {
+  rotItems = featured();
+  const section = document.getElementById("rotator");
+  if (!rotItems.length) { section.hidden = true; clearInterval(rotTimer); return; }
+  section.hidden = false;
+
+  const stage = document.getElementById("rotStage");
+  stage.querySelectorAll(".rot-slide").forEach(n => n.remove());
+  rotItems.forEach((d, i) => {
+    const div = document.createElement("div");
+    div.className = "rot-slide" + (i === 0 ? " on" : "");
+    div.innerHTML = photo(d, "slide", i === 0);
+    stage.insertBefore(div, stage.firstChild);
+  });
+
+  const single = rotItems.length < 2;
+  stage.querySelectorAll(".rot-arrow").forEach(a => a.style.display = single ? "none" : "");
+
+  rotIndex = 0;
+  paintCaption();
+  startAuto();
+}
+
+function paintCaption() {
+  const d = rotItems[rotIndex];
+  if (!d) return;
+  document.getElementById("rotCaption").innerHTML = `
+    <div class="rot-cap-body">
+      <span class="rot-cap-index">${String(rotIndex + 1).padStart(2, "0")}</span><h2 class="rot-cap-name">${esc(d.name)}</h2>
+      ${d.description ? `<p class="rot-cap-desc">${esc(d.description)}</p>` : ""}
+      <div class="rot-cap-price">${CONFIG.currency}${esc(d.price || "—")}${d.temp ? `<span class="temp-mark">${esc(d.temp)}</span>` : ""}</div>
+    </div>
+    <div class="rot-cap-thumb">${photo(d, "thumb", false)}</div>`;
+}
+
+function rotGo(step) {
+  if (rotItems.length < 2) return;
+  rotIndex = (rotIndex + step + rotItems.length) % rotItems.length;
+  document.querySelectorAll(".rot-slide").forEach((s, i) => s.classList.toggle("on", i === rotIndex));
+  paintCaption();
+  startAuto();
+}
+
+function startAuto() {
+  clearInterval(rotTimer);
+  if (!CONFIG.rotateEvery || rotItems.length < 2) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  rotTimer = setInterval(() => rotGo(1), CONFIG.rotateEvery);
+}
+
+(function () {
+  let x0 = null;
+  const stage = document.getElementById("rotStage");
+  stage.addEventListener("touchstart", e => { x0 = e.touches[0].clientX; }, { passive: true });
+  stage.addEventListener("touchend", e => {
+    if (x0 === null) return;
+    const dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 45) rotGo(dx < 0 ? 1 : -1);
+    x0 = null;
+  }, { passive: true });
+})();
+
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "INPUT") return;
+  if (e.key === "ArrowLeft") rotGo(-1);
+  if (e.key === "ArrowRight") rotGo(1);
+});
+
+/* ═══════════ FILTERS ═══════════ */
+function renderFilters() {
+  const counts = { All: DRINKS.length };
+  CATEGORIES.forEach(c => counts[c] = DRINKS.filter(d => d.category === c).length);
+  const items = [{ key: "All", label: "All" }]
+    .concat(CATEGORIES.filter(c => counts[c] > 0).map(c => ({ key: c, label: CAT_LABEL[c] })));
+
+  document.getElementById("filterRow").innerHTML = items
+    .map(t => `<button class="filter-btn${activeCategory === t.key ? " on" : ""}" data-cat="${t.key}" aria-pressed="${activeCategory === t.key}">${t.label}<span class="n">${counts[t.key]}</span></button>`)
+    .join("");
+
   const inCat = DRINKS.filter(d => activeCategory === "All" || d.category === activeCategory);
   const hot = inCat.filter(d => (d.temp || "Hot") === "Hot").length;
   const cold = inCat.filter(d => (d.temp || "Hot") === "Cold").length;
-  const bar = document.getElementById("tempBar");
-  if (!hot || !cold) { bar.innerHTML = ""; activeTemp = "All"; return; }
-  bar.innerHTML = [
+  const row = document.getElementById("tempRow");
+  if (!hot || !cold) { row.innerHTML = ""; activeTemp = "All"; return; }
+  row.innerHTML = [
     { key: "All", label: "Both" },
-    { key: "Hot", label: "🔥 Hot " + hot },
-    { key: "Cold", label: "❄️ Cold " + cold }
+    { key: "Hot", label: "Hot " + hot },
+    { key: "Cold", label: "Cold " + cold }
   ].map(t => `<button class="temp-btn${activeTemp === t.key ? " on" : ""}" data-temp="${t.key}" aria-pressed="${activeTemp === t.key}">${t.label}</button>`).join("");
 }
 
-document.getElementById("tempBar").addEventListener("click", e => {
-  const btn = e.target.closest("[data-temp]");
-  if (!btn) return;
-  activeTemp = btn.dataset.temp;
-  render();
-});
-
-document.getElementById("filterBar").addEventListener("click", e => {
+document.getElementById("filterRow").addEventListener("click", e => {
   const btn = e.target.closest("[data-cat]");
   if (!btn) return;
   activeCategory = btn.dataset.cat;
   activeTemp = "All";
-  render();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  renderFilters(); renderMenu();
+  document.querySelector(".filters").scrollIntoView({ block: "start" });
+});
+
+document.getElementById("tempRow").addEventListener("click", e => {
+  const btn = e.target.closest("[data-temp]");
+  if (!btn) return;
+  activeTemp = btn.dataset.temp;
+  renderFilters(); renderMenu();
 });
 
 document.getElementById("searchInput").addEventListener("input", e => {
   searchTerm = e.target.value.trim().toLowerCase();
-  render();
+  renderMenu();
 });
 
-/* ── RENDER ── */
+/* ═══════════ MENU ═══════════ */
 function visible() {
   return DRINKS.filter(d => {
     if (activeCategory !== "All" && d.category !== activeCategory) return false;
@@ -326,61 +435,49 @@ function visible() {
   });
 }
 
-function render() {
-  renderFilters();
-  renderTempBar();
+function renderMenu() {
   const list = visible();
   const menu = document.getElementById("menu");
 
   if (!list.length) {
-    menu.innerHTML = `
-      <div class="empty">
-        <div class="icon">🔍</div>
-        <div class="title">Nothing here yet</div>
-        <div class="sub">Try another category, or clear the search.</div>
-      </div>`;
+    menu.innerHTML = `<div class="empty"><div class="mark">◍</div><h3>Nothing here</h3><p>Try another filter, or clear the search.</p></div>`;
     return;
   }
 
-  // One category selected → flat list. "All" → grouped by category.
+  let n = 0;
   if (activeCategory !== "All") {
-    menu.innerHTML = `<div class="list">${list.map(card).join("")}</div>`;
+    menu.innerHTML = `<div class="list">${list.map(d => item(d, ++n)).join("")}</div>`;
     return;
   }
 
   menu.innerHTML = CATEGORIES.map(cat => {
     const items = list.filter(d => d.category === cat);
     if (!items.length) return "";
-    return `<div class="section-label">${CAT_EMOJI[cat]} ${CAT_LABEL[cat]} <span>${items.length}</span></div>
-            <div class="list">${items.map(card).join("")}</div>`;
+    return `<div class="cat-head"><h2>${CAT_LABEL[cat]}</h2><span class="label">${items.length}</span></div>
+            <div class="list">${items.map(d => item(d, ++n)).join("")}</div>`;
   }).join("");
 }
 
-function card(d) {
-  const allerg = Array.isArray(d.allergens) ? d.allergens : (d.allergens ? String(d.allergens).split(",").map(s => s.trim()) : []);
-  return `<article class="drink">
-    <h2 class="drink-name">${esc(d.name)}<span class="temp-tag">${TEMP_EMOJI[d.temp || "Hot"]} ${esc(d.temp || "Hot")}</span></h2>
-    <div class="drink-img">${d.image
-      ? `<img src="${esc(resolveImg(d.image))}" alt="${esc(d.name)}" loading="lazy" onerror="this.parentElement.textContent='${CAT_EMOJI[d.category] || "☕"}'">`
-      : (CAT_EMOJI[d.category] || "☕")}</div>
-    ${d.description ? `<p class="drink-desc">${esc(d.description)}</p>` : ""}
-    <div class="drink-price">${CONFIG.currency}${esc(d.price || "—")}</div>
-    ${(d.ingredients || allerg.length) ? `<div class="drink-meta">
-      ${d.ingredients ? `<div class="meta-line"><b>Ingredients</b>${esc(d.ingredients)}</div>` : ""}
-      ${allerg.length ? `<div class="meta-line"><b>Allergens</b>${allerg.map(a => `<span class="allergen-tag">${esc(a)}</span>`).join("")}</div>` : ""}
+function item(d, n) {
+  const allerg = Array.isArray(d.allergens) ? d.allergens : (d.allergens ? String(d.allergens).split(",").map(s => s.trim()).filter(Boolean) : []);
+  return `<article class="item">
+    <div class="item-head">
+      <span class="item-num">${String(n).padStart(2, "0")}</span>
+      <h3 class="item-name">${esc(d.name)}</h3>
+      <span class="item-price">${CONFIG.currency}${esc(d.price || "—")}</span>
+    </div>
+    <div class="item-img">${photo(d, "item", false)}</div>
+    ${d.description ? `<p class="item-desc">${esc(d.description)}${d.temp ? `<span class="temp-mark">${esc(d.temp)}</span>` : ""}</p>` : ""}
+    ${(d.ingredients || allerg.length) ? `<div class="item-meta">
+      ${d.ingredients ? `<div class="meta-line"><span class="label">Ingredients</span>${esc(d.ingredients)}</div>` : ""}
+      ${allerg.length ? `<div class="meta-line"><span class="label">Allergens</span>${allerg.map(a => `<span class="allergen">${esc(a)}</span>`).join("")}</div>` : ""}
     </div>` : ""}
   </article>`;
 }
 
-/* ── UTILITIES ── */
-function esc(s) { return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+function render() { renderRotator(); renderFilters(); renderMenu(); }
 
-function resolveImg(url) {
-  const s = String(url || "").trim();
-  if (!s) return "";
-  if (s.startsWith("http://") || s.startsWith("https://") || s.startsWith("data:")) return s;
-  return s; // relative to this page — same folder on GitHub Pages
-}
+function esc(s) { return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
 
 boot();
 </script>
