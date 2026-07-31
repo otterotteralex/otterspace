@@ -66,6 +66,33 @@
   }
   .filter-btn .count { opacity: .65; font-weight: 500; margin-left: 4px; }
 
+  .temp-bar {
+    position: sticky; top: 61px; z-index: 19;
+    background: rgba(15,14,12,.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 9px 14px;
+    display: flex; gap: 7px; justify-content: center;
+  }
+  .temp-bar:empty { display: none; }
+  .temp-btn {
+    font-family: inherit; font-size: 12px; font-weight: 600;
+    padding: 6px 14px; border-radius: 999px; white-space: nowrap;
+    border: 1px solid var(--border); background: transparent; color: var(--muted);
+    cursor: pointer; transition: all .15s;
+  }
+  .temp-btn:hover { color: var(--text); border-color: var(--border-light); }
+  .temp-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .temp-btn.on { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
+
+  .temp-tag {
+    display: inline-block; font-size: 10px; font-weight: 700;
+    letter-spacing: .07em; text-transform: uppercase;
+    padding: 2px 8px; border-radius: 999px; margin-left: 8px;
+    vertical-align: middle;
+    border: 1px solid var(--border-light); color: var(--muted);
+  }
+
   /* ── SEARCH ── */
   .search-wrap { padding: 12px 14px 0; max-width: 760px; margin: 0 auto; }
   .search-input {
@@ -162,10 +189,11 @@
 <header class="site-head">
   <img src="./otterspace.png" alt="" onerror="this.style.display='none'">
   <div class="site-title">Menu</div>
-  <div class="site-sub">Coffee · Tea · Refreshments</div>
+  <div class="site-sub">Coffee · Tea · Hot Drinks · Refreshments</div>
 </header>
 
 <nav class="filter-bar" id="filterBar" aria-label="Menu categories"></nav>
+<nav class="temp-bar" id="tempBar" aria-label="Hot or cold"></nav>
 
 <div class="search-wrap">
   <input class="search-input" id="searchInput" type="search" placeholder="Search the menu…" aria-label="Search the menu">
@@ -184,12 +212,14 @@ const CONFIG = {
   currency: "€"
 };
 
-const CATEGORIES = ["Coffee Based Drinks", "Teas", "Refreshments"];
-const CAT_EMOJI = { "Coffee Based Drinks": "☕", "Teas": "🍵", "Refreshments": "🥤" };
-const CAT_LABEL = { "Coffee Based Drinks": "Coffee", "Teas": "Teas", "Refreshments": "Refreshments" };
+const CATEGORIES = ["Coffee Based Drinks", "Teas", "Hot Beverages", "Refreshments"];
+const CAT_EMOJI = { "Coffee Based Drinks": "☕", "Teas": "🍵", "Hot Beverages": "🍫", "Refreshments": "🥤" };
+const CAT_LABEL = { "Coffee Based Drinks": "Coffee", "Teas": "Teas", "Hot Beverages": "Hot Drinks", "Refreshments": "Refreshments" };
+const TEMP_EMOJI = { "Hot": "🔥", "Cold": "❄️" };
 
 let DRINKS = [];
 let activeCategory = "All";
+let activeTemp = "All";
 let searchTerm = "";
 
 /* ── LOAD ── */
@@ -249,10 +279,32 @@ function renderFilters() {
     .join("");
 }
 
+function renderTempBar() {
+  // Only offer the toggle when the current view actually has both.
+  const inCat = DRINKS.filter(d => activeCategory === "All" || d.category === activeCategory);
+  const hot = inCat.filter(d => (d.temp || "Hot") === "Hot").length;
+  const cold = inCat.filter(d => (d.temp || "Hot") === "Cold").length;
+  const bar = document.getElementById("tempBar");
+  if (!hot || !cold) { bar.innerHTML = ""; activeTemp = "All"; return; }
+  bar.innerHTML = [
+    { key: "All", label: "Both" },
+    { key: "Hot", label: "🔥 Hot " + hot },
+    { key: "Cold", label: "❄️ Cold " + cold }
+  ].map(t => `<button class="temp-btn${activeTemp === t.key ? " on" : ""}" data-temp="${t.key}" aria-pressed="${activeTemp === t.key}">${t.label}</button>`).join("");
+}
+
+document.getElementById("tempBar").addEventListener("click", e => {
+  const btn = e.target.closest("[data-temp]");
+  if (!btn) return;
+  activeTemp = btn.dataset.temp;
+  render();
+});
+
 document.getElementById("filterBar").addEventListener("click", e => {
   const btn = e.target.closest("[data-cat]");
   if (!btn) return;
   activeCategory = btn.dataset.cat;
+  activeTemp = "All";
   render();
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
@@ -266,6 +318,7 @@ document.getElementById("searchInput").addEventListener("input", e => {
 function visible() {
   return DRINKS.filter(d => {
     if (activeCategory !== "All" && d.category !== activeCategory) return false;
+    if (activeTemp !== "All" && (d.temp || "Hot") !== activeTemp) return false;
     if (!searchTerm) return true;
     return (d.name || "").toLowerCase().includes(searchTerm)
         || (d.description || "").toLowerCase().includes(searchTerm)
@@ -275,6 +328,7 @@ function visible() {
 
 function render() {
   renderFilters();
+  renderTempBar();
   const list = visible();
   const menu = document.getElementById("menu");
 
@@ -305,7 +359,7 @@ function render() {
 function card(d) {
   const allerg = Array.isArray(d.allergens) ? d.allergens : (d.allergens ? String(d.allergens).split(",").map(s => s.trim()) : []);
   return `<article class="drink">
-    <h2 class="drink-name">${esc(d.name)}</h2>
+    <h2 class="drink-name">${esc(d.name)}<span class="temp-tag">${TEMP_EMOJI[d.temp || "Hot"]} ${esc(d.temp || "Hot")}</span></h2>
     <div class="drink-img">${d.image
       ? `<img src="${esc(resolveImg(d.image))}" alt="${esc(d.name)}" loading="lazy" onerror="this.parentElement.textContent='${CAT_EMOJI[d.category] || "☕"}'">`
       : (CAT_EMOJI[d.category] || "☕")}</div>

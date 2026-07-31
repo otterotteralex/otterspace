@@ -73,6 +73,8 @@
   }
   .tab.on { background: var(--accent); border-color: var(--accent); color: #0f0e0c; }
   .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .tab.temp.on { background: transparent; border-color: var(--accent); color: var(--accent); }
+  .tab-sep { width: 1px; background: var(--border); flex-shrink: 0; margin: 4px 2px; }
 
   .sb-list { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; padding-bottom: 20px; }
   .sb-list::-webkit-scrollbar { width: 6px; }
@@ -271,12 +273,14 @@ const CONFIG = {
   cacheKey: "otterspace_recipes_cache"
 };
 
-const CATEGORIES = ["Coffee Based Drinks", "Teas", "Refreshments"];
-const CAT_EMOJI = { "Coffee Based Drinks": "☕", "Teas": "🍵", "Refreshments": "🥤" };
-const CAT_LABEL = { "Coffee Based Drinks": "Coffee", "Teas": "Teas", "Refreshments": "Refreshments" };
+const CATEGORIES = ["Coffee Based Drinks", "Teas", "Hot Beverages", "Refreshments"];
+const CAT_EMOJI = { "Coffee Based Drinks": "☕", "Teas": "🍵", "Hot Beverages": "🍫", "Refreshments": "🥤" };
+const CAT_LABEL = { "Coffee Based Drinks": "Coffee", "Teas": "Teas", "Hot Beverages": "Hot Drinks", "Refreshments": "Refreshments" };
+const TEMP_EMOJI = { "Hot": "🔥", "Cold": "❄️" };
 
 let DRINKS = [];
 let activeCategory = "All";
+let activeTemp = "All";
 let searchTerm = "";
 let selected = null;
 let usingCache = false;
@@ -340,6 +344,7 @@ function stepsOf(d) { return Array.isArray(d.steps) ? d.steps.filter(s => (s.tex
 function visible() {
   return DRINKS.filter(d => {
     if (activeCategory !== "All" && d.category !== activeCategory) return false;
+    if (activeTemp !== "All" && (d.temp || "Hot") !== activeTemp) return false;
     if (!searchTerm) return true;
     return (d.name || "").toLowerCase().includes(searchTerm)
         || (d.ingredients || "").toLowerCase().includes(searchTerm)
@@ -353,9 +358,24 @@ function renderTabs() {
   CATEGORIES.forEach(c => counts[c] = DRINKS.filter(d => d.category === c).length);
   const items = [{ key: "All", label: "All", emoji: "" }]
     .concat(CATEGORIES.filter(c => counts[c] > 0).map(c => ({ key: c, label: CAT_LABEL[c], emoji: CAT_EMOJI[c] })));
-  document.getElementById("tabs").innerHTML = items
+  const catTabs = items
     .map(t => `<button class="tab${activeCategory === t.key ? " on" : ""}" data-cat="${t.key}">${t.emoji ? t.emoji + " " : ""}${t.label} ${counts[t.key]}</button>`)
     .join("");
+
+  const inCat = DRINKS.filter(d => activeCategory === "All" || d.category === activeCategory);
+  const hot = inCat.filter(d => (d.temp || "Hot") === "Hot").length;
+  const cold = inCat.filter(d => (d.temp || "Hot") === "Cold").length;
+  let tempTabs = "";
+  if (hot && cold) {
+    tempTabs = `<span class="tab-sep"></span>` + [
+      { key: "All", label: "Both" },
+      { key: "Hot", label: "🔥 " + hot },
+      { key: "Cold", label: "❄️ " + cold }
+    ].map(t => `<button class="tab temp${activeTemp === t.key ? " on" : ""}" data-temp="${t.key}">${t.label}</button>`).join("");
+  } else {
+    activeTemp = "All";
+  }
+  document.getElementById("tabs").innerHTML = catTabs + tempTabs;
 }
 
 function renderList() {
@@ -384,15 +404,18 @@ function row(d) {
     <div class="sb-thumb">${d.image ? `<img src="${esc(d.image)}" alt="" loading="lazy" onerror="this.parentElement.textContent='${CAT_EMOJI[d.category] || "☕"}'">` : (CAT_EMOJI[d.category] || "☕")}</div>
     <div style="flex:1;min-width:0">
       <div class="sb-item-name">${esc(d.name)}${d.hidden ? " · off menu" : ""}</div>
-      <div class="sb-item-meta">${n ? n + " step" + (n > 1 ? "s" : "") : '<span class="warn">no recipe written</span>'}</div>
+      <div class="sb-item-meta">${TEMP_EMOJI[d.temp || "Hot"]} ${n ? n + " step" + (n > 1 ? "s" : "") : '<span class="warn">no recipe written</span>'}</div>
     </div>
   </div>`;
 }
 
 document.getElementById("tabs").addEventListener("click", e => {
+  const tempBtn = e.target.closest("[data-temp]");
+  if (tempBtn) { activeTemp = tempBtn.dataset.temp; render(); return; }
   const btn = e.target.closest("[data-cat]");
   if (!btn) return;
   activeCategory = btn.dataset.cat;
+  activeTemp = "All";
   render();
 });
 
@@ -424,7 +447,7 @@ function renderRecipe() {
       <div class="r-head">
         <div class="r-photo">${d.image ? `<img src="${esc(d.image)}" alt="" onerror="this.parentElement.textContent='${CAT_EMOJI[d.category] || "☕"}'">` : (CAT_EMOJI[d.category] || "☕")}</div>
         <div class="r-titles">
-          <div class="r-cat">${CAT_EMOJI[d.category] || ""} ${esc(CAT_LABEL[d.category] || d.category || "")}</div>
+          <div class="r-cat">${CAT_EMOJI[d.category] || ""} ${esc(CAT_LABEL[d.category] || d.category || "")} · ${TEMP_EMOJI[d.temp || "Hot"]} ${esc(d.temp || "Hot")}</div>
           <h1 class="r-name">${esc(d.name)}</h1>
           <div class="r-price">${CONFIG.currency}${esc(d.price || "—")}${d.hidden ? " · currently off the menu" : ""}</div>
         </div>
