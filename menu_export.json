@@ -2214,6 +2214,17 @@
     "description": "(German language with printed English instructions)\nIn Via Romana the players take part in the construction of the road system in the Roman provinces of Gaul. Through carefully planned streets and mighty forts they connect the most important towns and protect the Roman supremacy. They also compete to have the biggest portion in the construction of the province roads, to connect important towns and to build the mightiest forts.",
     "imageUrl": "images/via-romana.jpg"
   },
+  "Village": {
+    "name": "Village",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "12+",
+    "playtime": "60-90",
+    "description": "Welcome to the fascinating world of Village, a board game that beautifully combines strategy, resource management, and storytelling into an engaging and immersive gameplay experience. In this game, you’ll be transported back in time, becoming part of a traditional rural village where each player is at the helm of a family striving to rise in fame and fortune.",
+    "imageUrl": "images/village.jpg",
+    "manualUrl": "https://board-game-rules.com/wp-content/uploads/2025/01/village_Official-Rules.pdf",
+    "dateAdded": "2026-09-12"
+  },
   "Village Green": {
     "name": "Village Green",
     "category": "BOARD GAME",
