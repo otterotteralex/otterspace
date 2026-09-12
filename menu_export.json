@@ -867,6 +867,17 @@
     "description": "As winter blows in and ghosts start to appear, play \"tricks\" to the past, present, and future. As turns progress, your foes will play - out of order - to any of these time periods, and you will start to figure out who might \"lead\" each trick. Even though you can play to the tricks in any order, the tricks will resolve based on who was leading. Points are awarded to whomever has correctly bid on the number of tricks they thought they'd win. If you’ve played as many hands as there are players, the game is now over, otherwise keep playing! Whoever has the highest score and collected the most wreaths wins the game!",
     "imageUrl": "images/ghosts-of-christmas.jpg"
   },
+  "Great Western Trail": {
+    "name": "Great Western Trail",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "12+",
+    "playtime": "75-150",
+    "description": "America in the 19th century: You are a rancher and repeatedly herd your cattle from Texas to Kansas City, where you send them off by train. This earns you money and victory points. Needless to say, each time you arrive in Kansas City, you want to have your most valuable cattle in tow. However, the \"Great Western Trail\" not only requires that you keep your herd in good shape, but also that you wisely use the various buildings along the trail. Also, it might be a good idea to hire capable staff: cowboys to improve your herd, craftsmen to build your very own buildings, or engineers for the important railroad line.\n\nIf you cleverly manage your herd and navigate the opportunities and pitfalls of Great Western Trail, you surely will gain the most victory points and win the game.",
+    "imageUrl": "images/great-western-trail.webp",
+    "manualUrl": "https://cdn.1j1ju.com/medias/10/1c/e0-great-western-trail-rulebook.pdf",
+    "dateAdded": "2026-09-12"
+  },
   "Ham Helsing": {
     "name": "Ham Helsing",
     "category": "BOARD GAME",
@@ -1880,6 +1891,17 @@
     "playtime": "30 minutes",
     "description": "Welcome to Star Wars™: The Deckbuilding Game! This new head-to-head game for two players brings the galaxy-spanning war between the Galactic Empire and the Rebel Alliance to your tabletop. In this easy-to-learn game, you and your opponent each choose a side, playing as either the Empire or the Rebels, and as the game progresses you both strengthen the power of your starting decks and work to destroy each other’s bases. The first player to destroy three of their opponent’s bases wins the game!",
     "imageUrl": "images/star-wars-the-deckbuilding-game.jpg"
+  },
+  "Subdivision": {
+    "name": "Subdivision",
+    "category": "BOARD GAME",
+    "players": "1-4",
+    "age": "13+",
+    "playtime": "45 minutes",
+    "description": "Subdivision mimics the city-building feel of Bézier Games' Suburbia, but differs in scope as now each player has been allocated a specific area in which to create the best possible subdivision, filling it with residential, commercial, industrial, civic, and luxury zones, while balancing various improvements to the area, including roads, schools, parks, sidewalks, and lakes. By the end of the game, each player will have created a unique, custom neighborhood with areas that interact with each other, hoping to outscore the competition by having the best subdivision.",
+    "imageUrl": "images/subdivision.jpg",
+    "manualUrl": null,
+    "dateAdded": "2026-09-12"
   },
   "Sumeria": {
     "name": "Sumeria",
