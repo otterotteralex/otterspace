@@ -586,6 +586,17 @@
     "description": "Players move pieces diagonally to \"jump\" opponent pieces 'til one side is eliminated.",
     "imageUrl": "images/draughts.jpg"
   },
+  "Dungeons & Dragons Wrath of Ashardalon": {
+    "name": "Dungeons & Dragons Wrath of Ashardalon",
+    "category": "BOARD GAME",
+    "players": "1-5",
+    "age": "12+",
+    "playtime": "60 minutes",
+    "description": "A cooperative game of adventure for 1-5 players set in the world of Dungeons & Dragons.\n\nA heavy shadow falls across the land, cast by a dark spire that belches smoke and oozes fiery lava. A cave mouth leads to a maze of tunnels and chambers, and deep within this monster-infested labyrinth lurks the most terrifying creature of all: a red dragon!\n\nDesigned for 1-5 players, this boardgame features multiple scenarios, challenging quests, and cooperative game play.\n\nEach player selects a hero; a rogue, thief, warrior, cleric, or wizard. On their turn, each player can explore further into the dungeon (turn over new tiles), move through the already explored parts of the dungeon, and fight monsters. When a new dungeon tile is revealed, there is typically an encounter of some sort, and new monsters to fight are added. Slain monsters reward the players with treasure, and experience points, allowing them to level up and increase their skills during play. Players must cooperate to stay alive, slay the monsters, and achieve the goal of their quest. Each scenario has a different goal - from retrieving a relic, to slaying a vampire lord.",
+    "imageUrl": "images/dungeons-dragons.webp",
+    "manualUrl": null,
+    "dateAdded": "2026-09-12"
+  },
   "Dungeons And Naggins": {
     "name": "Dungeons And Naggins",
     "category": "BOARD GAME",
@@ -786,6 +797,17 @@
     "description": "Each round in Fun Facts, a question is placed in the center of the table, e.g., \"How long is the perfect nap?\", then everyone secretly writes their answer on their colored arrow and places that arrow face down on the table. (You write your name on the other side of the arrow so that everyone knows which arrow is whose.)\n\nOnce everyone has written their answer, take turns placing your arrow in relation to the other players from low to high: \"I know that Mom is super sleepy, so I should definitely place my arrow below hers.\" After everyone has placed their answer in the center of the table, the starting player has the opportunity to move their own arrow — without touching anyone else's!\n\nThen you reveal everyone's numbers, and removes each arrow that is out of order. Each remaining arrow represents a correct answer and provides one point for the entire team. After eight rounds, record the team's score in the Record of Legends. Can you possibly achieve a perfect score? ",
     "imageUrl": "images/fun-facts.jpg",
     "manualUrl": null
+  },
+  "Fury of Dracula": {
+    "name": "Fury of Dracula",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "14+",
+    "playtime": "2-3 hours",
+    "description": "Fury of Dracula is a deduction game inspired by Bram Stoker's classic novel: Dracula. One player controls Dracula and up to four players assume the roles of his hunters. During the game, Dracula will attempt to elude the hunters as he spawns new vampires across Europe, while the hunters try to find and destroy Dracula, thereby ending his reign of terror.",
+    "imageUrl": "images/fury-of-dracula.webp",
+    "manualUrl": "https://ultraboardgames.com/fury-of-dracula/game-rules.php",
+    "dateAdded": "2026-09-12"
   },
   "Garden Guests": {
     "name": "Garden Guests",
