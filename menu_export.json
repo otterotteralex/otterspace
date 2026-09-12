@@ -95,6 +95,17 @@
     "imageUrl": "images/aqua-biodiversity-in-the-oceans.jpg",
     "manualUrl": "https://www.brdgmz.nl/wp-content/uploads/Spelregels-Aqua-English.pdf"
   },
+  "Archipelago": {
+    "name": "Archipelago",
+    "category": "BOARD GAME",
+    "players": "2-5",
+    "age": "14+",
+    "playtime": "30-240 minutes",
+    "description": "In Archipelago, players are Renaissance European powers competing in the exploration of a Pacific or Caribbean archipelago. They will explore territories, harvest resources, use those resources in markets both internal (for their use and that of the natives) and foreign (to sell it in Europe), build markets, harbors, cities and temples, and negotiate among themselves (and maybe betray each other) – all this to complete their secret objectives. They will also need to guess the secret objective of the other players to be able to benefit from them.",
+    "imageUrl": "images/archipelago.jpg",
+    "manualUrl": "https://board-game-rules.com/wp-content/uploads/2025/01/archipelago_Official-Rules.pdf",
+    "dateAdded": "2026-09-12"
+  },
   "Articulate! The Fast Talking Description Game": {
     "name": "Articulate! The Fast Talking Description Game",
     "category": "BOARD GAME",
@@ -2314,6 +2325,17 @@
     "playtime": "30 minutes",
     "description": "Slide letter tiles to make high scoring words.",
     "imageUrl": "images/wordsearch.jpg"
+  },
+  "XCOM The Board Game": {
+    "name": "XCOM The Board Game",
+    "category": "BOARD GAME",
+    "players": "1-4",
+    "age": "14+",
+    "playtime": "1-2 hours",
+    "description": "In XCOM: The Board Game, you and up to three friends assume the roles of the leaders of the elite, international organization known as XCOM. It is your job to defend humanity, quell the rising panic, and turn back the alien invasion.\n\nWhere the world's militaries have failed to stand against the alien invaders, you must succeed. To do so, you must make strategic use of the resources available to you. You must launch Interceptors to shoot down alien UFOs, assign soldiers to key missions, research alien technology, and use that technology to defend your base — all while trying to keep the world from collapsing just long enough that you can coordinate one final mission to repel the invaders for good.\n\nOne of the more notable aspects of XCOM: The Board Game is the way that it incorporates a free and innovative digital app into the core of its gameplay. This digital companion will be available both as a downloadable app and as an online tool.",
+    "imageUrl": "images/xcom-the-board-game.webp",
+    "manualUrl": "https://images-cdn.fantasyflightgames.com/filer_public/54/ec/54ec74ce-1584-4354-9677-7fe1b1085b08/xcom_rules_reference.pdf",
+    "dateAdded": "2026-09-12"
   },
   "Yahtzee": {
     "name": "Yahtzee",
