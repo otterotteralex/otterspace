@@ -1052,6 +1052,17 @@
     "manualUrl": "https://board-game-rules.com/wp-content/uploads/2025/01/keyflower_Official-Rules.pdf",
     "dateAdded": "2026-09-12"
   },
+  "Kingdom Builder": {
+    "name": "Kingdom Builder",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "8+",
+    "playtime": "45 minutes",
+    "description": "Kingdom Builder is a strategic area control and construction board game. Players must create their own kingdom by constructing as many settlements as possible in order to earn as much gold as possible.\n\nYou play with 40 wooden houses and a random board built with modular sections (hexes) offering random abilities. Three random criteria for scoring are selected and each player gets one card with a terrain type on it. On your turn, you can place 3 wooden houses on that terrain type and draw a new card. The houses must be placed adjacent to your other houses if possible, else you can place them on that terrain type anywhere else on the board.",
+    "imageUrl": "images/kingdom-builder.jpg",
+    "manualUrl": "https://rules.queen-games.com/kingdom-builder_en.pdf",
+    "dateAdded": "2026-09-12"
+  },
   "Kites": {
     "name": "Kites",
     "category": "BOARD GAME",
