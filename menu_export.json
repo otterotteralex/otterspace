@@ -735,6 +735,28 @@
     "description": "Fluxx is a card game in which the cards themselves determine the current rules of the game. By playing cards, you change numerous aspects of the game: how to draw cards, how to play cards, and even how to win.\nAt the start of the game, each player holds three cards and on a turn a player draws one card, then plays one card. By playing cards, you can put new rules into play that change numerous aspects of the game: how many cards to draw or play, how many cards you can hold in hand or keep on the table in front of you, and how to win the game.",
     "imageUrl": "images/fluxx.jpg"
   },
+  "Forbidden Desert": {
+    "name": "Forbidden Desert",
+    "category": "BOARD GAME",
+    "players": "2-5",
+    "age": "10+",
+    "playtime": "45 minutes",
+    "description": "Gear up for a thrilling adventure to recover a legendary flying machine buried deep in the ruins of an ancient desert city. You'll need to coordinate with your teammates and use every available resource if you hope to survive the scorching heat and relentless sandstorm. Find the flying machine and escape before you all become permanent artifacts of the forbidden desert!",
+    "imageUrl": "images/forbidden-desert.jpg",
+    "manualUrl": "https://www.ultraboardgames.com/forbidden-desert/game-rules.php",
+    "dateAdded": "2026-09-12"
+  },
+  "Forbidden Island": {
+    "name": "Forbidden Island",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "10+",
+    "playtime": "30 minutes",
+    "description": "Forbidden Island is a cooperative board game - everyone must work together to win the game. Players take turns moving their pawns around the 'island', which is built by arranging the tiles before play begins. As the game progresses, more and more island tiles sink, becoming unavailable, and the pace increases. Players use strategies to keep the island from sinking, while trying to collect treasures and items. As the water level rises, it gets more difficult- sacrifices must be made.",
+    "imageUrl": "images/forbidden-island.png",
+    "manualUrl": "https://officialgamerules.org/wp-content/uploads/2025/03/51-forbidden-island-rulebook.pdf",
+    "dateAdded": "2026-09-12"
+  },
   "Froggit (Smart Games)": {
     "name": "Froggit (Smart Games)",
     "category": "FOR THE YOUNGEST",
@@ -985,6 +1007,17 @@
     "description": "An asymmetric, cooperative dungeon defense game where you play as the monsters protecting their hard earned treasures against invading hordes of looters (so-called heroes) trying to steal it.\n\nIn their turn players draw 5 cards and play, these cards allow them to move, activate the tiles they are to perform the tiles actions, attack heroes, and move their units around. After each player, draw and perform cards from the heroes deck.\n\nYour goal as a team in every scenario is to survive the 2 waves of invading heroes by protecting the treasures on each room. If the main treasure is taken, the game ends and you lose, but if you manage to protect the treasures for long enough, you all win.",
     "imageUrl": "images/keep-the-heroes-out.jpg",
     "manualUrl": null
+  },
+  "Keyflower": {
+    "name": "Keyflower",
+    "category": "BOARD GAME",
+    "players": "2-6",
+    "age": "13+",
+    "playtime": "90-120",
+    "description": "Keyflower is a game for two to six players played over four rounds. Each round represents a season: spring, summer, autumn, and finally winter. Each player starts the game with a \"home\" tile and an initial team of eight workers, each of which is colored red, yellow, or blue. Workers of matching colors are used by the players to bid for tiles to add to their villages. Matching workers may alternatively be used to generate resources, skills and additional workers, not only from the player's own tiles, but also from the tiles in the other players' villages and from the new tiles being auctioned.",
+    "imageUrl": "images/keyflower.png",
+    "manualUrl": "https://board-game-rules.com/wp-content/uploads/2025/01/keyflower_Official-Rules.pdf",
+    "dateAdded": "2026-09-12"
   },
   "Kites": {
     "name": "Kites",
@@ -2164,6 +2197,17 @@
     "description": "The dark and gritty action of Warhammer 40,000: Darktide slips from the screen to the tabletop in a new card game by Cubicle 7 – publishers of tabletop RPG Imperium Maledictum and more. Darktide: The Card Game is a fast and deadly cooperative caper for one to four players, battling hordes of Chaos-warped monsters and traitorous Guardsmen across six missions decreed by their merciless Inquisitor.\n\nThe set includes over 260 cards, six player boards, and all the rules and tokens you need to play out missions packed with nerve-wracking decisions – after all, you’re merely Rejects, and the mission must succeed at any cost. If you’re up for a shorter experience, you can also tackle the terrors of Hive Tertium in solo and single mission game modes.",
     "imageUrl": "images/warhammer-40000-darktide-card-game.jpg",
     "manualUrl": null
+  },
+  "Warhammer Quest the Adventure Card Game": {
+    "name": "Warhammer Quest the Adventure Card Game",
+    "category": "BOARD GAME",
+    "players": "1-4",
+    "age": "14+",
+    "playtime": "30-60 minutes",
+    "description": "Join forces with legendary heroes to brave the many dangers of a cavernous dungeon. Wield potent weapons and magic. Conquer hordes of vile monsters. Discover fabulous treasures.\n\nWarhammer Quest: The Adventure Card Game is a cooperative game of heroic dungeon adventures for one to four players. Players assume the roles of some of the Old World's most iconic heroes, then venture into the shadows to battle ghouls, Goblins, Skaven, giant bats, swarms of rats, and other monsters.\n\nCan you survive their relentless onslaught? Can you press deeper into their lair to find the evil villain that drives them forward? There are only two ways for your quest to end – in death or in glory!",
+    "imageUrl": "images/warhammer-quest-the-adventure-card-game.png",
+    "manualUrl": "https://board-game-rules.com/wp-content/uploads/2025/01/warhammer-quest-the-adventure-card-game_Official-Rules.pdf",
+    "dateAdded": "2026-09-12"
   },
   "We Love Cats": {
     "name": "We Love Cats",
