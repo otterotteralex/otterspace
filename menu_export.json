@@ -1903,6 +1903,17 @@
     "description": "Welcome to Star Wars™: The Deckbuilding Game! This new head-to-head game for two players brings the galaxy-spanning war between the Galactic Empire and the Rebel Alliance to your tabletop. In this easy-to-learn game, you and your opponent each choose a side, playing as either the Empire or the Rebels, and as the game progresses you both strengthen the power of your starting decks and work to destroy each other’s bases. The first player to destroy three of their opponent’s bases wins the game!",
     "imageUrl": "images/star-wars-the-deckbuilding-game.jpg"
   },
+  "Stardew Valley": {
+    "name": "Stardew Valley",
+    "category": "BOARD GAME",
+    "players": "1-4",
+    "age": "13+",
+    "playtime": "60-150 minutes",
+    "description": "Stardew Valley: The Board Game is for 1 to 4 players, ages 13 and up. To play through a full year in the game (which is the standard experience) it takes about 45 minutes per player. This can be adjusted if you want a shorter game. The game has a lot to it but there are rules to make it easier or harder depending on your preferences. Just like the video game, we want you to be able to make this your own.\n\nPlayers work together to protect the Valley. If they succeed, it means that the Valley is brought back to life, and Joja Corporation is driven from town. The way you do this is by completing Grandpa’s Goals and restoring the Community Center. Your goals for each game are randomized, which adds to the game’s replayability.",
+    "imageUrl": "images/stardew-valley.png",
+    "manualUrl": "https://officialgamerules.org/wp-content/uploads/2026/03/Stardew-Rules.pdf",
+    "dateAdded": "2026-09-23"
+  },
   "Subdivision": {
     "name": "Subdivision",
     "category": "BOARD GAME",
