@@ -1523,6 +1523,17 @@
     "description": "Two players compete to build the most aesthetic (and high-scoring) patchwork quilt on a personal 9x9 game board.",
     "imageUrl": "images/patchwork.jpg"
   },
+  "Pear Shaped": {
+    "name": "Pear Shaped",
+    "category": "BOARD GAME",
+    "players": "2 - 8",
+    "age": "7+",
+    "playtime": "15 Minutes",
+    "description": "Pear-shaped is the fast and frantic pair-making, pear-grabbing card game that gets out of hand very quickly! Players aim to get rid of all their pear-shaped cards by matching pairs of pear-shaped objects, numbers and colors before the pear timer stops rocking!\nBut be Pre-peared! When the pear timer stops, all players must stop playing cards and point at the pear while rocking side to side like the pear timer! When a pair of the exact same card is played, all players race to grab the pear timer! Don't be last in your actions or you will collect extra cards!\nThe first player to get rid of all their cards wins!",
+    "imageUrl": "images/pear-shaped.webp",
+    "manualUrl": "https://www.pearshapedgame.com/englishrules",
+    "dateAdded": "2026-09-23"
+  },
   "Peppa Pig 2x Puzzle + Memos": {
     "name": "Peppa Pig 2x Puzzle + Memos",
     "category": "PUZZLE",
