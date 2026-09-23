@@ -1624,6 +1624,17 @@
     "description": "This is a must have item for any Pokemon fan. Containing all characters from #001, through to #151, can you name them all? Build the puzzle and then challenge yourself and your Pokemon knowledge and see if you can correctly guess all the character names!",
     "imageUrl": "images/pokemon-500-piece-puzzle.jpg"
   },
+  "Power Grid": {
+    "name": "Power Grid",
+    "category": "BOARD GAME",
+    "players": "2-6",
+    "age": "12+",
+    "playtime": "120 minutes",
+    "description": "Power Grid is a strategic economic board game where players compete to build electrical networks, purchase power plants, manage resources, and supply electricity more efficiently than their rivals. Using auctions, resource markets, and careful expansion, players must balance growth with timing to power the most cities when the game ends. ",
+    "imageUrl": "images/power-grid.jpg",
+    "manualUrl": "https://officialgamerules.org/wp-content/uploads/2025/04/8f5e6a_c17edd74e4dd4d5ca5891e4ede418ac4-1.pdf",
+    "dateAdded": "2026-09-23"
+  },
   "Power Hungry Pets": {
     "name": "Power Hungry Pets",
     "category": "BOARD GAME",
@@ -2186,6 +2197,17 @@
     "playtime": "90 minutes",
     "description": "(German language with printed English instructions)\nThe board shows the ancient Mediterranean area from Lebanon to the straits of Gibraltar.\nEach player receives a number of ships and cities. \n\nPlayers build galleys to control tiles or travel to locations and found a city there. \n\nAt the end of the game players score points for controlling tiles.",
     "imageUrl": "images/tyros.jpg"
+  },
+  "Tzolk'in The Mayan Calendar": {
+    "name": "Tzolk'in The Mayan Calendar",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "13+",
+    "playtime": "90 minutes",
+    "description": "Tzolkin: The Mayan Calendar presents a new game mechanism: dynamic worker placement. Players representing different Mayan tribes place their workers on giant connected gears, and as the gears rotate they take the workers to different action spots.\n\nDuring a turn, players can either (a) place one or more workers on the lowest visible spot of the gears or (b) pick up one or more workers. When placing workers, they must pay corn, which is used as a currency in the game. When they pick up a worker, they perform certain actions depending on the position of the worker. Actions located \"later\" on the gears are more valuable, so it's wise to let the time work for you – but players cannot skip their turn; if they have all their workers on the gears, they have to pick some up. ",
+    "imageUrl": "images/tzolkin-the-mayan-calendar.webp",
+    "manualUrl": "https://boardgame.bg/Tzolkin_rules_ENG_searchable.pdf",
+    "dateAdded": "2026-09-12"
   },
   "Umbra Via": {
     "name": "Umbra Via",
