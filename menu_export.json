@@ -326,6 +326,17 @@
     "imageUrl": "images/cluedo.jpg",
     "manualUrl": "https://instructions.hasbro.com/api/download/38712_en-nz_clue-the-classic-mystery-game.pdf"
   },
+  "Cluedo The Grinch": {
+    "name": "Cluedo The Grinch",
+    "category": "BOARD GAME",
+    "players": "2-6",
+    "age": "8",
+    "playtime": "",
+    "description": "Stop the Grinch from stealing Christmas. Join Cindy-Lou and the residents of Who-ville as they discover the true meaning of Christmas. In Cluedo: The Grinch, you will be trying to figure out which Who caught the Grinch stealing Christmas, What item they saw the Grinch stuffing up the chimney, and Where the item was taken from.",
+    "imageUrl": "images/cluedo-the-grinch.jpg",
+    "manualUrl": null,
+    "dateAdded": "2026-11-05"
+  },
   "Coastal Cottage - 1,000 piece j": {
     "name": "Coastal Cottage - 1,000 piece jigsaw puzzle",
     "category": "PUZZLE",
