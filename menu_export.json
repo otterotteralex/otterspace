@@ -1039,6 +1039,17 @@
     "description": "(German, Italian, and French with printed English instructions)\nAs a Javanese ruler, become the dominant force in this underdeveloped area.",
     "imageUrl": "images/java.jpg"
   },
+  "Joking Hazard": {
+    "name": "Joking Hazard",
+    "category": "BOARD GAME",
+    "players": "3-10",
+    "age": "17+",
+    "playtime": "30-90 minutes",
+    "description": "Inspired by the Cyanide & Happiness Random Comic Generator, Joking Hazard is a game in which you compete with your friends and enemies to finish an awful three-panel comic, from a deck of cards with millions of possible combinations.",
+    "imageUrl": "images/joking-hazard.jpg",
+    "manualUrl": "https://boardgame.bg/joking%20hazard%20rules.pdf",
+    "dateAdded": "2026-11-05"
+  },
   "Jumanji": {
     "name": "Jumanji",
     "category": "BOARD GAME",
