@@ -2161,6 +2161,17 @@
     "description": "TEN is an exciting push-your-luck and auction game for the whole family! Players draw cards one-at-a-time, trying to add as many as they can without exceeding a total value of TEN, or they bust!",
     "imageUrl": "images/ten.jpg"
   },
+  "Texas Hold It": {
+    "name": "Texas Hold It",
+    "category": "BOARD GAME",
+    "players": "2-6",
+    "age": "14+",
+    "playtime": "10-15 minutes",
+    "description": "Howdy Pardner! This here is a high-stakes push-your-luck card game about relieving yourself in the wildest bathroom in the west!",
+    "imageUrl": "images/texas-hold-it.webp",
+    "manualUrl": null,
+    "dateAdded": "2026-11-05"
+  },
   "The Baffler": {
     "name": "The Baffler",
     "category": "BOARD GAME",
