@@ -1006,6 +1006,17 @@
     "imageUrl": "images/hot-seat.jpg",
     "manualUrl": null
   },
+  "Hot Streak": {
+    "name": "Hot Streak",
+    "category": "BOARD GAME",
+    "players": "2-9",
+    "age": "6+",
+    "playtime": "20 minutes",
+    "description": "Hot Streak is a game for hard luck gamblers who love to bet on and scream at the racers, who in this case happen to be mascots who may (or may not) keep running in the right direction.",
+    "imageUrl": "images/hot-streak.webp",
+    "manualUrl": "https://gamers-hq.de/media/pdf/dc/37/cf/Hot_Streak_rulebook_2nd_printing.pdf",
+    "dateAdded": "2026-11-05"
+  },
   "Hues and Cues": {
     "name": "Hues and Cues",
     "category": "BOARD GAME",
