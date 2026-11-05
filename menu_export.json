@@ -286,6 +286,17 @@
     "imageUrl": "images/catan-6th-edition.jpg",
     "manualUrl": "https://www.catan.com/sites/default/files/2021-06/catan_base_rules_2020_200707.pdf"
   },
+  "Cats Knocking Things Off Ledges": {
+    "name": "Cats Knocking Things Off Ledges",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "10+",
+    "playtime": "15 minutes",
+    "description": "In Cats Knocking Things Off Ledges™, players take turns building a wobbly tower of platforms, placing their cats, and batting toys off the edge to score points based on how far they fall. But watch out - if the tower tumbles, you score zero! Earn extra points by landing on specific platforms, and race to be the first to reach the highest score.",
+    "imageUrl": "images/cats-knocking-things-off-ledges.webp",
+    "manualUrl": null,
+    "dateAdded": "2026-11-05"
+  },
   "Christmas trivia": {
     "name": "Christmas trivia",
     "category": "FOR THE YOUNGEST",
