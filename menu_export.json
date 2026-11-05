@@ -68,6 +68,17 @@
     "description": "Players simultaneously yell words where the first letter spells other words to win the game.",
     "imageUrl": "images/alpha-zulu.jpg"
   },
+  "Alphabet War": {
+    "name": "Alphabet War",
+    "category": "BOARD GAME",
+    "players": "2-6",
+    "age": "6+",
+    "playtime": "10 minutes",
+    "description": "Players race to get rid of their letter cards by changing the word in the middle of the table adding, removing, replacing and rearranging letters while using punctuation cards to skip, reverse and attack other players.",
+    "imageUrl": "images/alphabet-war.png",
+    "manualUrl": null,
+    "dateAdded": "2026-11-05"
+  },
   "Anno 1452": {
     "name": "Anno 1452",
     "category": "BOARD GAME",
