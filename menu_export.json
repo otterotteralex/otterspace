@@ -236,6 +236,17 @@
     "imageUrl": "images/calico.jpg",
     "manualUrl": "https://boardgame.bg/calico%20rules.pdf"
   },
+  "Cards Against Humanity": {
+    "name": "Cards Against Humanity",
+    "category": "BOARD GAME",
+    "players": "4-20",
+    "age": "17+",
+    "playtime": "30-90 minutes",
+    "description": "A party game for horrible people. The game is simple, each round one player asks a question from a black card, and everyone else answers with their funniest white card.",
+    "imageUrl": "images/cards-against-humanity.jpg",
+    "manualUrl": null,
+    "dateAdded": "2026-11-05"
+  },
   "Cascadia": {
     "name": "Cascadia",
     "category": "BOARD GAME",
