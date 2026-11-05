@@ -1607,6 +1607,17 @@
     "description": "The Allies and Abwehrr tangle to hide—or reveal—invasion information.",
     "imageUrl": "images/operationbarclay.jpg"
   },
+  "Organ Attack!": {
+    "name": "Organ Attack!",
+    "category": "BOARD GAME",
+    "players": "2-6",
+    "age": "8+",
+    "playtime": "30-90",
+    "description": "The Family-Friendly Game of Organ Harvesting is back and better than ever!\n\nThe main objective of OrganATTACK is to remove your opponent’s organs before they get the chance to remove yours. The last remaining player with at least one organ wins the game!",
+    "imageUrl": "images/organ-attack.webp",
+    "manualUrl": "https://themindcafe.sg/wp-content/uploads/2018/07/Organ-Attack.pdf",
+    "dateAdded": "2026-11-05"
+  },
   "Our Feathered Friends - 1,000 p": {
     "name": "Our Feathered Friends - 1,000 piece jigsaw puzzle",
     "category": "PUZZLE",
