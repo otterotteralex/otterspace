@@ -2590,6 +2590,17 @@
     "description": "Slide letter tiles to make high scoring words.",
     "imageUrl": "images/wordsearch.jpg"
   },
+  "Would You Still Love Me If": {
+    "name": "Would You Still Love Me If",
+    "category": "BOARD GAME",
+    "players": "2",
+    "age": "17+",
+    "playtime": "20 minutes",
+    "description": "Check your relationship status and limits by answering if certain wacky traits of your partner crossed the line. Agree on conditions, if you'll accept them or not; to go deeper on your relationships and ask even wackier scenarios.\n\nEach round, a question about a possible dela breaker in a relationship is asked and both players answer if yes or no. If agreeded, they advance in the next stage of their relationship. If they don't agree, they have a miss. Five misses and the players end their relationship. The objective of the game is to reach the \"Happily Forever\" space.",
+    "imageUrl": "images/would-you-still-love-me-if.webp",
+    "manualUrl": null,
+    "dateAdded": "2026-11-05"
+  },
   "XCOM The Board Game": {
     "name": "XCOM The Board Game",
     "category": "BOARD GAME",
