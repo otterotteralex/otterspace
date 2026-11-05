@@ -820,6 +820,17 @@
     "imageUrl": "images/fiction.jpg",
     "manualUrl": null
   },
+  "Fish'n'Chips Family Dice Game": {
+    "name": "Fish'n'Chips Family Dice Game",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "6+",
+    "playtime": "",
+    "description": "Rolling a FISH is key in this game, as it not only stops the other player collecting chips but also allows you to start collecting chips. BUT, be quick because the player to your left might roll a fish!\n\nTo be the first player to collect 10 chips.",
+    "imageUrl": "images/fishnchips-family-dice-game.webp",
+    "manualUrl": null,
+    "dateAdded": "2026-11-05"
+  },
   "Flesh and Blood Smash Palace": {
     "name": "Flesh and Blood Smash Palace",
     "category": "BOARD GAME",
