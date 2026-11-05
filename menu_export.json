@@ -1151,6 +1151,17 @@
     "manualUrl": "https://rules.queen-games.com/kingdom-builder_en.pdf",
     "dateAdded": "2026-09-12"
   },
+  "Kingdomino": {
+    "name": "Kingdomino",
+    "category": "BOARD GAME",
+    "players": "2-4",
+    "age": "8+",
+    "playtime": "15 minutes",
+    "description": "Kingdomino is a tile-laying game in which players take the role of monarchs expanding their kingdoms by claiming and arranging lands. Over the course of the game, players build a compact kingdom from forests, lakes, wheat fields, grasslands, swamps, and mines, carefully connecting matching terrain types while planning for valuable crown symbols that increase the prestige of their territories.",
+    "imageUrl": "images/kingdomino.webp",
+    "manualUrl": "https://themindcafe.sg/wp-content/uploads/1970/01/Kingdomino.pdf",
+    "dateAdded": "2026-11-05"
+  },
   "Kites": {
     "name": "Kites",
     "category": "BOARD GAME",
