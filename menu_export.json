@@ -545,6 +545,17 @@
     "description": "The Ravensburger Disney Princess 42 Piece Jigsaw 4 Puzzle Bumper Pack includes four bright and colourful Disney Princess jigsaw puzzles in one bumper pack! With gorgeous artwork, each puzzle creates a charming scene thats sure to enchant little Disney fans.",
     "imageUrl": "images/disney-princess-bumper-puzzle-pack.jpg"
   },
+  "Disturbed Friends": {
+    "name": "Disturbed Friends",
+    "category": "BOARD GAME",
+    "players": "4-10",
+    "age": "21+",
+    "playtime": "20-90 minutes",
+    "description": "Disturbed Friends is an adult party game designed to find out how disturbed your friends are, but, more importantly, how disturbed they think you are.\n\nEach player receives a Set of Voting cards. On your turn, you pick a Question Card and read it out loud. Your friends simply vote on which answer they believe you will choose and place their vote face down. Once all players have voted, you indicate your answer. Each player turns over their card revealing the answer they think you chose. Players that predicted your answer correctly receive a #winning Card. The first player to get 10 #winning cards wins!",
+    "imageUrl": "images/disturbed-friends.webp",
+    "manualUrl": "https://disturbedfriends.com/howtoplay.php",
+    "dateAdded": "2026-11-05"
+  },
   "Dixit": {
     "name": "Dixit",
     "category": "BOARD GAME",
