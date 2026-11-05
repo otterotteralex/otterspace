@@ -276,6 +276,17 @@
     "imageUrl": "images/cat-between-us.jpg",
     "manualUrl": "https://cdn.shopify.com/s/files/1/0611/3958/3198/files/Reduced_CBU_Rulebook_Pages.pdf?v=1747171149"
   },
+  "Cat In The Box": {
+    "name": "Cat In The Box",
+    "category": "BOARD GAME",
+    "players": "2-5",
+    "age": "14+",
+    "playtime": "30",
+    "description": "Cat in the Box: Deluxe Edition is the quintessential quantum trick-taking card game for 2 - 5 cool cats, where your card’s color isn’t defined until you play it! Hypothesize how many tricks you will win, and record your bid. Place tokens on the community research board as you play your hand, and connect large groups of tokens to score even more points. Plan your tricks carefully as you cannot claim the color of a card with the same number that has already been declared. Doing so would be pawsitively catastrophic as you have just created a paradox!",
+    "imageUrl": "images/cat-in-the-box.webp",
+    "manualUrl": "https://officialgamerules.org/game-rules/cat-in-the-box/",
+    "dateAdded": "2026-11-05"
+  },
   "Catan: 6th Edition": {
     "name": "Catan: 6th Edition",
     "category": "BOARD GAME",
