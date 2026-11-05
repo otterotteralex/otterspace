@@ -1250,6 +1250,17 @@
     "description": "A unique jigsaw suitable for ages 6+.",
     "imageUrl": "images/lustigt-jigsaw-puzzle-211-pieces.jpg"
   },
+  "Magical Athlete": {
+    "name": "Magical Athlete",
+    "category": "BOARD GAME",
+    "players": "2-6",
+    "age": "6+",
+    "playtime": "30 minutes",
+    "description": "Magical Athlete is a racing game of pure chaos! Roll a die and move your racer that many spaces — but all the racers have wacky, game-breaking abilities. Race four times, then whoever has the most points wins!\n\nBefore the racing begins, players will draft the four racers they will have in the game and choose before each race which to use. Races alternate between the \"mild\" side of the board and the \"wild\" side of the board. A race ends once two racers have crossed the finish line — with, generally, only these two players receiving points.",
+    "imageUrl": "images/magical-athlete.webp",
+    "manualUrl": null,
+    "dateAdded": "2026-11-05"
+  },
   "Magical Encounters": {
     "name": "Magical Encounters",
     "category": "BOARD GAME",
