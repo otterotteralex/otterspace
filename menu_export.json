@@ -316,6 +316,17 @@
     "imageUrl": "images/civilization.jpg",
     "manualUrl": "https://images-cdn.fantasyflightgames.com/ffg_content/civilization/support/civilization-rules.pdf"
   },
+  "Clack!": {
+    "name": "Clack!",
+    "category": "BOARD GAME",
+    "players": "2-6",
+    "age": "4+",
+    "playtime": "10 minutes",
+    "description": "CLACK! is both the name of the game and the sound that the magnetic discs in the game will make when you slap one against another – and slap them together you will as you're trying to claim the right discs as quickly as possible.",
+    "imageUrl": "images/clack.jpg",
+    "manualUrl": "https://www.ultraboardgames.com/clack/game-rules.php",
+    "dateAdded": "2026-11-05"
+  },
   "Cluedo": {
     "name": "Cluedo",
     "category": "BOARD GAME",
