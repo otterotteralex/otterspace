@@ -1992,6 +1992,17 @@
     "description": "A quick push-your-luck dice game! Every roll gets harder, but good choices let you limit your risk. You'll be surprised at what just two dice can do!",
     "imageUrl": "images/skullanddragon.jpg"
   },
+  "Skyjo": {
+    "name": "Skyjo",
+    "category": "BOARD GAME",
+    "players": "2-8",
+    "age": "8+",
+    "playtime": "30 minutes",
+    "description": "Skyjo is a strategic card game that requires you to have the lowest points in your hand, even without knowing exactly which cards you have. With all your cards hidden, attempt to trade cards to ensure you have the lowest scoring hand you could before the game is over.",
+    "imageUrl": "images/skyjo.webp",
+    "manualUrl": "https://www.boardgamecapital.com/game_rules/skyjo.pdf",
+    "dateAdded": "2026-11-05"
+  },
   "Smash Up Marvel": {
     "name": "Smash Up Marvel",
     "category": "BOARD GAME",
