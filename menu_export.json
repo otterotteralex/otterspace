@@ -218,6 +218,17 @@
     "description": "Put together a dinosaur friend! The set includes 64 parts: soft elements made of foam and plastic.",
     "imageUrl": "images/bloco_miniraptors.jpg"
   },
+  "Bohnanza": {
+    "name": "Bohnanza",
+    "category": "BOARD GAME",
+    "players": "3-5",
+    "age": "10+",
+    "playtime": "45 minutes",
+    "description": "This great card game is about planting, trading, and selling beans - 8 kinds of beans (this English version includes all the cards from the original game). Players try to collect large sets of beans to sell for gold. There is limited growing space and always new beans to plant. ",
+    "imageUrl": "images/bohnanza.webp",
+    "manualUrl": null,
+    "dateAdded": "2026-11-05"
+  },
   "Boss Monster: The Dungeon Building Card Game": {
     "name": "Boss Monster: The Dungeon Building Card Game",
     "category": "BOARD GAME",
