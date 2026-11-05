@@ -1,4 +1,15 @@
 {
+  "3 Chapters": {
+    "name": "3 Chapters",
+    "category": "BOARD GAME",
+    "players": "2-6",
+    "age": "10+",
+    "playtime": "30 min",
+    "description": "In 3 Chapters you become part of a story and take three challenges. Choose your fairytale companions and put them to the test in this trick-taking game to complete your story.",
+    "imageUrl": "images/3-chapters.jpg",
+    "manualUrl": "https://www.rulespal.com/3-chapters/rulebook",
+    "dateAdded": "2026-11-05"
+  },
   "30 Seconds": {
     "name": "30 Seconds",
     "category": "BOARD GAME",
